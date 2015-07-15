@@ -1,0 +1,65 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"62 C:\Program Files\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"33 C:\Users\Kiyomizu\MPLABXProjects\PropoPICSPIS.X\main.c
+[v _Timer Timer `II(v  1 e 0 0 ]
+"42
+[v _main main `(v  1 e 0 0 ]
+"414 C:\Program Files\Microchip\xc8\v1.34\include\pic16f1827.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"475
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"711
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"1120
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1181
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1417
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+"1664
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2797
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2848
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"6962
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"7216
+[v _RA2 RA2 `VEb  1 e 0 @98 ]
+"7218
+[v _RA3 RA3 `VEb  1 e 0 @99 ]
+"7240
+[v _RB6 RB6 `VEb  1 e 0 @110 ]
+"7242
+[v _RB7 RB7 `VEb  1 e 0 @111 ]
+"7416
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"7418
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"28 C:\Users\Kiyomizu\MPLABXProjects\PropoPICSPIS.X\main.c
+[v _Tcount Tcount `i  1 e 2 0 ]
+"29
+[v _Xcount Xcount `i  1 e 2 0 ]
+"30
+[v _Ycount Ycount `i  1 e 2 0 ]
+"42
+[v _main main `(v  1 e 0 0 ]
+{
+"100
+} 0
+"33
+[v _Timer Timer `II(v  1 e 0 0 ]
+{
+"40
+} 0

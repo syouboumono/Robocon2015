@@ -1,0 +1,4 @@
+～使用するピン～
+
+RA2:プロポ縦　RA3:プロポ横　RB6:縦LED RB7横LED RB1:SDI1 RB2:SDO RB4:SCK 
+RA5:SS

@@ -1,0 +1,43 @@
+～使用するピン～
+
+//RB1:SDI1 RB2:SDO RB3:Motor RB4:SCK RB5:PWM RB6:Motor RB7:PWM
+
+～ＰＷＭ～
+
+CCP1のフルブリッジ動作に関わるピン
+
+
+　　　　　　　　　01    11
+RA6 RB7→P1D→13　PWM   0
+RA7 RB6→P1C→12　0　　 1
+RB0 RB3→P1A→9　 1     0
+    RB5→P1B→11　0     PWM    
+
+
+  //PWM
+    CCPTMRS  = 0x00;  //Timer2
+    CCP1CON  = 0xCC;  //PWM     forwoard:4C    reverse:CC
+    PSTR1CON = 0x0A;
+    CCP1SEL  = 0;
+    T2CON    = 0x01;  //*4
+    PR2      = 15;    //PWMf 30kHz
+    CCPR1L   = 0;     //dutty reset
+    CCPR1H   = 0;
+    TMR2     = 0;     //timer reset
+    TMR2ON   = 1;     //timeron
+
+速度15段階
+
+～ＳＰＩ～
+
+//SPI Slave
+    SDO1SEL  = 0;     //RB2:SDO
+    SS1SEL   = 1;     //RA5:SS
+    SSP1CON1 = 0x24;  //CHP:low SS:enable
+    SSP1STAT = 0x00;  //CKE:up
+
+    //warikomi
+    SSP1IF    = 0;     //SPIwarikomiflag reset
+    SSP1IE    = 1;     //SPIwarikomi set
+    PEIE      = 1;
+    GIE       = 1;
