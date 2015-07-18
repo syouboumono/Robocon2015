@@ -23,10 +23,6 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
-  <sourceRootList>
-    <Elem>../../SPIライブラリ計画/SPIライブラリ</Elem>
-    <Elem>../../共通設定ライブラリ</Elem>
-  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
