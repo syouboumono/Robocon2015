@@ -1,0 +1,62 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1829 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"5 D:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829\MPLABXProjects\PWM16F1829.X\main.c
+[v _main main `(v  1 e 0 0 ]
+"414 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f1829.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"463
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"501
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"940
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"959
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"978
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1152
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1201
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1239
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1722
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2883
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2929
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2964
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"4628
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"4647
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @658 ]
+"4666
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+"4977
+[v _PSTR1CON PSTR1CON `VEuc  1 e 1 @662 ]
+"5338
+[v _CCPTMRS CCPTMRS `VEuc  1 e 1 @670 ]
+"7436
+[v _P1CSEL P1CSEL `VEb  1 e 0 @2290 ]
+"7452
+[v _P1DSEL P1DSEL `VEb  1 e 0 @2291 ]
+"7746
+[v _TMR2ON TMR2ON `VEb  1 e 0 @226 ]
+"5 D:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829\MPLABXProjects\PWM16F1829.X\main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"36
+} 0

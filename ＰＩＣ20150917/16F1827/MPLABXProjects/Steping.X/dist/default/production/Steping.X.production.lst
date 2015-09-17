@@ -1,0 +1,1273 @@
+
+
+Microchip Technology PIC LITE Macro Assembler V1.33 build 59893 
+                                                                                               Sat Jul 18 20:13:20 2015
+
+Microchip Technology Omniscient Code Generator (Lite mode) build 59893
+     1                           	processor	16F1827
+     2                           	opt	pw 120
+     3                           	opt	lm
+     4                           	psect	text0,local,class=CODE,merge=1,delta=2
+     5                           	psect	cinit,global,class=CODE,merge=1,delta=2
+     6                           	psect	bssCOMMON,global,class=COMMON,space=1,delta=1
+     7                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1
+     8                           	psect	maintext,global,class=CODE,merge=1,split=1,delta=2
+     9                           	psect	text1,local,class=CODE,merge=1,delta=2
+    10                           	psect	text2,local,class=CODE,merge=1,delta=2
+    11                           	dabs	1,0x7E,2
+    12  0000                     	;# 
+    13  0001                     	;# 
+    14  0002                     	;# 
+    15  0003                     	;# 
+    16  0004                     	;# 
+    17  0005                     	;# 
+    18  0006                     	;# 
+    19  0007                     	;# 
+    20  0008                     	;# 
+    21  0009                     	;# 
+    22  000A                     	;# 
+    23  000B                     	;# 
+    24  000C                     	;# 
+    25  000D                     	;# 
+    26  0011                     	;# 
+    27  0012                     	;# 
+    28  0013                     	;# 
+    29  0014                     	;# 
+    30  0015                     	;# 
+    31  0016                     	;# 
+    32  0016                     	;# 
+    33  0017                     	;# 
+    34  0018                     	;# 
+    35  0019                     	;# 
+    36  001A                     	;# 
+    37  001B                     	;# 
+    38  001C                     	;# 
+    39  001E                     	;# 
+    40  001F                     	;# 
+    41  008C                     	;# 
+    42  008D                     	;# 
+    43  0091                     	;# 
+    44  0092                     	;# 
+    45  0093                     	;# 
+    46  0094                     	;# 
+    47  0095                     	;# 
+    48  0096                     	;# 
+    49  0097                     	;# 
+    50  0098                     	;# 
+    51  0099                     	;# 
+    52  009A                     	;# 
+    53  009B                     	;# 
+    54  009B                     	;# 
+    55  009C                     	;# 
+    56  009D                     	;# 
+    57  009E                     	;# 
+    58  010C                     	;# 
+    59  010D                     	;# 
+    60  0111                     	;# 
+    61  0112                     	;# 
+    62  0113                     	;# 
+    63  0114                     	;# 
+    64  0115                     	;# 
+    65  0116                     	;# 
+    66  0117                     	;# 
+    67  0118                     	;# 
+    68  0119                     	;# 
+    69  011A                     	;# 
+    70  011B                     	;# 
+    71  011D                     	;# 
+    72  011E                     	;# 
+    73  018C                     	;# 
+    74  018D                     	;# 
+    75  0191                     	;# 
+    76  0191                     	;# 
+    77  0192                     	;# 
+    78  0193                     	;# 
+    79  0193                     	;# 
+    80  0193                     	;# 
+    81  0194                     	;# 
+    82  0195                     	;# 
+    83  0196                     	;# 
+    84  0199                     	;# 
+    85  019A                     	;# 
+    86  019B                     	;# 
+    87  019B                     	;# 
+    88  019B                     	;# 
+    89  019B                     	;# 
+    90  019C                     	;# 
+    91  019C                     	;# 
+    92  019D                     	;# 
+    93  019E                     	;# 
+    94  019F                     	;# 
+    95  020C                     	;# 
+    96  020D                     	;# 
+    97  0211                     	;# 
+    98  0211                     	;# 
+    99  0212                     	;# 
+   100  0212                     	;# 
+   101  0213                     	;# 
+   102  0213                     	;# 
+   103  0214                     	;# 
+   104  0214                     	;# 
+   105  0215                     	;# 
+   106  0215                     	;# 
+   107  0215                     	;# 
+   108  0216                     	;# 
+   109  0216                     	;# 
+   110  0217                     	;# 
+   111  0217                     	;# 
+   112  0219                     	;# 
+   113  021A                     	;# 
+   114  021B                     	;# 
+   115  021C                     	;# 
+   116  021D                     	;# 
+   117  021E                     	;# 
+   118  021F                     	;# 
+   119  0291                     	;# 
+   120  0291                     	;# 
+   121  0292                     	;# 
+   122  0293                     	;# 
+   123  0294                     	;# 
+   124  0295                     	;# 
+   125  0295                     	;# 
+   126  0296                     	;# 
+   127  0298                     	;# 
+   128  0298                     	;# 
+   129  0299                     	;# 
+   130  029A                     	;# 
+   131  029B                     	;# 
+   132  029C                     	;# 
+   133  029C                     	;# 
+   134  029D                     	;# 
+   135  029E                     	;# 
+   136  029E                     	;# 
+   137  0311                     	;# 
+   138  0311                     	;# 
+   139  0312                     	;# 
+   140  0313                     	;# 
+   141  0318                     	;# 
+   142  0318                     	;# 
+   143  0319                     	;# 
+   144  031A                     	;# 
+   145  0394                     	;# 
+   146  0395                     	;# 
+   147  0396                     	;# 
+   148  039A                     	;# 
+   149  039C                     	;# 
+   150  039D                     	;# 
+   151  039E                     	;# 
+   152  039F                     	;# 
+   153  0415                     	;# 
+   154  0416                     	;# 
+   155  0417                     	;# 
+   156  041C                     	;# 
+   157  041D                     	;# 
+   158  041E                     	;# 
+   159  0FE4                     	;# 
+   160  0FE5                     	;# 
+   161  0FE6                     	;# 
+   162  0FE7                     	;# 
+   163  0FE8                     	;# 
+   164  0FE9                     	;# 
+   165  0FEA                     	;# 
+   166  0FEB                     	;# 
+   167  0FED                     	;# 
+   168  0FEE                     	;# 
+   169  0FEF                     	;# 
+   170  0000                     	;# 
+   171  0001                     	;# 
+   172  0002                     	;# 
+   173  0003                     	;# 
+   174  0004                     	;# 
+   175  0005                     	;# 
+   176  0006                     	;# 
+   177  0007                     	;# 
+   178  0008                     	;# 
+   179  0009                     	;# 
+   180  000A                     	;# 
+   181  000B                     	;# 
+   182  000C                     	;# 
+   183  000D                     	;# 
+   184  0011                     	;# 
+   185  0012                     	;# 
+   186  0013                     	;# 
+   187  0014                     	;# 
+   188  0015                     	;# 
+   189  0016                     	;# 
+   190  0016                     	;# 
+   191  0017                     	;# 
+   192  0018                     	;# 
+   193  0019                     	;# 
+   194  001A                     	;# 
+   195  001B                     	;# 
+   196  001C                     	;# 
+   197  001E                     	;# 
+   198  001F                     	;# 
+   199  008C                     	;# 
+   200  008D                     	;# 
+   201  0091                     	;# 
+   202  0092                     	;# 
+   203  0093                     	;# 
+   204  0094                     	;# 
+   205  0095                     	;# 
+   206  0096                     	;# 
+   207  0097                     	;# 
+   208  0098                     	;# 
+   209  0099                     	;# 
+   210  009A                     	;# 
+   211  009B                     	;# 
+   212  009B                     	;# 
+   213  009C                     	;# 
+   214  009D                     	;# 
+   215  009E                     	;# 
+   216  010C                     	;# 
+   217  010D                     	;# 
+   218  0111                     	;# 
+   219  0112                     	;# 
+   220  0113                     	;# 
+   221  0114                     	;# 
+   222  0115                     	;# 
+   223  0116                     	;# 
+   224  0117                     	;# 
+   225  0118                     	;# 
+   226  0119                     	;# 
+   227  011A                     	;# 
+   228  011B                     	;# 
+   229  011D                     	;# 
+   230  011E                     	;# 
+   231  018C                     	;# 
+   232  018D                     	;# 
+   233  0191                     	;# 
+   234  0191                     	;# 
+   235  0192                     	;# 
+   236  0193                     	;# 
+   237  0193                     	;# 
+   238  0193                     	;# 
+   239  0194                     	;# 
+   240  0195                     	;# 
+   241  0196                     	;# 
+   242  0199                     	;# 
+   243  019A                     	;# 
+   244  019B                     	;# 
+   245  019B                     	;# 
+   246  019B                     	;# 
+   247  019B                     	;# 
+   248  019C                     	;# 
+   249  019C                     	;# 
+   250  019D                     	;# 
+   251  019E                     	;# 
+   252  019F                     	;# 
+   253  020C                     	;# 
+   254  020D                     	;# 
+   255  0211                     	;# 
+   256  0211                     	;# 
+   257  0212                     	;# 
+   258  0212                     	;# 
+   259  0213                     	;# 
+   260  0213                     	;# 
+   261  0214                     	;# 
+   262  0214                     	;# 
+   263  0215                     	;# 
+   264  0215                     	;# 
+   265  0215                     	;# 
+   266  0216                     	;# 
+   267  0216                     	;# 
+   268  0217                     	;# 
+   269  0217                     	;# 
+   270  0219                     	;# 
+   271  021A                     	;# 
+   272  021B                     	;# 
+   273  021C                     	;# 
+   274  021D                     	;# 
+   275  021E                     	;# 
+   276  021F                     	;# 
+   277  0291                     	;# 
+   278  0291                     	;# 
+   279  0292                     	;# 
+   280  0293                     	;# 
+   281  0294                     	;# 
+   282  0295                     	;# 
+   283  0295                     	;# 
+   284  0296                     	;# 
+   285  0298                     	;# 
+   286  0298                     	;# 
+   287  0299                     	;# 
+   288  029A                     	;# 
+   289  029B                     	;# 
+   290  029C                     	;# 
+   291  029C                     	;# 
+   292  029D                     	;# 
+   293  029E                     	;# 
+   294  029E                     	;# 
+   295  0311                     	;# 
+   296  0311                     	;# 
+   297  0312                     	;# 
+   298  0313                     	;# 
+   299  0318                     	;# 
+   300  0318                     	;# 
+   301  0319                     	;# 
+   302  031A                     	;# 
+   303  0394                     	;# 
+   304  0395                     	;# 
+   305  0396                     	;# 
+   306  039A                     	;# 
+   307  039C                     	;# 
+   308  039D                     	;# 
+   309  039E                     	;# 
+   310  039F                     	;# 
+   311  0415                     	;# 
+   312  0416                     	;# 
+   313  0417                     	;# 
+   314  041C                     	;# 
+   315  041D                     	;# 
+   316  041E                     	;# 
+   317  0FE4                     	;# 
+   318  0FE5                     	;# 
+   319  0FE6                     	;# 
+   320  0FE7                     	;# 
+   321  0FE8                     	;# 
+   322  0FE9                     	;# 
+   323  0FEA                     	;# 
+   324  0FEB                     	;# 
+   325  0FED                     	;# 
+   326  0FEE                     	;# 
+   327  0FEF                     	;# 
+   328  000C                     _PORTA	set	12
+   329  005F                     _GIE	set	95
+   330  005E                     _PEIE	set	94
+   331  0060                     _RA0	set	96
+   332  0061                     _RA1	set	97
+   333  0062                     _RA2	set	98
+   334  0063                     _RA3	set	99
+   335  0064                     _RA4	set	100
+   336  0067                     _RA7	set	103
+   337  0068                     _RB0	set	104
+   338  006B                     _RB3	set	107
+   339  006E                     _RB6	set	110
+   340  006F                     _RB7	set	111
+   341  008B                     _SSP1IF	set	139
+   342  0099                     _OSCCON	set	153
+   343  008C                     _TRISA	set	140
+   344  008D                     _TRISB	set	141
+   345  048B                     _SSP1IE	set	1163
+   346  08EE                     _SDO1SEL	set	2286
+   347  08ED                     _SS1SEL	set	2285
+   348  018C                     _ANSELA	set	396
+   349  018D                     _ANSELB	set	397
+   350  0211                     _SSP1BUF	set	529
+   351  0215                     _SSP1CON1	set	533
+   352  0214                     _SSP1STAT	set	532
+   353  0214                     _SSP1STATbits	set	532
+   354                           
+   355                           	psect	text0
+   356  0000                     __ptext0:	
+   357                           ; #config settings
+   358                           
+   359                           
+   360                           ;psect for function _MasterInit
+   361  0000                     
+   362                           	psect	cinit
+   363  07FB                     start_initialization:	
+   364  07FB                     __initialization:	
+   365                           
+   366                           ; Clear objects allocated to COMMON
+   367  07FB  01F4               	clrf	__pbssCOMMON& (0+127)
+   368  07FC                     end_of_initialization:	
+   369                           ;End of C runtime variable initialization code
+   370                           
+   371  07FC                     __end_of__initialization:	
+   372  07FC  107E               	bcf	pic14e$flags,0	;clear compiler interrupt flag
+   373  07FD  0020               	movlb	0
+   374  07FE  3187  2F51         	ljmp	_main	;jump to C main() function
+   375                           
+   376                           	psect	bssCOMMON
+   377  0074                     __pbssCOMMON:	
+   378  0074                     _R_data:	
+   379  0074                     	ds	1
+   380                           
+   381                           	psect	cstackCOMMON
+   382  0070                     __pcstackCOMMON:	
+   383  0070                     ?_MasterInit:	
+   384  0070                     ??_MasterInit:	
+   385                           ; 0 bytes @ 0x0
+   386                           
+   387  0070                     ?_MasterSend:	
+   388                           ; 0 bytes @ 0x0
+   389                           
+   390  0070                     ?_main:	
+   391                           ; 0 bytes @ 0x0
+   392                           
+   393  0070                     MasterSend@obj:	
+   394                           ; 0 bytes @ 0x0
+   395                           
+   396                           
+   397                           ; 2 bytes @ 0x0
+   398  0070                     	ds	2
+   399  0072                     MasterSend@S_data:	
+   400                           
+   401                           ; 1 bytes @ 0x2
+   402  0072                     	ds	1
+   403  0073                     ??_MasterSend:	
+   404  0073                     ??_main:	
+   405                           ; 0 bytes @ 0x3
+   406                           
+   407                           
+   408                           ; 0 bytes @ 0x3
+   409  0073                     	ds	1
+   410                           
+   411                           	psect	maintext
+   412  0751                     __pmaintext:	
+   413 ;;
+   414 ;;Main: autosize = 0, tempsize = 1, incstack = 0, save=0
+   415 ;;
+   416 ;; *************** function _main *****************
+   417 ;; Defined at:
+   418 ;;		line 6 in file "main.c"
+   419 ;; Parameters:    Size  Location     Type
+   420 ;;		None
+   421 ;; Auto vars:     Size  Location     Type
+   422 ;;		None
+   423 ;; Return value:  Size  Location     Type
+   424 ;;		None               void
+   425 ;; Registers used:
+   426 ;;		wreg, status,2, status,0, pclath, cstack
+   427 ;; Tracked objects:
+   428 ;;		On entry : 17F/0
+   429 ;;		On exit  : 0/0
+   430 ;;		Unchanged: 0/0
+   431 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+   432 ;;      Params:         0       0       0       0       0       0
+   433 ;;      Locals:         0       0       0       0       0       0
+   434 ;;      Temps:          1       0       0       0       0       0
+   435 ;;      Totals:         1       0       0       0       0       0
+   436 ;;Total ram usage:        1 bytes
+   437 ;; Hardware stack levels required when called:    1
+   438 ;; This function calls:
+   439 ;;		_MasterInit
+   440 ;;		_MasterSend
+   441 ;; This function is called by:
+   442 ;;		Startup code after reset
+   443 ;; This function uses a non-reentrant model
+   444 ;;
+   445                           
+   446                           
+   447                           ;psect for function _main
+   448  0751                     _main:	
+   449                           
+   450                           ;main.c: 9: OSCCON = 0x72;
+   451                           
+   452                           ;incstack = 0
+   453                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
+   454  0751  3072               	movlw	114
+   455  0752  0021               	movlb	1	; select bank1
+   456  0753  0099               	movwf	25	;volatile
+   457                           
+   458                           ;main.c: 10: MasterInit();
+   459  0754  3186  26A6  3187   	fcall	_MasterInit
+   460                           
+   461                           ;main.c: 13: MasterSend(2,0x00);
+   462  0757  3002               	movlw	2
+   463  0758  00F0               	movwf	MasterSend@obj
+   464  0759  3000               	movlw	0
+   465  075A  00F1               	movwf	MasterSend@obj+1
+   466  075B  01F2               	clrf	MasterSend@S_data
+   467  075C  3186  26BE  3187   	fcall	_MasterSend
+   468                           
+   469                           ;main.c: 14: MasterSend(2,0x00);
+   470  075F  3002               	movlw	2
+   471  0760  00F0               	movwf	MasterSend@obj
+   472  0761  3000               	movlw	0
+   473  0762  00F1               	movwf	MasterSend@obj+1
+   474  0763  01F2               	clrf	MasterSend@S_data
+   475  0764  3186  26BE  3187   	fcall	_MasterSend
+   476                           
+   477                           ;main.c: 15: MasterSend(2,0x00);
+   478  0767  3002               	movlw	2
+   479  0768  00F0               	movwf	MasterSend@obj
+   480  0769  3000               	movlw	0
+   481  076A  00F1               	movwf	MasterSend@obj+1
+   482  076B  01F2               	clrf	MasterSend@S_data
+   483  076C  3186  26BE  3187   	fcall	_MasterSend
+   484                           
+   485                           ;main.c: 16: MasterSend(2,0x00);
+   486  076F  3002               	movlw	2
+   487  0770  00F0               	movwf	MasterSend@obj
+   488  0771  3000               	movlw	0
+   489  0772  00F1               	movwf	MasterSend@obj+1
+   490  0773  01F2               	clrf	MasterSend@S_data
+   491  0774  3186  26BE  3187   	fcall	_MasterSend
+   492                           
+   493                           ;main.c: 19: MasterSend(2,0xc0);
+   494  0777  3002               	movlw	2
+   495  0778  00F0               	movwf	MasterSend@obj
+   496  0779  3000               	movlw	0
+   497  077A  00F1               	movwf	MasterSend@obj+1
+   498  077B  30C0               	movlw	192
+   499  077C  00F3               	movwf	??_main
+   500  077D  0873               	movf	??_main,w
+   501  077E  00F2               	movwf	MasterSend@S_data
+   502  077F  3186  26BE  3187   	fcall	_MasterSend
+   503                           
+   504                           ;main.c: 21: MasterSend(2,0x16);
+   505  0782  3002               	movlw	2
+   506  0783  00F0               	movwf	MasterSend@obj
+   507  0784  3000               	movlw	0
+   508  0785  00F1               	movwf	MasterSend@obj+1
+   509  0786  3016               	movlw	22
+   510  0787  00F3               	movwf	??_main
+   511  0788  0873               	movf	??_main,w
+   512  0789  00F2               	movwf	MasterSend@S_data
+   513  078A  3186  26BE  3187   	fcall	_MasterSend
+   514                           
+   515                           ;main.c: 22: MasterSend(2,0x77);
+   516  078D  3002               	movlw	2
+   517  078E  00F0               	movwf	MasterSend@obj
+   518  078F  3000               	movlw	0
+   519  0790  00F1               	movwf	MasterSend@obj+1
+   520  0791  3077               	movlw	119
+   521  0792  00F3               	movwf	??_main
+   522  0793  0873               	movf	??_main,w
+   523  0794  00F2               	movwf	MasterSend@S_data
+   524  0795  3186  26BE  3187   	fcall	_MasterSend
+   525                           
+   526                           ;main.c: 24: MasterSend(2,0x05);
+   527  0798  3002               	movlw	2
+   528  0799  00F0               	movwf	MasterSend@obj
+   529  079A  3000               	movlw	0
+   530  079B  00F1               	movwf	MasterSend@obj+1
+   531  079C  3005               	movlw	5
+   532  079D  00F3               	movwf	??_main
+   533  079E  0873               	movf	??_main,w
+   534  079F  00F2               	movwf	MasterSend@S_data
+   535  07A0  3186  26BE  3187   	fcall	_MasterSend
+   536                           
+   537                           ;main.c: 25: MasterSend(2,0x00);
+   538  07A3  3002               	movlw	2
+   539  07A4  00F0               	movwf	MasterSend@obj
+   540  07A5  3000               	movlw	0
+   541  07A6  00F1               	movwf	MasterSend@obj+1
+   542  07A7  01F2               	clrf	MasterSend@S_data
+   543  07A8  3186  26BE  3187   	fcall	_MasterSend
+   544                           
+   545                           ;main.c: 26: MasterSend(2,0x10);
+   546  07AB  3002               	movlw	2
+   547  07AC  00F0               	movwf	MasterSend@obj
+   548  07AD  3000               	movlw	0
+   549  07AE  00F1               	movwf	MasterSend@obj+1
+   550  07AF  3010               	movlw	16
+   551  07B0  00F3               	movwf	??_main
+   552  07B1  0873               	movf	??_main,w
+   553  07B2  00F2               	movwf	MasterSend@S_data
+   554  07B3  3186  26BE  3187   	fcall	_MasterSend
+   555                           
+   556                           ;main.c: 28: MasterSend(2,0x06);
+   557  07B6  3002               	movlw	2
+   558  07B7  00F0               	movwf	MasterSend@obj
+   559  07B8  3000               	movlw	0
+   560  07B9  00F1               	movwf	MasterSend@obj+1
+   561  07BA  3006               	movlw	6
+   562  07BB  00F3               	movwf	??_main
+   563  07BC  0873               	movf	??_main,w
+   564  07BD  00F2               	movwf	MasterSend@S_data
+   565  07BE  3186  26BE  3187   	fcall	_MasterSend
+   566                           
+   567                           ;main.c: 29: MasterSend(2,0x00);
+   568  07C1  3002               	movlw	2
+   569  07C2  00F0               	movwf	MasterSend@obj
+   570  07C3  3000               	movlw	0
+   571  07C4  00F1               	movwf	MasterSend@obj+1
+   572  07C5  01F2               	clrf	MasterSend@S_data
+   573  07C6  3186  26BE  3187   	fcall	_MasterSend
+   574                           
+   575                           ;main.c: 30: MasterSend(2,0x10);
+   576  07C9  3002               	movlw	2
+   577  07CA  00F0               	movwf	MasterSend@obj
+   578  07CB  3000               	movlw	0
+   579  07CC  00F1               	movwf	MasterSend@obj+1
+   580  07CD  3010               	movlw	16
+   581  07CE  00F3               	movwf	??_main
+   582  07CF  0873               	movf	??_main,w
+   583  07D0  00F2               	movwf	MasterSend@S_data
+   584  07D1  3186  26BE  3187   	fcall	_MasterSend
+   585                           
+   586                           ;main.c: 32: MasterSend(2,0x50);
+   587  07D4  3002               	movlw	2
+   588  07D5  00F0               	movwf	MasterSend@obj
+   589  07D6  3000               	movlw	0
+   590  07D7  00F1               	movwf	MasterSend@obj+1
+   591  07D8  3050               	movlw	80
+   592  07D9  00F3               	movwf	??_main
+   593  07DA  0873               	movf	??_main,w
+   594  07DB  00F2               	movwf	MasterSend@S_data
+   595  07DC  3186  26BE  3187   	fcall	_MasterSend
+   596                           
+   597                           ;main.c: 33: MasterSend(2,0x00);
+   598  07DF  3002               	movlw	2
+   599  07E0  00F0               	movwf	MasterSend@obj
+   600  07E1  3000               	movlw	0
+   601  07E2  00F1               	movwf	MasterSend@obj+1
+   602  07E3  01F2               	clrf	MasterSend@S_data
+   603  07E4  3186  26BE  3187   	fcall	_MasterSend
+   604                           
+   605                           ;main.c: 34: MasterSend(2,0x00);
+   606  07E7  3002               	movlw	2
+   607  07E8  00F0               	movwf	MasterSend@obj
+   608  07E9  3000               	movlw	0
+   609  07EA  00F1               	movwf	MasterSend@obj+1
+   610  07EB  01F2               	clrf	MasterSend@S_data
+   611  07EC  3186  26BE  3187   	fcall	_MasterSend
+   612                           
+   613                           ;main.c: 35: MasterSend(2,0x10);
+   614  07EF  3002               	movlw	2
+   615  07F0  00F0               	movwf	MasterSend@obj
+   616  07F1  3000               	movlw	0
+   617  07F2  00F1               	movwf	MasterSend@obj+1
+   618  07F3  3010               	movlw	16
+   619  07F4  00F3               	movwf	??_main
+   620  07F5  0873               	movf	??_main,w
+   621  07F6  00F2               	movwf	MasterSend@S_data
+   622  07F7  3186  26BE  3187   	fcall	_MasterSend
+   623  07FA                     l11:	
+   624                           ;main.c: 37: while(1){
+   625                           
+   626  07FA  2FFA               	goto	l11
+   627  07FB                     __end_of_main:	
+   628                           
+   629                           	psect	text1
+   630  06BE                     __ptext1:	
+   631 ;; *************** function _MasterSend *****************
+   632 ;; Defined at:
+   633 ;;		line 90 in file "SPI.c"
+   634 ;; Parameters:    Size  Location     Type
+   635 ;;  obj             2    0[COMMON] int 
+   636 ;;  S_data          1    2[COMMON] unsigned char 
+   637 ;; Auto vars:     Size  Location     Type
+   638 ;;		None
+   639 ;; Return value:  Size  Location     Type
+   640 ;;		None               void
+   641 ;; Registers used:
+   642 ;;		wreg, status,2, status,0
+   643 ;; Tracked objects:
+   644 ;;		On entry : 0/0
+   645 ;;		On exit  : 0/0
+   646 ;;		Unchanged: 0/0
+   647 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+   648 ;;      Params:         3       0       0       0       0       0
+   649 ;;      Locals:         0       0       0       0       0       0
+   650 ;;      Temps:          0       0       0       0       0       0
+   651 ;;      Totals:         3       0       0       0       0       0
+   652 ;;Total ram usage:        3 bytes
+   653 ;; Hardware stack levels used:    1
+   654 ;; This function calls:
+   655 ;;		Nothing
+   656 ;; This function is called by:
+   657 ;;		_main
+   658 ;; This function uses a non-reentrant model
+   659 ;;
+   660                           
+   661                           
+   662                           ;psect for function _MasterSend
+   663  06BE                     _MasterSend:	
+   664                           
+   665                           ;SPI.c: 92: if(obj == 0){
+   666                           
+   667                           ;incstack = 0
+   668                           ; Regs used in _MasterSend: [wreg+status,2+status,0]
+   669  06BE  0871               	movf	MasterSend@obj+1,w
+   670  06BF  0470               	iorwf	MasterSend@obj,w
+   671  06C0  1D03               	skipz
+   672  06C1  2ECC               	goto	l605
+   673                           
+   674                           ;SPI.c: 93: RA0 = 0;
+   675  06C2  0020               	movlb	0	; select bank0
+   676  06C3  100C               	bcf	12,0	;volatile
+   677                           
+   678                           ;SPI.c: 94: SSP1BUF = S_data;
+   679  06C4  0872               	movf	MasterSend@S_data,w
+   680  06C5  0024               	movlb	4	; select bank4
+   681  06C6  0091               	movwf	17	;volatile
+   682  06C7                     l80:	
+   683                           ;SPI.c: 95: while(SSP1STATbits.BF == 0);
+   684                           
+   685  06C7  1C14               	btfss	20,0	;volatile
+   686  06C8  2EC7               	goto	l80
+   687                           
+   688                           ;SPI.c: 96: RA0 = 1;
+   689  06C9  0020               	movlb	0	; select bank0
+   690  06CA  140C               	bsf	12,0	;volatile
+   691                           
+   692                           ;SPI.c: 97: return;
+   693  06CB  0008               	return
+   694  06CC                     l605:	
+   695                           
+   696                           ;SPI.c: 98: }
+   697                           ;SPI.c: 100: if(obj == 1){
+   698  06CC  3001               	movlw	1
+   699  06CD  0670               	xorwf	MasterSend@obj,w
+   700  06CE  0471               	iorwf	MasterSend@obj+1,w
+   701  06CF  1D03               	skipz
+   702  06D0  2EDB               	goto	l611
+   703                           
+   704                           ;SPI.c: 101: RA1 = 0;
+   705  06D1  0020               	movlb	0	; select bank0
+   706  06D2  108C               	bcf	12,1	;volatile
+   707                           
+   708                           ;SPI.c: 102: SSP1BUF = S_data;
+   709  06D3  0872               	movf	MasterSend@S_data,w
+   710  06D4  0024               	movlb	4	; select bank4
+   711  06D5  0091               	movwf	17	;volatile
+   712  06D6                     l85:	
+   713                           ;SPI.c: 103: while(SSP1STATbits.BF == 0);
+   714                           
+   715  06D6  1C14               	btfss	20,0	;volatile
+   716  06D7  2ED6               	goto	l85
+   717                           
+   718                           ;SPI.c: 104: RA1 = 1;
+   719  06D8  0020               	movlb	0	; select bank0
+   720  06D9  148C               	bsf	12,1	;volatile
+   721                           
+   722                           ;SPI.c: 105: return;
+   723  06DA  0008               	return
+   724  06DB                     l611:	
+   725                           
+   726                           ;SPI.c: 106: }
+   727                           ;SPI.c: 108: if(obj == 2){
+   728  06DB  3002               	movlw	2
+   729  06DC  0670               	xorwf	MasterSend@obj,w
+   730  06DD  0471               	iorwf	MasterSend@obj+1,w
+   731  06DE  1D03               	skipz
+   732  06DF  2EE8               	goto	l621
+   733                           
+   734                           ;SPI.c: 109: RA2 = 0;
+   735  06E0  0020               	movlb	0	; select bank0
+   736  06E1  110C               	bcf	12,2	;volatile
+   737                           
+   738                           ;SPI.c: 110: SSP1BUF = S_data;
+   739  06E2  0872               	movf	MasterSend@S_data,w
+   740  06E3  0024               	movlb	4	; select bank4
+   741  06E4  0091               	movwf	17	;volatile
+   742                           
+   743                           ;SPI.c: 112: RA2 = 1;
+   744  06E5  0020               	movlb	0	; select bank0
+   745  06E6  150C               	bsf	12,2	;volatile
+   746                           
+   747                           ;SPI.c: 113: return;
+   748  06E7  0008               	return
+   749  06E8                     l621:	
+   750                           
+   751                           ;SPI.c: 114: }
+   752                           ;SPI.c: 116: if(obj == 3){
+   753  06E8  3003               	movlw	3
+   754  06E9  0670               	xorwf	MasterSend@obj,w
+   755  06EA  0471               	iorwf	MasterSend@obj+1,w
+   756  06EB  1D03               	skipz
+   757  06EC  2EF7               	goto	l627
+   758                           
+   759                           ;SPI.c: 117: RA3 = 0;
+   760  06ED  0020               	movlb	0	; select bank0
+   761  06EE  118C               	bcf	12,3	;volatile
+   762                           
+   763                           ;SPI.c: 118: SSP1BUF = S_data;
+   764  06EF  0872               	movf	MasterSend@S_data,w
+   765  06F0  0024               	movlb	4	; select bank4
+   766  06F1  0091               	movwf	17	;volatile
+   767  06F2                     l90:	
+   768                           ;SPI.c: 119: while(SSP1STATbits.BF == 0);
+   769                           
+   770  06F2  1C14               	btfss	20,0	;volatile
+   771  06F3  2EF2               	goto	l90
+   772                           
+   773                           ;SPI.c: 120: RA3 = 1;
+   774  06F4  0020               	movlb	0	; select bank0
+   775  06F5  158C               	bsf	12,3	;volatile
+   776                           
+   777                           ;SPI.c: 121: return;
+   778  06F6  0008               	return
+   779  06F7                     l627:	
+   780                           
+   781                           ;SPI.c: 122: }
+   782                           ;SPI.c: 124: if(obj == 4){
+   783  06F7  3004               	movlw	4
+   784  06F8  0670               	xorwf	MasterSend@obj,w
+   785  06F9  0471               	iorwf	MasterSend@obj+1,w
+   786  06FA  1D03               	skipz
+   787  06FB  2F06               	goto	l633
+   788                           
+   789                           ;SPI.c: 125: RA4 = 0;
+   790  06FC  0020               	movlb	0	; select bank0
+   791  06FD  120C               	bcf	12,4	;volatile
+   792                           
+   793                           ;SPI.c: 126: SSP1BUF = S_data;
+   794  06FE  0872               	movf	MasterSend@S_data,w
+   795  06FF  0024               	movlb	4	; select bank4
+   796  0700  0091               	movwf	17	;volatile
+   797  0701                     l94:	
+   798                           ;SPI.c: 127: while(SSP1STATbits.BF == 0);
+   799                           
+   800  0701  1C14               	btfss	20,0	;volatile
+   801  0702  2F01               	goto	l94
+   802                           
+   803                           ;SPI.c: 128: RA4 = 1;
+   804  0703  0020               	movlb	0	; select bank0
+   805  0704  160C               	bsf	12,4	;volatile
+   806                           
+   807                           ;SPI.c: 129: return;
+   808  0705  0008               	return
+   809  0706                     l633:	
+   810                           
+   811                           ;SPI.c: 130: }
+   812                           ;SPI.c: 132: if(obj == 5){
+   813  0706  3005               	movlw	5
+   814  0707  0670               	xorwf	MasterSend@obj,w
+   815  0708  0471               	iorwf	MasterSend@obj+1,w
+   816  0709  1D03               	skipz
+   817  070A  2F15               	goto	l639
+   818                           
+   819                           ;SPI.c: 133: RA7 = 0;
+   820  070B  0020               	movlb	0	; select bank0
+   821  070C  138C               	bcf	12,7	;volatile
+   822                           
+   823                           ;SPI.c: 134: SSP1BUF = S_data;
+   824  070D  0872               	movf	MasterSend@S_data,w
+   825  070E  0024               	movlb	4	; select bank4
+   826  070F  0091               	movwf	17	;volatile
+   827  0710                     l98:	
+   828                           ;SPI.c: 135: while(SSP1STATbits.BF == 0);
+   829                           
+   830  0710  1C14               	btfss	20,0	;volatile
+   831  0711  2F10               	goto	l98
+   832                           
+   833                           ;SPI.c: 136: RA7 = 1;
+   834  0712  0020               	movlb	0	; select bank0
+   835  0713  178C               	bsf	12,7	;volatile
+   836                           
+   837                           ;SPI.c: 137: return;
+   838  0714  0008               	return
+   839  0715                     l639:	
+   840                           
+   841                           ;SPI.c: 138: }
+   842                           ;SPI.c: 140: if(obj == 6){
+   843  0715  3006               	movlw	6
+   844  0716  0670               	xorwf	MasterSend@obj,w
+   845  0717  0471               	iorwf	MasterSend@obj+1,w
+   846  0718  1D03               	skipz
+   847  0719  2F24               	goto	l645
+   848                           
+   849                           ;SPI.c: 141: RB0 = 0;
+   850  071A  0020               	movlb	0	; select bank0
+   851  071B  100D               	bcf	13,0	;volatile
+   852                           
+   853                           ;SPI.c: 142: SSP1BUF = S_data;
+   854  071C  0872               	movf	MasterSend@S_data,w
+   855  071D  0024               	movlb	4	; select bank4
+   856  071E  0091               	movwf	17	;volatile
+   857  071F                     l102:	
+   858                           ;SPI.c: 143: while(SSP1STATbits.BF == 0);
+   859                           
+   860  071F  1C14               	btfss	20,0	;volatile
+   861  0720  2F1F               	goto	l102
+   862                           
+   863                           ;SPI.c: 144: RB0 = 1;
+   864  0721  0020               	movlb	0	; select bank0
+   865  0722  140D               	bsf	13,0	;volatile
+   866                           
+   867                           ;SPI.c: 145: return;
+   868  0723  0008               	return
+   869  0724                     l645:	
+   870                           
+   871                           ;SPI.c: 146: }
+   872                           ;SPI.c: 148: if(obj == 7){
+   873  0724  3007               	movlw	7
+   874  0725  0670               	xorwf	MasterSend@obj,w
+   875  0726  0471               	iorwf	MasterSend@obj+1,w
+   876  0727  1D03               	skipz
+   877  0728  2F33               	goto	l651
+   878                           
+   879                           ;SPI.c: 149: RB3 = 0;
+   880  0729  0020               	movlb	0	; select bank0
+   881  072A  118D               	bcf	13,3	;volatile
+   882                           
+   883                           ;SPI.c: 150: SSP1BUF = S_data;
+   884  072B  0872               	movf	MasterSend@S_data,w
+   885  072C  0024               	movlb	4	; select bank4
+   886  072D  0091               	movwf	17	;volatile
+   887  072E                     l106:	
+   888                           ;SPI.c: 151: while(SSP1STATbits.BF == 0);
+   889                           
+   890  072E  1C14               	btfss	20,0	;volatile
+   891  072F  2F2E               	goto	l106
+   892                           
+   893                           ;SPI.c: 152: RB3 = 1;
+   894  0730  0020               	movlb	0	; select bank0
+   895  0731  158D               	bsf	13,3	;volatile
+   896                           
+   897                           ;SPI.c: 153: return;
+   898  0732  0008               	return
+   899  0733                     l651:	
+   900                           
+   901                           ;SPI.c: 154: }
+   902                           ;SPI.c: 156: if(obj == 8){
+   903  0733  3008               	movlw	8
+   904  0734  0670               	xorwf	MasterSend@obj,w
+   905  0735  0471               	iorwf	MasterSend@obj+1,w
+   906  0736  1D03               	skipz
+   907  0737  2F42               	goto	l657
+   908                           
+   909                           ;SPI.c: 157: RB6 = 0;
+   910  0738  0020               	movlb	0	; select bank0
+   911  0739  130D               	bcf	13,6	;volatile
+   912                           
+   913                           ;SPI.c: 158: SSP1BUF = S_data;
+   914  073A  0872               	movf	MasterSend@S_data,w
+   915  073B  0024               	movlb	4	; select bank4
+   916  073C  0091               	movwf	17	;volatile
+   917  073D                     l110:	
+   918                           ;SPI.c: 159: while(SSP1STATbits.BF == 0);
+   919                           
+   920  073D  1C14               	btfss	20,0	;volatile
+   921  073E  2F3D               	goto	l110
+   922                           
+   923                           ;SPI.c: 160: RB6 = 1;
+   924  073F  0020               	movlb	0	; select bank0
+   925  0740  170D               	bsf	13,6	;volatile
+   926                           
+   927                           ;SPI.c: 161: return;
+   928  0741  0008               	return
+   929  0742                     l657:	
+   930                           
+   931                           ;SPI.c: 162: }
+   932                           ;SPI.c: 164: if(obj == 9){
+   933  0742  3009               	movlw	9
+   934  0743  0670               	xorwf	MasterSend@obj,w
+   935  0744  0471               	iorwf	MasterSend@obj+1,w
+   936  0745  1D03               	skipz
+   937  0746  0008               	return
+   938                           
+   939                           ;SPI.c: 165: RB7 = 0;
+   940  0747  0020               	movlb	0	; select bank0
+   941  0748  138D               	bcf	13,7	;volatile
+   942                           
+   943                           ;SPI.c: 166: SSP1BUF = S_data;
+   944  0749  0872               	movf	MasterSend@S_data,w
+   945  074A  0024               	movlb	4	; select bank4
+   946  074B  0091               	movwf	17	;volatile
+   947  074C                     l114:	
+   948                           ;SPI.c: 167: while(SSP1STATbits.BF == 0);
+   949                           
+   950  074C  1C14               	btfss	20,0	;volatile
+   951  074D  2F4C               	goto	l114
+   952                           
+   953                           ;SPI.c: 168: RB7 = 1;
+   954  074E  0020               	movlb	0	; select bank0
+   955  074F  178D               	bsf	13,7	;volatile
+   956                           
+   957                           ;SPI.c: 169: return;
+   958  0750  0008               	return
+   959  0751                     __end_of_MasterSend:	
+   960                           
+   961                           	psect	text2
+   962  06A6                     __ptext2:	
+   963 ;; *************** function _MasterInit *****************
+   964 ;; Defined at:
+   965 ;;		line 63 in file "SPI.c"
+   966 ;; Parameters:    Size  Location     Type
+   967 ;;		None
+   968 ;; Auto vars:     Size  Location     Type
+   969 ;;		None
+   970 ;; Return value:  Size  Location     Type
+   971 ;;		None               void
+   972 ;; Registers used:
+   973 ;;		wreg, status,2
+   974 ;; Tracked objects:
+   975 ;;		On entry : 0/0
+   976 ;;		On exit  : 0/0
+   977 ;;		Unchanged: 0/0
+   978 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+   979 ;;      Params:         0       0       0       0       0       0
+   980 ;;      Locals:         0       0       0       0       0       0
+   981 ;;      Temps:          0       0       0       0       0       0
+   982 ;;      Totals:         0       0       0       0       0       0
+   983 ;;Total ram usage:        0 bytes
+   984 ;; Hardware stack levels used:    1
+   985 ;; This function calls:
+   986 ;;		Nothing
+   987 ;; This function is called by:
+   988 ;;		_main
+   989 ;; This function uses a non-reentrant model
+   990 ;;
+   991                           
+   992                           
+   993                           ;psect for function _MasterInit
+   994  06A6                     _MasterInit:	
+   995                           
+   996                           ;SPI.c: 66: TRISA = 0x00;
+   997                           
+   998                           ;incstack = 0
+   999                           ; Regs used in _MasterInit: [wreg+status,2]
+  1000  06A6  0021               	movlb	1	; select bank1
+  1001  06A7  018C               	clrf	12	;volatile
+  1002                           
+  1003                           ;SPI.c: 67: TRISB = 0x02;
+  1004  06A8  3002               	movlw	2
+  1005  06A9  008D               	movwf	13	;volatile
+  1006                           
+  1007                           ;SPI.c: 68: PORTA = 0x00;
+  1008  06AA  0020               	movlb	0	; select bank0
+  1009  06AB  018C               	clrf	12	;volatile
+  1010                           
+  1011                           ;SPI.c: 69: PORTA = 0x00;
+  1012  06AC  018C               	clrf	12	;volatile
+  1013                           
+  1014                           ;SPI.c: 70: ANSELA = 0x00;
+  1015  06AD  0023               	movlb	3	; select bank3
+  1016  06AE  018C               	clrf	12	;volatile
+  1017                           
+  1018                           ;SPI.c: 71: ANSELB = 0x00;
+  1019  06AF  018D               	clrf	13	;volatile
+  1020                           
+  1021                           ;SPI.c: 74: SSP1CON1 = 0b00110000;
+  1022  06B0  3030               	movlw	48
+  1023  06B1  0024               	movlb	4	; select bank4
+  1024  06B2  0095               	movwf	21	;volatile
+  1025                           
+  1026                           ;SPI.c: 75: SSP1STAT = 0b11000001;
+  1027  06B3  30C1               	movlw	193
+  1028  06B4  0094               	movwf	20	;volatile
+  1029                           
+  1030                           ;SPI.c: 76: SDO1SEL = 0;
+  1031  06B5  0022               	movlb	2	; select bank2
+  1032  06B6  131D               	bcf	29,6	;volatile
+  1033                           
+  1034                           ;SPI.c: 79: SSP1IF = 0;
+  1035  06B7  0020               	movlb	0	; select bank0
+  1036  06B8  1191               	bcf	17,3	;volatile
+  1037                           
+  1038                           ;SPI.c: 80: SSP1IE = 1;
+  1039  06B9  0021               	movlb	1	; select bank1
+  1040  06BA  1591               	bsf	17,3	;volatile
+  1041                           
+  1042                           ;SPI.c: 81: PEIE = 1;
+  1043  06BB  170B               	bsf	11,6	;volatile
+  1044                           
+  1045                           ;SPI.c: 82: GIE = 1;
+  1046  06BC  178B               	bsf	11,7	;volatile
+  1047  06BD  0008               	return
+  1048  06BE                     __end_of_MasterInit:	
+  1049  007E                     btemp	set	126	;btemp
+  1050  007E                     pic14e$flags	set	126
+  1051  007E                     wtemp	set	126
+  1052  007E                     wtemp0	set	126
+  1053  0080                     wtemp1	set	128
+  1054  0082                     wtemp2	set	130
+  1055  0084                     wtemp3	set	132
+  1056  0086                     wtemp4	set	134
+  1057  0088                     wtemp5	set	136
+  1058  007F                     wtemp6	set	127
+  1059  007E                     ttemp	set	126
+  1060  007E                     ttemp0	set	126
+  1061  0081                     ttemp1	set	129
+  1062  0084                     ttemp2	set	132
+  1063  0087                     ttemp3	set	135
+  1064  007F                     ttemp4	set	127
+  1065  007E                     ltemp	set	126
+  1066  007E                     ltemp0	set	126
+  1067  0082                     ltemp1	set	130
+  1068  0086                     ltemp2	set	134
+  1069  0080                     ltemp3	set	128
+
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         1
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON           14      4       5
+    BANK0            80      0       0
+    BANK1            80      0       0
+    BANK2            80      0       0
+    BANK3            80      0       0
+    BANK4            48      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMMON
+
+    _main->_MasterSend
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK4
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 1     1      0    1762
+                                              3 COMMON     1     1      0
+                         _MasterInit
+                         _MasterSend
+ ---------------------------------------------------------------------------------
+ (1) _MasterSend                                           3     0      3    1762
+                                              0 COMMON     3     0      3
+ ---------------------------------------------------------------------------------
+ (1) _MasterInit                                           0     0      0       0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 1
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _MasterInit
+   _MasterSend
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BIGRAM             170      0       0       0        0.0%
+EEDATA             100      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+BITCOMMON            E      0       0       1        0.0%
+BITSFR0              0      0       0       1        0.0%
+SFR0                 0      0       0       1        0.0%
+COMMON               E      4       5       2       35.7%
+BITSFR1              0      0       0       2        0.0%
+SFR1                 0      0       0       2        0.0%
+BITSFR2              0      0       0       3        0.0%
+SFR2                 0      0       0       3        0.0%
+STACK                0      0       0       3        0.0%
+BITSFR3              0      0       0       4        0.0%
+SFR3                 0      0       0       4        0.0%
+ABS                  0      0       5       4        0.0%
+BITBANK0            50      0       0       5        0.0%
+BITSFR4              0      0       0       5        0.0%
+SFR4                 0      0       0       5        0.0%
+BANK0               50      0       0       6        0.0%
+BITSFR5              0      0       0       6        0.0%
+SFR5                 0      0       0       6        0.0%
+BITBANK1            50      0       0       7        0.0%
+BITSFR6              0      0       0       7        0.0%
+SFR6                 0      0       0       7        0.0%
+BANK1               50      0       0       8        0.0%
+BITSFR7              0      0       0       8        0.0%
+SFR7                 0      0       0       8        0.0%
+BITBANK2            50      0       0       9        0.0%
+BITSFR8              0      0       0       9        0.0%
+SFR8                 0      0       0       9        0.0%
+BANK2               50      0       0      10        0.0%
+BITSFR9              0      0       0      10        0.0%
+SFR9                 0      0       0      10        0.0%
+BITBANK3            50      0       0      11        0.0%
+BITSFR10             0      0       0      11        0.0%
+SFR10                0      0       0      11        0.0%
+BANK3               50      0       0      12        0.0%
+BITSFR11             0      0       0      12        0.0%
+SFR11                0      0       0      12        0.0%
+BITBANK4            30      0       0      13        0.0%
+BITSFR12             0      0       0      13        0.0%
+SFR12                0      0       0      13        0.0%
+BANK4               30      0       0      14        0.0%
+BITSFR13             0      0       0      14        0.0%
+SFR13                0      0       0      14        0.0%
+BITSFR14             0      0       0      15        0.0%
+SFR14                0      0       0      15        0.0%
+DATA                 0      0       5      15        0.0%
+BITSFR15             0      0       0      16        0.0%
+SFR15                0      0       0      16        0.0%
+BITSFR16             0      0       0      17        0.0%
+SFR16                0      0       0      17        0.0%
+BITSFR17             0      0       0      18        0.0%
+SFR17                0      0       0      18        0.0%
+BITSFR18             0      0       0      19        0.0%
+SFR18                0      0       0      19        0.0%
+BITSFR19             0      0       0      20        0.0%
+SFR19                0      0       0      20        0.0%
+BITSFR20             0      0       0      21        0.0%
+SFR20                0      0       0      21        0.0%
+BITSFR21             0      0       0      22        0.0%
+SFR21                0      0       0      22        0.0%
+BITSFR22             0      0       0      23        0.0%
+SFR22                0      0       0      23        0.0%
+BITSFR23             0      0       0      24        0.0%
+SFR23                0      0       0      24        0.0%
+BITSFR24             0      0       0      25        0.0%
+SFR24                0      0       0      25        0.0%
+BITSFR25             0      0       0      26        0.0%
+SFR25                0      0       0      26        0.0%
+BITSFR26             0      0       0      27        0.0%
+SFR26                0      0       0      27        0.0%
+BITSFR27             0      0       0      28        0.0%
+SFR27                0      0       0      28        0.0%
+BITSFR28             0      0       0      29        0.0%
+SFR28                0      0       0      29        0.0%
+BITSFR29             0      0       0      30        0.0%
+SFR29                0      0       0      30        0.0%
+BITSFR30             0      0       0      31        0.0%
+SFR30                0      0       0      31        0.0%
+BITSFR31             0      0       0      32        0.0%
+SFR31                0      0       0      32        0.0%
+
+
+Microchip Technology PIC Macro Assembler V1.33 build 59893 
+Symbol Table                                                                                   Sat Jul 18 20:13:20 2015
+
+            __CFG_CP$OFF 0000                       l11 07FA                       l80 06C7  
+                     l90 06F2                       l85 06D6                       l94 0701  
+                     l98 0710                      l110 073D                      l102 071F  
+                    l114 074C                      l106 072E                      l611 06DB  
+                    l621 06E8                      l605 06CC                      l633 0706  
+                    l651 0733                      l627 06F7                      l645 0724  
+                    l639 0715                      l657 0742                      _GIE 005F  
+                    _RA0 0060                      _RA1 0061                      _RB0 0068  
+                    _RA2 0062                      _RA3 0063                      _RA4 0064  
+                    _RB3 006B                      _RA7 0067                      _RB6 006E  
+                    _RB7 006F             __CFG_CPD$OFF 0000             __CFG_BORV$LO 0000  
+           __CFG_LVP$OFF 0000                     _PEIE 005E             __CFG_WRT$OFF 0000  
+                   _main 0751                     btemp 007E                     ltemp 007E  
+                   start 0002                     ttemp 007E                     wtemp 007E  
+          __CFG_IESO$OFF 0000                    ?_main 0070            __CFG_WDTE$OFF 0000  
+                  _PORTA 000C                    _TRISA 008C                    _TRISB 008D  
+         __CFG_FCMEN$OFF 0000           __CFG_BOREN$OFF 0000                    ltemp0 007E  
+                  ltemp1 0082                    ltemp2 0086                    ltemp3 0080  
+                  ttemp0 007E                    ttemp1 0081                    ttemp2 0084  
+                  ttemp3 0087                    ttemp4 007F                    wtemp0 007E  
+                  wtemp1 0080                    wtemp2 0082                    wtemp3 0084  
+                  wtemp4 0086                    wtemp5 0088                    wtemp6 007F  
+         __CFG_MCLRE$OFF 0000          __initialization 07FB             __end_of_main 07FB  
+             _MasterInit 06A6               _MasterSend 06BE                   ??_main 0073  
+         __CFG_PLLEN$OFF 0000                   _ANSELA 018C                   _ANSELB 018D  
+                 _OSCCON 0099                   _SS1SEL 08ED                   _SSP1IE 048B  
+                 _SSP1IF 008B           __CFG_PWRTE$OFF 0000                   _R_data 0074  
+__end_of__initialization 07FC           __pcstackCOMMON 0070              ?_MasterInit 0070  
+            ?_MasterSend 0070               __pmaintext 0751                  _SDO1SEL 08EE  
+                _SSP1BUF 0211      __size_of_MasterInit 0018      __size_of_MasterSend 0093  
+        __CFG_STVREN$OFF 0000                  __ptext0 0000                  __ptext1 06BE  
+                __ptext2 06A6     end_of_initialization 07FC         __CFG_FOSC$INTOSC 0000  
+           ??_MasterInit 0070             ??_MasterSend 0073      start_initialization 07FB  
+          MasterSend@obj 0070       __end_of_MasterInit 06BE       __end_of_MasterSend 0751  
+       MasterSend@S_data 0072              __pbssCOMMON 0074                ___latbits 0001  
+               _SSP1CON1 0215                 _SSP1STAT 0214            __size_of_main 00AA  
+           _SSP1STATbits 0214              pic14e$flags 007E        __CFG_CLKOUTEN$OFF 0000  
