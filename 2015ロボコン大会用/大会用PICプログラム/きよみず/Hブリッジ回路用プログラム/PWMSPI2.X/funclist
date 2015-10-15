@@ -1,0 +1,15 @@
+_pic_reg: CODE, 96 0 17
+_stop: CODE, 218 0 5
+i1_stop: CODE, 223 0 5
+_main: CODE, 181 0 15
+_keep: CODE, 113 0 17
+_slave_reg: CODE, 209 0 9
+_slave_read: CODE, 74 0 22
+__initialization: CODE, 47 0 1
+_left: CODE, 164 0 17
+_inter: CODE, 4 0 41
+_right: CODE, 147 0 17
+i1_keep: CODE, 130 0 17
+_pwm_reg: CODE, 52 0 22
+_speed: CODE, 196 0 13
+Total: 218

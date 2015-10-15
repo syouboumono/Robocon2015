@@ -1,0 +1,208 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"22 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+[v _inter inter `II(v  1 e 0 0 ]
+"66
+[v _main main `(v  1 e 0 0 ]
+"103
+[v _shot shot `(v  1 e 0 0 ]
+[v i1_shot shot `(v  1 e 0 0 ]
+"111
+[v _load load `(v  1 e 0 0 ]
+"3 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\pic16f1827_config.c
+[v _pic_reg pic_reg `(v  1 e 0 0 ]
+"15 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\spi.c
+[v _slave_reg slave_reg `(v  1 e 0 0 ]
+"42
+[v _slave_read slave_read `(i  1 e 2 0 ]
+"414 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f1827.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"475
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"914
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"933
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"952
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1120
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1181
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1417
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+"1664
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2797
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2848
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3433
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"3502
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"3613
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+[s S177 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"3635
+[u S186 . 1 `S177 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES186  1 e 1 @532 ]
+"3734
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+"4179
+[v _SSP2BUF SSP2BUF `VEuc  1 e 1 @537 ]
+"4236
+[v _SSP2STAT SSP2STAT `VEuc  1 e 1 @540 ]
+"4253
+[v _SSP2STATbits SSP2STATbits `VES186  1 e 1 @540 ]
+"4297
+[v _SSP2CON1 SSP2CON1 `VEuc  1 e 1 @541 ]
+"5284
+[v _CCPTMRS CCPTMRS `VEuc  1 e 1 @670 ]
+"5463
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
+"5482
+[v _CCPR3H CCPR3H `VEuc  1 e 1 @786 ]
+"5501
+[v _CCP3CON CCP3CON `VEuc  1 e 1 @787 ]
+"5570
+[v _CCPR4L CCPR4L `VEuc  1 e 1 @792 ]
+"5589
+[v _CCPR4H CCPR4H `VEuc  1 e 1 @793 ]
+"5608
+[v _CCP4CON CCP4CON `VEuc  1 e 1 @794 ]
+[s S119 . 1 `uc 1 IOCBN0 1 0 :1:0 
+`uc 1 IOCBN1 1 0 :1:1 
+`uc 1 IOCBN2 1 0 :1:2 
+`uc 1 IOCBN3 1 0 :1:3 
+`uc 1 IOCBN4 1 0 :1:4 
+`uc 1 IOCBN5 1 0 :1:5 
+`uc 1 IOCBN6 1 0 :1:6 
+`uc 1 IOCBN7 1 0 :1:7 
+]
+"5760
+[s S128 . 1 `uc 1 IOCBN 1 0 :8:0 
+]
+[u S130 . 1 `S119 1 . 1 0 `S128 1 . 1 0 ]
+[v _IOCBNbits IOCBNbits `VES130  1 e 1 @917 ]
+[s S38 . 1 `uc 1 IOCBF0 1 0 :1:0 
+`uc 1 IOCBF1 1 0 :1:1 
+`uc 1 IOCBF2 1 0 :1:2 
+`uc 1 IOCBF3 1 0 :1:3 
+`uc 1 IOCBF4 1 0 :1:4 
+`uc 1 IOCBF5 1 0 :1:5 
+`uc 1 IOCBF6 1 0 :1:6 
+`uc 1 IOCBF7 1 0 :1:7 
+]
+"5829
+[s S47 . 1 `uc 1 IOCBF 1 0 :8:0 
+]
+[u S49 . 1 `S38 1 . 1 0 `S47 1 . 1 0 ]
+[v _IOCBFbits IOCBFbits `VES49  1 e 1 @918 ]
+"6962
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"7028
+[v _IOCIE IOCIE `VEb  1 e 0 @91 ]
+"7030
+[v _IOCIF IOCIF `VEb  1 e 0 @88 ]
+"7184
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"7212
+[v _RA0 RA0 `VEb  1 e 0 @96 ]
+"7214
+[v _RA1 RA1 `VEb  1 e 0 @97 ]
+"7216
+[v _RA2 RA2 `VEb  1 e 0 @98 ]
+"7218
+[v _RA3 RA3 `VEb  1 e 0 @99 ]
+"7220
+[v _RA4 RA4 `VEb  1 e 0 @100 ]
+"7226
+[v _RA7 RA7 `VEb  1 e 0 @103 ]
+"7228
+[v _RB0 RB0 `VEb  1 e 0 @104 ]
+"7234
+[v _RB3 RB3 `VEb  1 e 0 @107 ]
+"7240
+[v _RB6 RB6 `VEb  1 e 0 @110 ]
+"7242
+[v _RB7 RB7 `VEb  1 e 0 @111 ]
+"7266
+[v _SDO1SEL SDO1SEL `VEb  1 e 0 @2286 ]
+"7308
+[v _SS1SEL SS1SEL `VEb  1 e 0 @2285 ]
+"7310
+[v _SSP1IE SSP1IE `VEb  1 e 0 @1163 ]
+"7312
+[v _SSP1IF SSP1IF `VEb  1 e 0 @139 ]
+"7314
+[v _SSP2IE SSP2IE `VEb  1 e 0 @1184 ]
+"7316
+[v _SSP2IF SSP2IF `VEb  1 e 0 @160 ]
+"7442
+[v _TMR2ON TMR2ON `VEb  1 e 0 @226 ]
+"16 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+[v _slot_state slot_state `[3]i  1 e 6 0 ]
+"17
+[v _load_flag load_flag `i  1 e 2 0 ]
+"3 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\spi.h
+[v _r_data r_data `uc  1 e 1 0 ]
+"66 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"101
+} 0
+"15 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\spi.c
+[v _slave_reg slave_reg `(v  1 e 0 0 ]
+{
+"36
+} 0
+"103 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+[v _shot shot `(v  1 e 0 0 ]
+{
+"109
+} 0
+"3 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\pic16f1827_config.c
+[v _pic_reg pic_reg `(v  1 e 0 0 ]
+{
+"23
+} 0
+"22 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+[v _inter inter `II(v  1 e 0 0 ]
+{
+"64
+} 0
+"103
+[v i1_shot shot `(v  1 e 0 0 ]
+{
+"109
+} 0
+"42 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\spi.c
+[v _slave_read slave_read `(i  1 e 2 0 ]
+{
+"52
+} 0
+"111 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+[v _load load `(v  1 e 0 0 ]
+{
+"157
+} 0

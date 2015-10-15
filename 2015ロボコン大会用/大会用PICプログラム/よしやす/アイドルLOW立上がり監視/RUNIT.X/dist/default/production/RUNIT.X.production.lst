@@ -1,0 +1,1977 @@
+
+
+Microchip Technology PIC LITE Macro Assembler V1.34 build -361300703 
+                                                                                               Sun Oct 04 15:13:25 2015
+
+Microchip Technology Omniscient Code Generator (Lite mode) build 201502162209
+     1                           	processor	16F1827
+     2                           	opt	pw 120
+     3                           	opt	lm
+     4                           	psect	text0,local,class=CODE,merge=1,delta=2
+     5                           	psect	cinit,global,class=CODE,merge=1,delta=2
+     6                           	psect	bitbssBANK0,global,bit,class=BANK0,space=1,delta=1
+     7                           	psect	bssBANK0,global,class=BANK0,space=1,delta=1
+     8                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1
+     9                           	psect	cstackBANK0,global,class=BANK0,space=1,delta=1
+    10                           	psect	maintext,global,class=CODE,merge=1,split=1,delta=2
+    11                           	psect	intentry,global,class=CODE,delta=2
+    12                           	psect	text2,local,class=CODE,merge=1,delta=2
+    13                           	psect	text3,local,class=CODE,merge=1,delta=2
+    14                           	psect	text4,local,class=CODE,merge=1,delta=2
+    15                           	psect	text5,local,class=CODE,merge=1,delta=2
+    16                           	dabs	1,0x7E,2
+    17  0000                     	;# 
+    18  0001                     	;# 
+    19  0002                     	;# 
+    20  0003                     	;# 
+    21  0004                     	;# 
+    22  0005                     	;# 
+    23  0006                     	;# 
+    24  0007                     	;# 
+    25  0008                     	;# 
+    26  0009                     	;# 
+    27  000A                     	;# 
+    28  000B                     	;# 
+    29  000C                     	;# 
+    30  000D                     	;# 
+    31  0011                     	;# 
+    32  0012                     	;# 
+    33  0013                     	;# 
+    34  0014                     	;# 
+    35  0015                     	;# 
+    36  0016                     	;# 
+    37  0016                     	;# 
+    38  0017                     	;# 
+    39  0018                     	;# 
+    40  0019                     	;# 
+    41  001A                     	;# 
+    42  001B                     	;# 
+    43  001C                     	;# 
+    44  001E                     	;# 
+    45  001F                     	;# 
+    46  008C                     	;# 
+    47  008D                     	;# 
+    48  0091                     	;# 
+    49  0092                     	;# 
+    50  0093                     	;# 
+    51  0094                     	;# 
+    52  0095                     	;# 
+    53  0096                     	;# 
+    54  0097                     	;# 
+    55  0098                     	;# 
+    56  0099                     	;# 
+    57  009A                     	;# 
+    58  009B                     	;# 
+    59  009B                     	;# 
+    60  009C                     	;# 
+    61  009D                     	;# 
+    62  009E                     	;# 
+    63  010C                     	;# 
+    64  010D                     	;# 
+    65  0111                     	;# 
+    66  0112                     	;# 
+    67  0113                     	;# 
+    68  0114                     	;# 
+    69  0115                     	;# 
+    70  0116                     	;# 
+    71  0117                     	;# 
+    72  0118                     	;# 
+    73  0119                     	;# 
+    74  011A                     	;# 
+    75  011B                     	;# 
+    76  011D                     	;# 
+    77  011E                     	;# 
+    78  018C                     	;# 
+    79  018D                     	;# 
+    80  0191                     	;# 
+    81  0191                     	;# 
+    82  0192                     	;# 
+    83  0193                     	;# 
+    84  0193                     	;# 
+    85  0193                     	;# 
+    86  0194                     	;# 
+    87  0195                     	;# 
+    88  0196                     	;# 
+    89  0199                     	;# 
+    90  019A                     	;# 
+    91  019B                     	;# 
+    92  019B                     	;# 
+    93  019B                     	;# 
+    94  019B                     	;# 
+    95  019C                     	;# 
+    96  019C                     	;# 
+    97  019D                     	;# 
+    98  019E                     	;# 
+    99  019F                     	;# 
+   100  020C                     	;# 
+   101  020D                     	;# 
+   102  0211                     	;# 
+   103  0211                     	;# 
+   104  0212                     	;# 
+   105  0212                     	;# 
+   106  0213                     	;# 
+   107  0213                     	;# 
+   108  0214                     	;# 
+   109  0214                     	;# 
+   110  0215                     	;# 
+   111  0215                     	;# 
+   112  0215                     	;# 
+   113  0216                     	;# 
+   114  0216                     	;# 
+   115  0217                     	;# 
+   116  0217                     	;# 
+   117  0219                     	;# 
+   118  021A                     	;# 
+   119  021B                     	;# 
+   120  021C                     	;# 
+   121  021D                     	;# 
+   122  021E                     	;# 
+   123  021F                     	;# 
+   124  0291                     	;# 
+   125  0291                     	;# 
+   126  0292                     	;# 
+   127  0293                     	;# 
+   128  0294                     	;# 
+   129  0295                     	;# 
+   130  0295                     	;# 
+   131  0296                     	;# 
+   132  0298                     	;# 
+   133  0298                     	;# 
+   134  0299                     	;# 
+   135  029A                     	;# 
+   136  029B                     	;# 
+   137  029C                     	;# 
+   138  029C                     	;# 
+   139  029D                     	;# 
+   140  029E                     	;# 
+   141  029E                     	;# 
+   142  0311                     	;# 
+   143  0311                     	;# 
+   144  0312                     	;# 
+   145  0313                     	;# 
+   146  0318                     	;# 
+   147  0318                     	;# 
+   148  0319                     	;# 
+   149  031A                     	;# 
+   150  0394                     	;# 
+   151  0395                     	;# 
+   152  0396                     	;# 
+   153  039A                     	;# 
+   154  039C                     	;# 
+   155  039D                     	;# 
+   156  039E                     	;# 
+   157  039F                     	;# 
+   158  0415                     	;# 
+   159  0416                     	;# 
+   160  0417                     	;# 
+   161  041C                     	;# 
+   162  041D                     	;# 
+   163  041E                     	;# 
+   164  0FE4                     	;# 
+   165  0FE5                     	;# 
+   166  0FE6                     	;# 
+   167  0FE7                     	;# 
+   168  0FE8                     	;# 
+   169  0FE9                     	;# 
+   170  0FEA                     	;# 
+   171  0FEB                     	;# 
+   172  0FED                     	;# 
+   173  0FEE                     	;# 
+   174  0FEF                     	;# 
+   175  000C                     _PORTA	set	12
+   176  000D                     _PORTB	set	13
+   177  005F                     _GIE	set	95
+   178  005E                     _PEIE	set	94
+   179  0061                     _RA1	set	97
+   180  0062                     _RA2	set	98
+   181  0063                     _RA3	set	99
+   182  0064                     _RA4	set	100
+   183  0067                     _RA7	set	103
+   184  006F                     _RB7	set	111
+   185  008B                     _SSP1IF	set	139
+   186  0099                     _OSCCON	set	153
+   187  008C                     _TRISA	set	140
+   188  008D                     _TRISB	set	141
+   189  048B                     _SSP1IE	set	1163
+   190  08EE                     _SDO1SEL	set	2286
+   191  08ED                     _SS1SEL	set	2285
+   192  018C                     _ANSELA	set	396
+   193  018D                     _ANSELB	set	397
+   194  0211                     _SSP1BUF	set	529
+   195  0215                     _SSP1CON1	set	533
+   196  0214                     _SSP1STAT	set	532
+   197  0219                     _SSP2BUF	set	537
+   198  021D                     _SSP2CON1	set	541
+   199  021C                     _SSP2STAT	set	540
+   200  021C                     _SSP2STATbits	set	540
+   201                           
+   202                           	psect	text0
+   203  0000                     __ptext0:	
+   204                           ; #config settings
+   205                           
+   206                           
+   207                           ;psect for function ___awdiv
+   208  0000                     
+   209                           	psect	cinit
+   210  020B                     start_initialization:	
+   211  020B                     __initialization:	
+   212                           
+   213                           ; Clear objects allocated to BITBANK0
+   214  020B  01BD               	clrf	(__pbitbssBANK0/(0+8))& (0+127)
+   215                           
+   216                           ; Clear objects allocated to BANK0
+   217  020C  01B9               	clrf	__pbssBANK0& (0+127)
+   218  020D  01BA               	clrf	(__pbssBANK0+1)& (0+127)
+   219  020E  01BB               	clrf	(__pbssBANK0+2)& (0+127)
+   220  020F  01BC               	clrf	(__pbssBANK0+3)& (0+127)
+   221  0210                     end_of_initialization:	
+   222                           ;End of C runtime variable initialization code
+   223                           
+   224  0210                     __end_of__initialization:	
+   225  0210  0020               	movlb	0
+   226  0211  3182  2AA2         	ljmp	_main	;jump to C main() function
+   227                           
+   228                           	psect	bitbssBANK0
+   229  01E8                     __pbitbssBANK0:	
+   230  01E8                     _hasshaflag1:	
+   231  01E8                     	ds	1
+   232  01E9                     _hasshaflag2:	
+   233  01E9                     	ds	1
+   234  01EA                     _hasshaflag3:	
+   235  01EA                     	ds	1
+   236                           
+   237                           	psect	bssBANK0
+   238  0039                     __pbssBANK0:	
+   239  0039                     _G_Lmotor:	
+   240  0039                     	ds	1
+   241  003A                     _G_Rmotor:	
+   242  003A                     	ds	1
+   243  003B                     _G_hassha:	
+   244  003B                     	ds	1
+   245  003C                     _G_hassha2:	
+   246  003C                     	ds	1
+   247                           
+   248                           	psect	cstackCOMMON
+   249  0070                     __pcstackCOMMON:	
+   250  0070                     ??_absolute:	
+   251  0070                     ?_spi_send:	
+   252                           ; 0 bytes @ 0x0
+   253                           
+   254  0070                     ?_InterSPI:	
+   255                           ; 0 bytes @ 0x0
+   256                           
+   257  0070                     ?_main:	
+   258                           ; 0 bytes @ 0x0
+   259                           
+   260  0070                     ?_absolute:	
+   261                           ; 0 bytes @ 0x0
+   262                           
+   263  0070                     spi_send@BLmotor:	
+   264                           ; 1 bytes @ 0x0
+   265                           
+   266  0070                     absolute@a:	
+   267                           ; 1 bytes @ 0x0
+   268                           
+   269                           
+   270                           ; 1 bytes @ 0x0
+   271  0070                     	ds	1
+   272  0071                     ?___awdiv:	
+   273  0071                     spi_send@FRmotor:	
+   274                           ; 2 bytes @ 0x1
+   275                           
+   276  0071                     ___awdiv@divisor:	
+   277                           ; 1 bytes @ 0x1
+   278                           
+   279                           
+   280                           ; 2 bytes @ 0x1
+   281  0071                     	ds	1
+   282  0072                     spi_send@BRmotor:	
+   283                           
+   284                           ; 1 bytes @ 0x2
+   285  0072                     	ds	1
+   286  0073                     spi_send@hasshakiko:	
+   287  0073                     ___awdiv@dividend:	
+   288                           ; 1 bytes @ 0x3
+   289                           
+   290                           
+   291                           ; 2 bytes @ 0x3
+   292  0073                     	ds	1
+   293  0074                     spi_send@hasshakiko2:	
+   294                           
+   295                           ; 1 bytes @ 0x4
+   296  0074                     	ds	1
+   297  0075                     ??_spi_send:	
+   298  0075                     ??___awdiv:	
+   299                           ; 0 bytes @ 0x5
+   300                           
+   301  0075                     spi_send@FLmotor:	
+   302                           ; 0 bytes @ 0x5
+   303                           
+   304                           
+   305                           ; 1 bytes @ 0x5
+   306  0075                     	ds	1
+   307  0076                     ___awdiv@counter:	
+   308                           
+   309                           ; 1 bytes @ 0x6
+   310  0076                     	ds	1
+   311  0077                     ___awdiv@sign:	
+   312                           
+   313                           ; 1 bytes @ 0x7
+   314  0077                     	ds	1
+   315  0078                     ___awdiv@quotient:	
+   316                           
+   317                           ; 2 bytes @ 0x8
+   318  0078                     	ds	2
+   319  007A                     ?___bmul:	
+   320  007A                     ___bmul@multiplicand:	
+   321                           ; 1 bytes @ 0xA
+   322                           
+   323                           
+   324                           ; 1 bytes @ 0xA
+   325  007A                     	ds	1
+   326  007B                     ??___bmul:	
+   327                           
+   328                           ; 0 bytes @ 0xB
+   329  007B                     	ds	1
+   330  007C                     ___bmul@product:	
+   331                           
+   332                           ; 1 bytes @ 0xC
+   333  007C                     	ds	1
+   334  007D                     ___bmul@multiplier:	
+   335                           
+   336                           ; 1 bytes @ 0xD
+   337  007D                     	ds	1
+   338                           
+   339                           	psect	cstackBANK0
+   340  0020                     __pcstackBANK0:	
+   341  0020                     ??_InterSPI:	
+   342                           
+   343                           ; 0 bytes @ 0x0
+   344  0020                     	ds	6
+   345  0026                     InterSPI@Lmotor:	
+   346                           
+   347                           ; 1 bytes @ 0x6
+   348  0026                     	ds	1
+   349  0027                     InterSPI@Rmotor:	
+   350                           
+   351                           ; 1 bytes @ 0x7
+   352  0027                     	ds	1
+   353  0028                     InterSPI@FLmotor:	
+   354                           
+   355                           ; 1 bytes @ 0x8
+   356  0028                     	ds	1
+   357  0029                     InterSPI@FRmotor:	
+   358                           
+   359                           ; 1 bytes @ 0x9
+   360  0029                     	ds	1
+   361  002A                     InterSPI@BLmotor:	
+   362                           
+   363                           ; 1 bytes @ 0xA
+   364  002A                     	ds	1
+   365  002B                     InterSPI@BRmotor:	
+   366                           
+   367                           ; 1 bytes @ 0xB
+   368  002B                     	ds	1
+   369  002C                     InterSPI@hassha:	
+   370                           
+   371                           ; 1 bytes @ 0xC
+   372  002C                     	ds	1
+   373  002D                     InterSPI@hassha2:	
+   374                           
+   375                           ; 1 bytes @ 0xD
+   376  002D                     	ds	1
+   377  002E                     _InterSPI$506:	
+   378                           
+   379                           ; 2 bytes @ 0xE
+   380  002E                     	ds	2
+   381  0030                     InterSPI@FL_BRmotor:	
+   382                           
+   383                           ; 1 bytes @ 0x10
+   384  0030                     	ds	1
+   385  0031                     InterSPI@FR_BLmotor:	
+   386                           
+   387                           ; 1 bytes @ 0x11
+   388  0031                     	ds	1
+   389  0032                     InterSPI@FL_BRmotor2:	
+   390                           
+   391                           ; 1 bytes @ 0x12
+   392  0032                     	ds	1
+   393  0033                     InterSPI@FR_BLmotor2:	
+   394                           
+   395                           ; 1 bytes @ 0x13
+   396  0033                     	ds	1
+   397  0034                     InterSPI@x_level:	
+   398                           
+   399                           ; 1 bytes @ 0x14
+   400  0034                     	ds	1
+   401  0035                     InterSPI@y_level:	
+   402                           
+   403                           ; 1 bytes @ 0x15
+   404  0035                     	ds	1
+   405  0036                     InterSPI@senkai:	
+   406                           
+   407                           ; 1 bytes @ 0x16
+   408  0036                     	ds	1
+   409  0037                     InterSPI@R_data:	
+   410                           
+   411                           ; 2 bytes @ 0x17
+   412  0037                     	ds	2
+   413  0039                     ??_main:	
+   414                           
+   415                           	psect	maintext
+   416  02A2                     __pmaintext:	
+   417                           ; 0 bytes @ 0x19
+   418 ;;
+   419 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   420 ;;
+   421 ;; *************** function _main *****************
+   422 ;; Defined at:
+   423 ;;		line 178 in file "source.c"
+   424 ;; Parameters:    Size  Location     Type
+   425 ;;		None
+   426 ;; Auto vars:     Size  Location     Type
+   427 ;;		None
+   428 ;; Return value:  Size  Location     Type
+   429 ;;		None               void
+   430 ;; Registers used:
+   431 ;;		wreg, status,2
+   432 ;; Tracked objects:
+   433 ;;		On entry : B1F/0
+   434 ;;		On exit  : 0/0
+   435 ;;		Unchanged: 0/0
+   436 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+   437 ;;      Params:         0       0       0       0       0       0
+   438 ;;      Locals:         0       0       0       0       0       0
+   439 ;;      Temps:          0       0       0       0       0       0
+   440 ;;      Totals:         0       0       0       0       0       0
+   441 ;;Total ram usage:        0 bytes
+   442 ;; Hardware stack levels required when called:    2
+   443 ;; This function calls:
+   444 ;;		Nothing
+   445 ;; This function is called by:
+   446 ;;		Startup code after reset
+   447 ;; This function uses a non-reentrant model
+   448 ;;
+   449                           
+   450                           
+   451                           ;psect for function _main
+   452  02A2                     _main:	
+   453                           
+   454                           ;source.c: 181: OSCCON = 0x72;
+   455                           
+   456                           ;incstack = 0
+   457                           ; Regs used in _main: [wreg+status,2]
+   458  02A2  3072               	movlw	114
+   459  02A3  0021               	movlb	1	; select bank1
+   460  02A4  0099               	movwf	25	;volatile
+   461                           
+   462                           ;source.c: 182: TRISA = 0b00100000;
+   463  02A5  3020               	movlw	32
+   464  02A6  008C               	movwf	12	;volatile
+   465                           
+   466                           ;source.c: 183: PORTA = 0x00;
+   467  02A7  0020               	movlb	0	; select bank0
+   468  02A8  018C               	clrf	12	;volatile
+   469                           
+   470                           ;source.c: 184: ANSELA = 0x00;
+   471  02A9  0023               	movlb	3	; select bank3
+   472  02AA  018C               	clrf	12	;volatile
+   473                           
+   474                           ;source.c: 185: TRISB = 0b00010110;
+   475  02AB  3016               	movlw	22
+   476  02AC  0021               	movlb	1	; select bank1
+   477  02AD  008D               	movwf	13	;volatile
+   478                           
+   479                           ;source.c: 186: PORTB = 0x00;
+   480  02AE  0020               	movlb	0	; select bank0
+   481  02AF  018D               	clrf	13	;volatile
+   482                           
+   483                           ;source.c: 187: ANSELB = 0x00;
+   484  02B0  0023               	movlb	3	; select bank3
+   485  02B1  018D               	clrf	13	;volatile
+   486                           
+   487                           ;source.c: 190: SDO1SEL = 1;
+   488  02B2  0022               	movlb	2	; select bank2
+   489  02B3  171D               	bsf	29,6	;volatile
+   490                           
+   491                           ;source.c: 191: SS1SEL = 1;
+   492  02B4  169D               	bsf	29,5	;volatile
+   493                           
+   494                           ;source.c: 192: SSP1CON1 = 0b00100100;
+   495  02B5  3024               	movlw	36
+   496  02B6  0024               	movlb	4	; select bank4
+   497  02B7  0095               	movwf	21	;volatile
+   498                           
+   499                           ;source.c: 193: SSP1STAT = 0b00000000;
+   500  02B8  0194               	clrf	20	;volatile
+   501                           
+   502                           ;source.c: 194: SSP2CON1 = 0b00100001;
+   503  02B9  3021               	movlw	33
+   504  02BA  009D               	movwf	29	;volatile
+   505                           
+   506                           ;source.c: 195: SSP2STAT = 0b00000000;
+   507  02BB  019C               	clrf	28	;volatile
+   508                           
+   509                           ;source.c: 198: SSP1IF = 0;
+   510  02BC  0020               	movlb	0	; select bank0
+   511  02BD  1191               	bcf	17,3	;volatile
+   512                           
+   513                           ;source.c: 199: SSP1IE = 1;
+   514  02BE  0021               	movlb	1	; select bank1
+   515  02BF  1591               	bsf	17,3	;volatile
+   516                           
+   517                           ;source.c: 200: PEIE = 1;
+   518  02C0  170B               	bsf	11,6	;volatile
+   519                           
+   520                           ;source.c: 201: GIE = 1;
+   521  02C1  178B               	bsf	11,7	;volatile
+   522                           
+   523                           ;source.c: 203: RA1=1;
+   524  02C2  0020               	movlb	0	; select bank0
+   525  02C3  148C               	bsf	12,1	;volatile
+   526                           
+   527                           ;source.c: 204: RA2=1;
+   528  02C4  150C               	bsf	12,2	;volatile
+   529                           
+   530                           ;source.c: 205: RA3=1;
+   531  02C5  158C               	bsf	12,3	;volatile
+   532                           
+   533                           ;source.c: 206: RA4=1;
+   534  02C6  160C               	bsf	12,4	;volatile
+   535                           
+   536                           ;source.c: 207: RA7=1;
+   537  02C7  178C               	bsf	12,7	;volatile
+   538                           
+   539                           ;source.c: 208: RB7=1;
+   540  02C8  178D               	bsf	13,7	;volatile
+   541  02C9                     l121:	
+   542                           ;source.c: 210: while(1);
+   543                           
+   544  02C9  2AC9               	goto	l121
+   545  02CA                     __end_of_main:	
+   546                           
+   547                           	psect	intentry
+   548  0004                     __pintentry:	
+   549 ;; *************** function _InterSPI *****************
+   550 ;; Defined at:
+   551 ;;		line 40 in file "source.c"
+   552 ;; Parameters:    Size  Location     Type
+   553 ;;		None
+   554 ;; Auto vars:     Size  Location     Type
+   555 ;;  R_data          2   23[BANK0 ] unsigned int 
+   556 ;;  senkai          1   22[BANK0 ] char 
+   557 ;;  y_level         1   21[BANK0 ] char 
+   558 ;;  x_level         1   20[BANK0 ] char 
+   559 ;;  FR_BLmotor2     1   19[BANK0 ] unsigned char 
+   560 ;;  FL_BRmotor2     1   18[BANK0 ] unsigned char 
+   561 ;;  FR_BLmotor      1   17[BANK0 ] char 
+   562 ;;  FL_BRmotor      1   16[BANK0 ] char 
+   563 ;;  hassha2         1   13[BANK0 ] char 
+   564 ;;  hassha          1   12[BANK0 ] char 
+   565 ;;  BRmotor         1   11[BANK0 ] char 
+   566 ;;  BLmotor         1   10[BANK0 ] char 
+   567 ;;  FRmotor         1    9[BANK0 ] char 
+   568 ;;  FLmotor         1    8[BANK0 ] char 
+   569 ;;  Rmotor          1    7[BANK0 ] unsigned char 
+   570 ;;  Lmotor          1    6[BANK0 ] unsigned char 
+   571 ;; Return value:  Size  Location     Type
+   572 ;;		None               void
+   573 ;; Registers used:
+   574 ;;		wreg, status,2, status,0, pclath, cstack
+   575 ;; Tracked objects:
+   576 ;;		On entry : 0/0
+   577 ;;		On exit  : 0/0
+   578 ;;		Unchanged: 0/0
+   579 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+   580 ;;      Params:         0       0       0       0       0       0
+   581 ;;      Locals:         0      19       0       0       0       0
+   582 ;;      Temps:          0       6       0       0       0       0
+   583 ;;      Totals:         0      25       0       0       0       0
+   584 ;;Total ram usage:       25 bytes
+   585 ;; Hardware stack levels used:    1
+   586 ;; Hardware stack levels required when called:    1
+   587 ;; This function calls:
+   588 ;;		___awdiv
+   589 ;;		___bmul
+   590 ;;		_absolute
+   591 ;;		_spi_send
+   592 ;; This function is called by:
+   593 ;;		Interrupt level 1
+   594 ;; This function uses a non-reentrant model
+   595 ;;
+   596                           
+   597  0004                     _InterSPI:	
+   598                           
+   599                           ;incstack = 0
+   600                           ; Regs used in _InterSPI: [wreg+status,2+status,0+pclath+cstack]
+   601  0004  3180               	pagesel	$
+   602  0005  0020               	movlb	0	; select bank0
+   603  0006  087F               	movf	127,w
+   604  0007  00A5               	movwf	??_InterSPI+5
+   605                           
+   606                           ;source.c: 42: unsigned int R_data;
+   607                           ;source.c: 43: signed char x_level,y_level,senkai;
+   608                           ;source.c: 44: signed char FL_BRmotor,FR_BLmotor;
+   609                           ;source.c: 45: unsigned char FL_BRmotor2,FR_BLmotor2;
+   610                           ;source.c: 46: unsigned char Lmotor,Rmotor;
+   611                           ;source.c: 47: signed char FLmotor,FRmotor,BLmotor,BRmotor;
+   612                           ;source.c: 48: signed char hassha,hassha2;
+   613                           ;source.c: 50: if(SSP1IF==1){
+   614  0008  1D91               	btfss	17,3	;volatile
+   615  0009  2A06               	goto	i1l91
+   616                           
+   617                           ;source.c: 52: R_data=SSP1BUF;
+   618  000A  0024               	movlb	4	; select bank4
+   619  000B  0811               	movf	17,w	;volatile
+   620  000C  0020               	movlb	0	; select bank0
+   621  000D  00A0               	movwf	??_InterSPI
+   622  000E  01A1               	clrf	??_InterSPI+1
+   623  000F  0820               	movf	??_InterSPI,w
+   624  0010  00B7               	movwf	InterSPI@R_data
+   625  0011  0821               	movf	??_InterSPI+1,w
+   626  0012  00B8               	movwf	InterSPI@R_data+1
+   627                           
+   628                           ;source.c: 53: if(R_data<0b10000000){
+   629  0013  3000               	movlw	0
+   630  0014  0238               	subwf	InterSPI@R_data+1,w
+   631  0015  3080               	movlw	128
+   632  0016  1903               	skipnz
+   633  0017  0237               	subwf	InterSPI@R_data,w
+   634  0018  1803               	skipnc
+   635  0019  28E6               	goto	i1l942
+   636                           
+   637                           ;source.c: 56: senkai=R_data-((char)(R_data/16))*16-8;
+   638  001A  0838               	movf	InterSPI@R_data+1,w
+   639  001B  00A1               	movwf	??_InterSPI+1
+   640  001C  0837               	movf	InterSPI@R_data,w
+   641  001D  00A0               	movwf	??_InterSPI
+   642  001E  3004               	movlw	4
+   643  001F                     u80_25:	
+   644  001F  36A1               	lsrf	??_InterSPI+1,f
+   645  0020  0CA0               	rrf	??_InterSPI,f
+   646  0021  0B89               	decfsz	9,f
+   647  0022  281F               	goto	u80_25
+   648  0023  0820               	movf	??_InterSPI,w
+   649  0024  00A2               	movwf	??_InterSPI+2
+   650  0025  3003               	movlw	3
+   651  0026                     u81_25:	
+   652  0026  35A2               	lslf	??_InterSPI+2,f
+   653  0027  3EFF               	addlw	-1
+   654  0028  1D03               	skipz
+   655  0029  2826               	goto	u81_25
+   656  002A  3522               	lslf	??_InterSPI+2,w
+   657  002B  3E08               	addlw	8
+   658  002C  3AFF               	xorlw	255
+   659  002D  3E01               	addlw	1
+   660  002E  0737               	addwf	InterSPI@R_data,w
+   661  002F  00A3               	movwf	??_InterSPI+3
+   662  0030  0823               	movf	??_InterSPI+3,w
+   663  0031  00B6               	movwf	InterSPI@senkai
+   664                           
+   665                           ;source.c: 57: if(senkai<0){
+   666  0032  1FB6               	btfss	InterSPI@senkai,7
+   667  0033  2850               	goto	i1l894
+   668                           
+   669                           ;source.c: 58: Lmotor=0b10000000+absolute(senkai)*(127/8);
+   670  0034  300F               	movlw	15
+   671  0035  00A0               	movwf	??_InterSPI
+   672  0036  0820               	movf	??_InterSPI,w
+   673  0037  00FA               	movwf	___bmul@multiplicand
+   674  0038  0836               	movf	InterSPI@senkai,w
+   675  0039  3182  22DB  3180   	fcall	_absolute
+   676  003C  3182  22CA  3180   	fcall	___bmul
+   677  003F  3E80               	addlw	128
+   678  0040  0020               	movlb	0	; select bank0
+   679  0041  00A1               	movwf	??_InterSPI+1
+   680  0042  0821               	movf	??_InterSPI+1,w
+   681  0043  00A6               	movwf	InterSPI@Lmotor
+   682                           
+   683                           ;source.c: 59: Rmotor=0b00000000+absolute(senkai)*(127/8);
+   684  0044  300F               	movlw	15
+   685  0045  00A0               	movwf	??_InterSPI
+   686  0046  0820               	movf	??_InterSPI,w
+   687  0047  00FA               	movwf	___bmul@multiplicand
+   688  0048  0836               	movf	InterSPI@senkai,w
+   689  0049  3182  22DB  3180   	fcall	_absolute
+   690  004C  3182  22CA  3180   	fcall	___bmul
+   691  004F  286B               	goto	L1
+   692  0050                     i1l894:	
+   693                           ;source.c: 60: }else{
+   694                           
+   695                           
+   696                           ;source.c: 61: Lmotor=0b00000000+absolute(senkai)*(127/8);
+   697  0050  300F               	movlw	15
+   698  0051  00A0               	movwf	??_InterSPI
+   699  0052  0820               	movf	??_InterSPI,w
+   700  0053  00FA               	movwf	___bmul@multiplicand
+   701  0054  0836               	movf	InterSPI@senkai,w
+   702  0055  3182  22DB  3180   	fcall	_absolute
+   703  0058  3182  22CA  3180   	fcall	___bmul
+   704  005B  0020               	movlb	0	; select bank0
+   705  005C  00A1               	movwf	??_InterSPI+1
+   706  005D  0821               	movf	??_InterSPI+1,w
+   707  005E  00A6               	movwf	InterSPI@Lmotor
+   708                           
+   709                           ;source.c: 62: Rmotor=0b10000000+absolute(senkai)*(127/8);
+   710  005F  300F               	movlw	15
+   711  0060  00A0               	movwf	??_InterSPI
+   712  0061  0820               	movf	??_InterSPI,w
+   713  0062  00FA               	movwf	___bmul@multiplicand
+   714  0063  0836               	movf	InterSPI@senkai,w
+   715  0064  3182  22DB  3180   	fcall	_absolute
+   716  0067  3182  22CA  3180   	fcall	___bmul
+   717  006A  3E80               	addlw	128
+   718  006B                     L1:	
+   719  006B  0020               	movlb	0	; select bank0
+   720  006C  00A1               	movwf	??_InterSPI+1
+   721  006D  0821               	movf	??_InterSPI+1,w
+   722  006E  00A7               	movwf	InterSPI@Rmotor
+   723                           
+   724                           ;source.c: 63: }
+   725                           ;source.c: 65: if(((char)(R_data/16))==1 && hasshaflag1==0){
+   726  006F  0838               	movf	InterSPI@R_data+1,w
+   727  0070  00A1               	movwf	??_InterSPI+1
+   728  0071  0837               	movf	InterSPI@R_data,w
+   729  0072  00A0               	movwf	??_InterSPI
+   730  0073  3004               	movlw	4
+   731  0074                     u83_25:	
+   732  0074  36A1               	lsrf	??_InterSPI+1,f
+   733  0075  0CA0               	rrf	??_InterSPI,f
+   734  0076  0B89               	decfsz	9,f
+   735  0077  2874               	goto	u83_25
+   736  0078  0320               	decf	??_InterSPI,w
+   737  0079  1903               	btfsc	3,2
+   738  007A  183D               	btfsc	_hasshaflag1/(0+8),_hasshaflag1& (0+7)
+   739  007B  2880               	goto	i1l902
+   740                           
+   741                           ;source.c: 66: hassha=1;
+   742  007C  01AC               	clrf	InterSPI@hassha
+   743  007D  0AAC               	incf	InterSPI@hassha,f
+   744                           
+   745                           ;source.c: 67: hasshaflag1=1;
+   746  007E  143D               	bsf	_hasshaflag1/(0+8),_hasshaflag1& (0+7)
+   747                           
+   748                           ;source.c: 68: }else{
+   749  007F  2881               	goto	i1l904
+   750  0080                     i1l902:	
+   751                           
+   752                           ;source.c: 69: hassha=0;
+   753  0080  01AC               	clrf	InterSPI@hassha
+   754  0081                     i1l904:	
+   755                           
+   756                           ;source.c: 70: }
+   757                           ;source.c: 71: if(((char)(R_data/16))!=1 && hasshaflag1==1){
+   758  0081  0838               	movf	InterSPI@R_data+1,w
+   759  0082  00A1               	movwf	??_InterSPI+1
+   760  0083  0837               	movf	InterSPI@R_data,w
+   761  0084  00A0               	movwf	??_InterSPI
+   762  0085  3004               	movlw	4
+   763  0086                     u86_25:	
+   764  0086  36A1               	lsrf	??_InterSPI+1,f
+   765  0087  0CA0               	rrf	??_InterSPI,f
+   766  0088  0B89               	decfsz	9,f
+   767  0089  2886               	goto	u86_25
+   768  008A  0320               	decf	??_InterSPI,w
+   769  008B  1D03               	btfss	3,2
+   770  008C  1C3D               	btfss	_hasshaflag1/(0+8),_hasshaflag1& (0+7)
+   771  008D  288F               	goto	i1l910
+   772                           
+   773                           ;source.c: 72: hasshaflag1=0;
+   774  008E  103D               	bcf	_hasshaflag1/(0+8),_hasshaflag1& (0+7)
+   775  008F                     i1l910:	
+   776                           
+   777                           ;source.c: 73: }
+   778                           ;source.c: 75: if(((char)(R_data/16))==2 && hasshaflag2==0){
+   779  008F  0838               	movf	InterSPI@R_data+1,w
+   780  0090  00A1               	movwf	??_InterSPI+1
+   781  0091  0837               	movf	InterSPI@R_data,w
+   782  0092  00A0               	movwf	??_InterSPI
+   783  0093  3004               	movlw	4
+   784  0094                     u89_25:	
+   785  0094  36A1               	lsrf	??_InterSPI+1,f
+   786  0095  0CA0               	rrf	??_InterSPI,f
+   787  0096  0B89               	decfsz	9,f
+   788  0097  2894               	goto	u89_25
+   789  0098  3002               	movlw	2
+   790  0099  0620               	xorwf	??_InterSPI,w
+   791  009A  1903               	btfsc	3,2
+   792  009B  18BD               	btfsc	_hasshaflag2/(0+8),_hasshaflag2& (0+7)
+   793  009C  28A1               	goto	i1l916
+   794                           
+   795                           ;source.c: 76: hassha2=1;
+   796  009D  01AD               	clrf	InterSPI@hassha2
+   797  009E  0AAD               	incf	InterSPI@hassha2,f
+   798                           
+   799                           ;source.c: 77: hasshaflag2=1;
+   800  009F  14BD               	bsf	_hasshaflag2/(0+8),_hasshaflag2& (0+7)
+   801                           
+   802                           ;source.c: 78: }else{
+   803  00A0  28B7               	goto	i1l928
+   804  00A1                     i1l916:	
+   805                           
+   806                           ;source.c: 79: hassha2=0;
+   807  00A1  01AD               	clrf	InterSPI@hassha2
+   808                           
+   809                           ;source.c: 81: if(((char)(R_data/16))==3 && hasshaflag3==0){
+   810  00A2  0838               	movf	InterSPI@R_data+1,w
+   811  00A3  00A1               	movwf	??_InterSPI+1
+   812  00A4  0837               	movf	InterSPI@R_data,w
+   813  00A5  00A0               	movwf	??_InterSPI
+   814  00A6  3004               	movlw	4
+   815  00A7                     u92_25:	
+   816  00A7  36A1               	lsrf	??_InterSPI+1,f
+   817  00A8  0CA0               	rrf	??_InterSPI,f
+   818  00A9  0B89               	decfsz	9,f
+   819  00AA  28A7               	goto	u92_25
+   820  00AB  3003               	movlw	3
+   821  00AC  0620               	xorwf	??_InterSPI,w
+   822  00AD  1903               	btfsc	3,2
+   823  00AE  193D               	btfsc	_hasshaflag3/(0+8),_hasshaflag3& (0+7)
+   824  00AF  28B6               	goto	i1l926
+   825                           
+   826                           ;source.c: 82: hassha2=2;
+   827  00B0  3002               	movlw	2
+   828  00B1  00A0               	movwf	??_InterSPI
+   829  00B2  0820               	movf	??_InterSPI,w
+   830  00B3  00AD               	movwf	InterSPI@hassha2
+   831                           
+   832                           ;source.c: 83: hasshaflag3=1;
+   833  00B4  153D               	bsf	_hasshaflag3/(0+8),_hasshaflag3& (0+7)
+   834                           
+   835                           ;source.c: 84: }else{
+   836  00B5  28B7               	goto	i1l928
+   837  00B6                     i1l926:	
+   838                           
+   839                           ;source.c: 85: hassha2=0;
+   840  00B6  01AD               	clrf	InterSPI@hassha2
+   841  00B7                     i1l928:	
+   842                           
+   843                           ;source.c: 86: }
+   844                           ;source.c: 87: }
+   845                           ;source.c: 89: if(((char)(R_data/16))!=3 && hasshaflag3==1){
+   846  00B7  0838               	movf	InterSPI@R_data+1,w
+   847  00B8  00A1               	movwf	??_InterSPI+1
+   848  00B9  0837               	movf	InterSPI@R_data,w
+   849  00BA  00A0               	movwf	??_InterSPI
+   850  00BB  3004               	movlw	4
+   851  00BC                     u95_25:	
+   852  00BC  36A1               	lsrf	??_InterSPI+1,f
+   853  00BD  0CA0               	rrf	??_InterSPI,f
+   854  00BE  0B89               	decfsz	9,f
+   855  00BF  28BC               	goto	u95_25
+   856  00C0  3003               	movlw	3
+   857  00C1  0620               	xorwf	??_InterSPI,w
+   858  00C2  1D03               	btfss	3,2
+   859  00C3  1D3D               	btfss	_hasshaflag3/(0+8),_hasshaflag3& (0+7)
+   860  00C4  28C6               	goto	i1l934
+   861                           
+   862                           ;source.c: 90: hasshaflag3=0;
+   863  00C5  113D               	bcf	_hasshaflag3/(0+8),_hasshaflag3& (0+7)
+   864  00C6                     i1l934:	
+   865                           
+   866                           ;source.c: 91: }
+   867                           ;source.c: 92: if(((char)(R_data/16))!=2 && hasshaflag2==1){
+   868  00C6  0838               	movf	InterSPI@R_data+1,w
+   869  00C7  00A1               	movwf	??_InterSPI+1
+   870  00C8  0837               	movf	InterSPI@R_data,w
+   871  00C9  00A0               	movwf	??_InterSPI
+   872  00CA  3004               	movlw	4
+   873  00CB                     u98_25:	
+   874  00CB  36A1               	lsrf	??_InterSPI+1,f
+   875  00CC  0CA0               	rrf	??_InterSPI,f
+   876  00CD  0B89               	decfsz	9,f
+   877  00CE  28CB               	goto	u98_25
+   878  00CF  3002               	movlw	2
+   879  00D0  0620               	xorwf	??_InterSPI,w
+   880  00D1  1D03               	btfss	3,2
+   881  00D2  1CBD               	btfss	_hasshaflag2/(0+8),_hasshaflag2& (0+7)
+   882  00D3  28D5               	goto	i1l940
+   883                           
+   884                           ;source.c: 93: hasshaflag2=0;
+   885  00D4  10BD               	bcf	_hasshaflag2/(0+8),_hasshaflag2& (0+7)
+   886  00D5                     i1l940:	
+   887                           
+   888                           ;source.c: 94: }
+   889                           ;source.c: 96: G_Lmotor=Lmotor;
+   890  00D5  0826               	movf	InterSPI@Lmotor,w
+   891  00D6  00A0               	movwf	??_InterSPI
+   892  00D7  0820               	movf	??_InterSPI,w
+   893  00D8  00B9               	movwf	_G_Lmotor
+   894                           
+   895                           ;source.c: 97: G_Rmotor=Rmotor;
+   896  00D9  0827               	movf	InterSPI@Rmotor,w
+   897  00DA  00A0               	movwf	??_InterSPI
+   898  00DB  0820               	movf	??_InterSPI,w
+   899  00DC  00BA               	movwf	_G_Rmotor
+   900                           
+   901                           ;source.c: 98: G_hassha=hassha;
+   902  00DD  082C               	movf	InterSPI@hassha,w
+   903  00DE  00A0               	movwf	??_InterSPI
+   904  00DF  0820               	movf	??_InterSPI,w
+   905  00E0  00BB               	movwf	_G_hassha
+   906                           
+   907                           ;source.c: 99: G_hassha2=hassha2;
+   908  00E1  082D               	movf	InterSPI@hassha2,w
+   909  00E2  00A0               	movwf	??_InterSPI
+   910  00E3  0820               	movf	??_InterSPI,w
+   911  00E4  00BC               	movwf	_G_hassha2
+   912                           
+   913                           ;source.c: 101: }else{
+   914  00E5  2A04               	goto	i1l964
+   915  00E6                     i1l942:	
+   916                           
+   917                           ;source.c: 102: R_data=R_data-0b10000000;
+   918  00E6  0837               	movf	InterSPI@R_data,w
+   919  00E7  3E80               	addlw	128
+   920  00E8  00B7               	movwf	InterSPI@R_data
+   921  00E9  30FF               	movlw	255
+   922  00EA  3D38               	addwfc	InterSPI@R_data+1,w
+   923  00EB  00B8               	movwf	InterSPI@R_data+1
+   924                           
+   925                           ;source.c: 103: y_level=((char)(R_data/16))-4;
+   926  00EC  0838               	movf	InterSPI@R_data+1,w
+   927  00ED  00A1               	movwf	??_InterSPI+1
+   928  00EE  0837               	movf	InterSPI@R_data,w
+   929  00EF  00A0               	movwf	??_InterSPI
+   930  00F0  3004               	movlw	4
+   931  00F1                     u101_25:	
+   932  00F1  36A1               	lsrf	??_InterSPI+1,f
+   933  00F2  0CA0               	rrf	??_InterSPI,f
+   934  00F3  0B89               	decfsz	9,f
+   935  00F4  28F1               	goto	u101_25
+   936  00F5  0820               	movf	??_InterSPI,w
+   937  00F6  3EFC               	addlw	-4
+   938  00F7  00A2               	movwf	??_InterSPI+2
+   939  00F8  0822               	movf	??_InterSPI+2,w
+   940  00F9  00B5               	movwf	InterSPI@y_level
+   941                           
+   942                           ;source.c: 104: x_level=R_data-y_level*16-72;
+   943  00FA  0835               	movf	InterSPI@y_level,w
+   944  00FB  00A0               	movwf	??_InterSPI
+   945  00FC  3003               	movlw	3
+   946  00FD                     u102_25:	
+   947  00FD  35A0               	lslf	??_InterSPI,f
+   948  00FE  3EFF               	addlw	-1
+   949  00FF  1D03               	skipz
+   950  0100  28FD               	goto	u102_25
+   951  0101  3520               	lslf	??_InterSPI,w
+   952  0102  3E48               	addlw	72
+   953  0103  3AFF               	xorlw	255
+   954  0104  3E01               	addlw	1
+   955  0105  0737               	addwf	InterSPI@R_data,w
+   956  0106  00A1               	movwf	??_InterSPI+1
+   957  0107  0821               	movf	??_InterSPI+1,w
+   958  0108  00B4               	movwf	InterSPI@x_level
+   959                           
+   960                           ;source.c: 106: FL_BRmotor=-((y_level+x_level)*(9-absolute(x_level)/(2-(absolute(y_level
+      +                          )/4))));
+   961  0109  3004               	movlw	4
+   962  010A  00F1               	movwf	___awdiv@divisor
+   963  010B  3000               	movlw	0
+   964  010C  00F2               	movwf	___awdiv@divisor+1
+   965  010D  0835               	movf	InterSPI@y_level,w
+   966  010E  3182  22DB  3180   	fcall	_absolute
+   967  0111  0020               	movlb	0	; select bank0
+   968  0112  00A0               	movwf	??_InterSPI
+   969  0113  01A1               	clrf	??_InterSPI+1
+   970  0114  0820               	movf	??_InterSPI,w
+   971  0115  00F3               	movwf	___awdiv@dividend
+   972  0116  0821               	movf	??_InterSPI+1,w
+   973  0117  00F4               	movwf	___awdiv@dividend+1
+   974  0118  3182  2213  3180   	fcall	___awdiv
+   975  011B  0971               	comf	?___awdiv,w
+   976  011C  0020               	movlb	0	; select bank0
+   977  011D  00A2               	movwf	??_InterSPI+2
+   978  011E  0972               	comf	?___awdiv+1,w
+   979  011F  00A3               	movwf	??_InterSPI+3
+   980  0120  0AA2               	incf	??_InterSPI+2,f
+   981  0121  1903               	skipnz
+   982  0122  0AA3               	incf	??_InterSPI+3,f
+   983  0123  0822               	movf	??_InterSPI+2,w
+   984  0124  3E02               	addlw	2
+   985  0125  00AE               	movwf	_InterSPI$506
+   986  0126  3000               	movlw	0
+   987  0127  3D23               	addwfc	??_InterSPI+3,w
+   988  0128  00AF               	movwf	_InterSPI$506+1
+   989                           
+   990                           ;source.c: 106: FL_BRmotor=-((y_level+x_level)*(9-absolute(x_level)/(2-(absolute(y_level
+      +                          )/4))));
+   991  0129  082F               	movf	_InterSPI$506+1,w
+   992  012A  00F2               	movwf	___awdiv@divisor+1
+   993  012B  082E               	movf	_InterSPI$506,w
+   994  012C  00F1               	movwf	___awdiv@divisor
+   995  012D  0834               	movf	InterSPI@x_level,w
+   996  012E  3182  22DB  3180   	fcall	_absolute
+   997  0131  0020               	movlb	0	; select bank0
+   998  0132  00A0               	movwf	??_InterSPI
+   999  0133  01A1               	clrf	??_InterSPI+1
+  1000  0134  0820               	movf	??_InterSPI,w
+  1001  0135  00F3               	movwf	___awdiv@dividend
+  1002  0136  0821               	movf	??_InterSPI+1,w
+  1003  0137  00F4               	movwf	___awdiv@dividend+1
+  1004  0138  3182  2213  3180   	fcall	___awdiv
+  1005  013B  0871               	movf	?___awdiv,w
+  1006  013C  3AFF               	xorlw	255
+  1007  013D  3E01               	addlw	1
+  1008  013E  3E09               	addlw	9
+  1009  013F  0020               	movlb	0	; select bank0
+  1010  0140  00A2               	movwf	??_InterSPI+2
+  1011  0141  0822               	movf	??_InterSPI+2,w
+  1012  0142  00FA               	movwf	___bmul@multiplicand
+  1013  0143  0835               	movf	InterSPI@y_level,w
+  1014  0144  0734               	addwf	InterSPI@x_level,w
+  1015  0145  3182  22CA  3180   	fcall	___bmul
+  1016  0148  3AFF               	xorlw	255
+  1017  0149  3E01               	addlw	1
+  1018  014A  0020               	movlb	0	; select bank0
+  1019  014B  00A3               	movwf	??_InterSPI+3
+  1020  014C  0823               	movf	??_InterSPI+3,w
+  1021  014D  00B0               	movwf	InterSPI@FL_BRmotor
+  1022                           
+  1023                           ;source.c: 107: FR_BLmotor=-((y_level-x_level)*(9-absolute(x_level)/(2-(absolute(y_level
+      +                          )/4))));
+  1024  014E  3004               	movlw	4
+  1025  014F  00F1               	movwf	___awdiv@divisor
+  1026  0150  3000               	movlw	0
+  1027  0151  00F2               	movwf	___awdiv@divisor+1
+  1028  0152  0835               	movf	InterSPI@y_level,w
+  1029  0153  3182  22DB  3180   	fcall	_absolute
+  1030  0156  0020               	movlb	0	; select bank0
+  1031  0157  00A0               	movwf	??_InterSPI
+  1032  0158  01A1               	clrf	??_InterSPI+1
+  1033  0159  0820               	movf	??_InterSPI,w
+  1034  015A  00F3               	movwf	___awdiv@dividend
+  1035  015B  0821               	movf	??_InterSPI+1,w
+  1036  015C  00F4               	movwf	___awdiv@dividend+1
+  1037  015D  3182  2213  3180   	fcall	___awdiv
+  1038  0160  0971               	comf	?___awdiv,w
+  1039  0161  0020               	movlb	0	; select bank0
+  1040  0162  00A2               	movwf	??_InterSPI+2
+  1041  0163  0972               	comf	?___awdiv+1,w
+  1042  0164  00A3               	movwf	??_InterSPI+3
+  1043  0165  0AA2               	incf	??_InterSPI+2,f
+  1044  0166  1903               	skipnz
+  1045  0167  0AA3               	incf	??_InterSPI+3,f
+  1046  0168  0822               	movf	??_InterSPI+2,w
+  1047  0169  3E02               	addlw	2
+  1048  016A  00AE               	movwf	_InterSPI$506
+  1049  016B  3000               	movlw	0
+  1050  016C  3D23               	addwfc	??_InterSPI+3,w
+  1051  016D  00AF               	movwf	_InterSPI$506+1
+  1052                           
+  1053                           ;source.c: 107: FR_BLmotor=-((y_level-x_level)*(9-absolute(x_level)/(2-(absolute(y_level
+      +                          )/4))));
+  1054  016E  082F               	movf	_InterSPI$506+1,w
+  1055  016F  00F2               	movwf	___awdiv@divisor+1
+  1056  0170  082E               	movf	_InterSPI$506,w
+  1057  0171  00F1               	movwf	___awdiv@divisor
+  1058  0172  0834               	movf	InterSPI@x_level,w
+  1059  0173  3182  22DB  3180   	fcall	_absolute
+  1060  0176  0020               	movlb	0	; select bank0
+  1061  0177  00A0               	movwf	??_InterSPI
+  1062  0178  01A1               	clrf	??_InterSPI+1
+  1063  0179  0820               	movf	??_InterSPI,w
+  1064  017A  00F3               	movwf	___awdiv@dividend
+  1065  017B  0821               	movf	??_InterSPI+1,w
+  1066  017C  00F4               	movwf	___awdiv@dividend+1
+  1067  017D  3182  2213  3180   	fcall	___awdiv
+  1068  0180  0871               	movf	?___awdiv,w
+  1069  0181  3AFF               	xorlw	255
+  1070  0182  3E01               	addlw	1
+  1071  0183  3E09               	addlw	9
+  1072  0184  0020               	movlb	0	; select bank0
+  1073  0185  00A2               	movwf	??_InterSPI+2
+  1074  0186  0822               	movf	??_InterSPI+2,w
+  1075  0187  00FA               	movwf	___bmul@multiplicand
+  1076  0188  0334               	decf	InterSPI@x_level,w
+  1077  0189  3AFF               	xorlw	255
+  1078  018A  0735               	addwf	InterSPI@y_level,w
+  1079  018B  3182  22CA  3180   	fcall	___bmul
+  1080  018E  3AFF               	xorlw	255
+  1081  018F  3E01               	addlw	1
+  1082  0190  0020               	movlb	0	; select bank0
+  1083  0191  00A3               	movwf	??_InterSPI+3
+  1084  0192  0823               	movf	??_InterSPI+3,w
+  1085  0193  00B1               	movwf	InterSPI@FR_BLmotor
+  1086                           
+  1087                           ;source.c: 109: FL_BRmotor2=(FL_BRmotor<0)*0b10000000+absolute(FL_BRmotor)*2;
+  1088  0194  0830               	movf	InterSPI@FL_BRmotor,w
+  1089  0195  3182  22DB  3180   	fcall	_absolute
+  1090  0198  0020               	movlb	0	; select bank0
+  1091  0199  00A0               	movwf	??_InterSPI
+  1092  019A  3001               	movlw	1
+  1093  019B                     u103_25:	
+  1094  019B  35A0               	lslf	??_InterSPI,f
+  1095  019C  0B89               	decfsz	9,f
+  1096  019D  299B               	goto	u103_25
+  1097  019E  1FB0               	btfss	InterSPI@FL_BRmotor,7
+  1098  019F  29A2               	goto	u104_20
+  1099  01A0  3001               	movlw	1
+  1100  01A1  29A3               	goto	u105_20
+  1101  01A2                     u104_20:	
+  1102  01A2  3000               	movlw	0
+  1103  01A3                     u105_20:	
+  1104  01A3  00A1               	movwf	??_InterSPI+1
+  1105  01A4  3006               	movlw	6
+  1106  01A5                     u106_25:	
+  1107  01A5  35A1               	lslf	??_InterSPI+1,f
+  1108  01A6  3EFF               	addlw	-1
+  1109  01A7  1D03               	skipz
+  1110  01A8  29A5               	goto	u106_25
+  1111  01A9  3521               	lslf	??_InterSPI+1,w
+  1112  01AA  0720               	addwf	??_InterSPI,w
+  1113  01AB  00A2               	movwf	??_InterSPI+2
+  1114  01AC  0822               	movf	??_InterSPI+2,w
+  1115  01AD  00B2               	movwf	InterSPI@FL_BRmotor2
+  1116                           
+  1117                           ;source.c: 110: FR_BLmotor2=(FR_BLmotor<0)*0b10000000+absolute(FR_BLmotor)*2;
+  1118  01AE  0831               	movf	InterSPI@FR_BLmotor,w
+  1119  01AF  3182  22DB  3180   	fcall	_absolute
+  1120  01B2  0020               	movlb	0	; select bank0
+  1121  01B3  00A0               	movwf	??_InterSPI
+  1122  01B4  3001               	movlw	1
+  1123  01B5                     u107_25:	
+  1124  01B5  35A0               	lslf	??_InterSPI,f
+  1125  01B6  0B89               	decfsz	9,f
+  1126  01B7  29B5               	goto	u107_25
+  1127  01B8  1FB1               	btfss	InterSPI@FR_BLmotor,7
+  1128  01B9  29BC               	goto	u108_20
+  1129  01BA  3001               	movlw	1
+  1130  01BB  29BD               	goto	u109_20
+  1131  01BC                     u108_20:	
+  1132  01BC  3000               	movlw	0
+  1133  01BD                     u109_20:	
+  1134  01BD  00A1               	movwf	??_InterSPI+1
+  1135  01BE  3006               	movlw	6
+  1136  01BF                     u110_25:	
+  1137  01BF  35A1               	lslf	??_InterSPI+1,f
+  1138  01C0  3EFF               	addlw	-1
+  1139  01C1  1D03               	skipz
+  1140  01C2  29BF               	goto	u110_25
+  1141  01C3  3521               	lslf	??_InterSPI+1,w
+  1142  01C4  0720               	addwf	??_InterSPI,w
+  1143  01C5  00A2               	movwf	??_InterSPI+2
+  1144  01C6  0822               	movf	??_InterSPI+2,w
+  1145  01C7  00B3               	movwf	InterSPI@FR_BLmotor2
+  1146                           
+  1147                           ;source.c: 112: if(G_Lmotor==0b00000000 || G_Lmotor==0b10000000){
+  1148  01C8  0839               	movf	_G_Lmotor,w
+  1149  01C9  1903               	btfsc	3,2
+  1150  01CA  29CF               	goto	i1l958
+  1151  01CB  3080               	movlw	128
+  1152  01CC  0639               	xorwf	_G_Lmotor,w
+  1153  01CD  1D03               	btfss	3,2
+  1154  01CE  29DD               	goto	i1l960
+  1155  01CF                     i1l958:	
+  1156                           
+  1157                           ;source.c: 113: FLmotor=FL_BRmotor2;
+  1158  01CF  0832               	movf	InterSPI@FL_BRmotor2,w
+  1159  01D0  00A0               	movwf	??_InterSPI
+  1160  01D1  0820               	movf	??_InterSPI,w
+  1161  01D2  00A8               	movwf	InterSPI@FLmotor
+  1162                           
+  1163                           ;source.c: 114: FRmotor=FR_BLmotor2;
+  1164  01D3  0833               	movf	InterSPI@FR_BLmotor2,w
+  1165  01D4  00A0               	movwf	??_InterSPI
+  1166  01D5  0820               	movf	??_InterSPI,w
+  1167  01D6  00A9               	movwf	InterSPI@FRmotor
+  1168                           
+  1169                           ;source.c: 115: BLmotor=FR_BLmotor2;
+  1170  01D7  0833               	movf	InterSPI@FR_BLmotor2,w
+  1171  01D8  00A0               	movwf	??_InterSPI
+  1172  01D9  0820               	movf	??_InterSPI,w
+  1173  01DA  00AA               	movwf	InterSPI@BLmotor
+  1174                           
+  1175                           ;source.c: 116: BRmotor=FL_BRmotor2;
+  1176  01DB  0832               	movf	InterSPI@FL_BRmotor2,w
+  1177  01DC  29EA               	goto	L2
+  1178  01DD                     i1l960:	
+  1179                           ;source.c: 117: }else{
+  1180                           
+  1181                           
+  1182                           ;source.c: 118: FLmotor=G_Lmotor;
+  1183  01DD  0839               	movf	_G_Lmotor,w
+  1184  01DE  00A0               	movwf	??_InterSPI
+  1185  01DF  0820               	movf	??_InterSPI,w
+  1186  01E0  00A8               	movwf	InterSPI@FLmotor
+  1187                           
+  1188                           ;source.c: 119: FRmotor=G_Rmotor;
+  1189  01E1  083A               	movf	_G_Rmotor,w
+  1190  01E2  00A0               	movwf	??_InterSPI
+  1191  01E3  0820               	movf	??_InterSPI,w
+  1192  01E4  00A9               	movwf	InterSPI@FRmotor
+  1193                           
+  1194                           ;source.c: 120: BLmotor=G_Lmotor;
+  1195  01E5  0839               	movf	_G_Lmotor,w
+  1196  01E6  00A0               	movwf	??_InterSPI
+  1197  01E7  0820               	movf	??_InterSPI,w
+  1198  01E8  00AA               	movwf	InterSPI@BLmotor
+  1199                           
+  1200                           ;source.c: 121: BRmotor=G_Rmotor;
+  1201  01E9  083A               	movf	_G_Rmotor,w
+  1202  01EA                     L2:	
+  1203  01EA  00A0               	movwf	??_InterSPI
+  1204  01EB  0820               	movf	??_InterSPI,w
+  1205  01EC  00AB               	movwf	InterSPI@BRmotor
+  1206                           
+  1207                           ;source.c: 122: }
+  1208                           ;source.c: 123: spi_send(FLmotor,BLmotor,FRmotor,BRmotor,G_hassha,G_hassha2);
+  1209  01ED  082A               	movf	InterSPI@BLmotor,w
+  1210  01EE  00A0               	movwf	??_InterSPI
+  1211  01EF  0820               	movf	??_InterSPI,w
+  1212  01F0  00F0               	movwf	spi_send@BLmotor
+  1213  01F1  0829               	movf	InterSPI@FRmotor,w
+  1214  01F2  00A1               	movwf	??_InterSPI+1
+  1215  01F3  0821               	movf	??_InterSPI+1,w
+  1216  01F4  00F1               	movwf	spi_send@FRmotor
+  1217  01F5  082B               	movf	InterSPI@BRmotor,w
+  1218  01F6  00A2               	movwf	??_InterSPI+2
+  1219  01F7  0822               	movf	??_InterSPI+2,w
+  1220  01F8  00F2               	movwf	spi_send@BRmotor
+  1221  01F9  083B               	movf	_G_hassha,w
+  1222  01FA  00A3               	movwf	??_InterSPI+3
+  1223  01FB  0823               	movf	??_InterSPI+3,w
+  1224  01FC  00F3               	movwf	spi_send@hasshakiko
+  1225  01FD  083C               	movf	_G_hassha2,w
+  1226  01FE  00A4               	movwf	??_InterSPI+4
+  1227  01FF  0824               	movf	??_InterSPI+4,w
+  1228  0200  00F4               	movwf	spi_send@hasshakiko2
+  1229  0201  0828               	movf	InterSPI@FLmotor,w
+  1230  0202  3182  2264         	fcall	_spi_send
+  1231  0204                     i1l964:	
+  1232                           
+  1233                           ;source.c: 124: }
+  1234                           ;source.c: 125: SSP1IF=0;
+  1235  0204  0020               	movlb	0	; select bank0
+  1236  0205  1191               	bcf	17,3	;volatile
+  1237  0206                     i1l91:	
+  1238  0206  0825               	movf	??_InterSPI+5,w
+  1239  0207  00FF               	movwf	127
+  1240  0208  0009               	retfie
+  1241  0209                     __end_of_InterSPI:	
+  1242                           
+  1243                           	psect	text2
+  1244  0264                     __ptext2:	
+  1245 ;; *************** function _spi_send *****************
+  1246 ;; Defined at:
+  1247 ;;		line 129 in file "source.c"
+  1248 ;; Parameters:    Size  Location     Type
+  1249 ;;  FLmotor         1    wreg     unsigned char 
+  1250 ;;  BLmotor         1    0[COMMON] unsigned char 
+  1251 ;;  FRmotor         1    1[COMMON] unsigned char 
+  1252 ;;  BRmotor         1    2[COMMON] unsigned char 
+  1253 ;;  hasshakiko      1    3[COMMON] char 
+  1254 ;;  hasshakiko2     1    4[COMMON] char 
+  1255 ;; Auto vars:     Size  Location     Type
+  1256 ;;  FLmotor         1    5[COMMON] unsigned char 
+  1257 ;; Return value:  Size  Location     Type
+  1258 ;;		None               void
+  1259 ;; Registers used:
+  1260 ;;		wreg, status,2, status,0
+  1261 ;; Tracked objects:
+  1262 ;;		On entry : 0/0
+  1263 ;;		On exit  : 0/0
+  1264 ;;		Unchanged: 0/0
+  1265 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  1266 ;;      Params:         5       0       0       0       0       0
+  1267 ;;      Locals:         1       0       0       0       0       0
+  1268 ;;      Temps:          0       0       0       0       0       0
+  1269 ;;      Totals:         6       0       0       0       0       0
+  1270 ;;Total ram usage:        6 bytes
+  1271 ;; Hardware stack levels used:    1
+  1272 ;; This function calls:
+  1273 ;;		Nothing
+  1274 ;; This function is called by:
+  1275 ;;		_InterSPI
+  1276 ;; This function uses a non-reentrant model
+  1277 ;;
+  1278                           
+  1279                           
+  1280                           ;psect for function _spi_send
+  1281  0264                     _spi_send:	
+  1282                           
+  1283                           ;incstack = 0
+  1284                           ; Regs used in _spi_send: [wreg+status,2+status,0]
+  1285                           ;spi_send@FLmotor stored from wreg
+  1286  0264  00F5               	movwf	spi_send@FLmotor
+  1287                           
+  1288                           ;source.c: 131: RA2=1;
+  1289  0265  0020               	movlb	0	; select bank0
+  1290  0266  150C               	bsf	12,2	;volatile
+  1291                           
+  1292                           ;source.c: 132: RA3=1;
+  1293  0267  158C               	bsf	12,3	;volatile
+  1294                           
+  1295                           ;source.c: 133: RA4=1;
+  1296  0268  160C               	bsf	12,4	;volatile
+  1297                           
+  1298                           ;source.c: 134: RA7=1;
+  1299  0269  178C               	bsf	12,7	;volatile
+  1300                           
+  1301                           ;source.c: 135: RB7=1;
+  1302  026A  178D               	bsf	13,7	;volatile
+  1303                           
+  1304                           ;source.c: 137: RA1=0;
+  1305  026B  108C               	bcf	12,1	;volatile
+  1306                           
+  1307                           ;source.c: 138: SSP2BUF=FLmotor;
+  1308  026C  0875               	movf	spi_send@FLmotor,w
+  1309  026D  0024               	movlb	4	; select bank4
+  1310  026E  0099               	movwf	25	;volatile
+  1311  026F                     i1l94:	
+  1312                           ;source.c: 139: while(SSP2STATbits.BF==0);
+  1313                           
+  1314  026F  1C1C               	btfss	28,0	;volatile
+  1315  0270  2A6F               	goto	i1l94
+  1316                           
+  1317                           ;source.c: 140: RA1=1;
+  1318  0271  0020               	movlb	0	; select bank0
+  1319  0272  148C               	bsf	12,1	;volatile
+  1320                           
+  1321                           ;source.c: 142: RA2=0;
+  1322  0273  110C               	bcf	12,2	;volatile
+  1323                           
+  1324                           ;source.c: 143: SSP2BUF=BLmotor;
+  1325  0274  0870               	movf	spi_send@BLmotor,w
+  1326  0275  0024               	movlb	4	; select bank4
+  1327  0276  0099               	movwf	25	;volatile
+  1328  0277                     i1l97:	
+  1329                           ;source.c: 144: while(SSP2STATbits.BF==0);
+  1330                           
+  1331  0277  1C1C               	btfss	28,0	;volatile
+  1332  0278  2A77               	goto	i1l97
+  1333                           
+  1334                           ;source.c: 145: RA2=1;
+  1335  0279  0020               	movlb	0	; select bank0
+  1336  027A  150C               	bsf	12,2	;volatile
+  1337                           
+  1338                           ;source.c: 147: RA3=0;
+  1339  027B  118C               	bcf	12,3	;volatile
+  1340                           
+  1341                           ;source.c: 148: SSP2BUF=FRmotor;
+  1342  027C  0871               	movf	spi_send@FRmotor,w
+  1343  027D  0024               	movlb	4	; select bank4
+  1344  027E  0099               	movwf	25	;volatile
+  1345  027F                     i1l100:	
+  1346                           ;source.c: 149: while(SSP2STATbits.BF==0);
+  1347                           
+  1348  027F  1C1C               	btfss	28,0	;volatile
+  1349  0280  2A7F               	goto	i1l100
+  1350                           
+  1351                           ;source.c: 150: RA3=1;
+  1352  0281  0020               	movlb	0	; select bank0
+  1353  0282  158C               	bsf	12,3	;volatile
+  1354                           
+  1355                           ;source.c: 152: RA4=0;
+  1356  0283  120C               	bcf	12,4	;volatile
+  1357                           
+  1358                           ;source.c: 153: SSP2BUF=BRmotor;
+  1359  0284  0872               	movf	spi_send@BRmotor,w
+  1360  0285  0024               	movlb	4	; select bank4
+  1361  0286  0099               	movwf	25	;volatile
+  1362  0287                     i1l103:	
+  1363                           ;source.c: 154: while(SSP2STATbits.BF==0);
+  1364                           
+  1365  0287  1C1C               	btfss	28,0	;volatile
+  1366  0288  2A87               	goto	i1l103
+  1367                           
+  1368                           ;source.c: 155: RA4=1;
+  1369  0289  0020               	movlb	0	; select bank0
+  1370  028A  160C               	bsf	12,4	;volatile
+  1371                           
+  1372                           ;source.c: 157: if (hasshakiko!=0){
+  1373  028B  0873               	movf	spi_send@hasshakiko,w
+  1374  028C  1903               	btfsc	3,2
+  1375  028D  2A96               	goto	i1l820
+  1376                           
+  1377                           ;source.c: 158: RA7=0;
+  1378  028E  138C               	bcf	12,7	;volatile
+  1379                           
+  1380                           ;source.c: 159: SSP2BUF=hasshakiko;
+  1381  028F  0873               	movf	spi_send@hasshakiko,w
+  1382  0290  0024               	movlb	4	; select bank4
+  1383  0291  0099               	movwf	25	;volatile
+  1384  0292                     i1l107:	
+  1385                           ;source.c: 160: while(SSP2STATbits.BF==0);
+  1386                           
+  1387  0292  1C1C               	btfss	28,0	;volatile
+  1388  0293  2A92               	goto	i1l107
+  1389                           
+  1390                           ;source.c: 161: RA7=1;
+  1391  0294  0020               	movlb	0	; select bank0
+  1392  0295  178C               	bsf	12,7	;volatile
+  1393  0296                     i1l820:	
+  1394                           
+  1395                           ;source.c: 162: }
+  1396                           ;source.c: 163: if (hasshakiko2!=0){
+  1397  0296  0874               	movf	spi_send@hasshakiko2,w
+  1398  0297  1903               	btfsc	3,2
+  1399  0298  0008               	return
+  1400                           
+  1401                           ;source.c: 164: RB7=0;
+  1402  0299  138D               	bcf	13,7	;volatile
+  1403                           
+  1404                           ;source.c: 165: SSP2BUF=hasshakiko2;
+  1405  029A  0874               	movf	spi_send@hasshakiko2,w
+  1406  029B  0024               	movlb	4	; select bank4
+  1407  029C  0099               	movwf	25	;volatile
+  1408  029D                     i1l111:	
+  1409                           ;source.c: 166: while(SSP2STATbits.BF==0);
+  1410                           
+  1411  029D  1C1C               	btfss	28,0	;volatile
+  1412  029E  2A9D               	goto	i1l111
+  1413                           
+  1414                           ;source.c: 167: RB7=1;
+  1415  029F  0020               	movlb	0	; select bank0
+  1416  02A0  178D               	bsf	13,7	;volatile
+  1417  02A1  0008               	return
+  1418  02A2                     __end_of_spi_send:	
+  1419                           
+  1420                           	psect	text3
+  1421  02DB                     __ptext3:	
+  1422 ;; *************** function _absolute *****************
+  1423 ;; Defined at:
+  1424 ;;		line 171 in file "source.c"
+  1425 ;; Parameters:    Size  Location     Type
+  1426 ;;  a               1    wreg     char 
+  1427 ;; Auto vars:     Size  Location     Type
+  1428 ;;  a               1    0[COMMON] char 
+  1429 ;; Return value:  Size  Location     Type
+  1430 ;;                  1    wreg      unsigned char 
+  1431 ;; Registers used:
+  1432 ;;		wreg, status,2, status,0
+  1433 ;; Tracked objects:
+  1434 ;;		On entry : 0/0
+  1435 ;;		On exit  : 0/0
+  1436 ;;		Unchanged: 0/0
+  1437 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  1438 ;;      Params:         0       0       0       0       0       0
+  1439 ;;      Locals:         1       0       0       0       0       0
+  1440 ;;      Temps:          0       0       0       0       0       0
+  1441 ;;      Totals:         1       0       0       0       0       0
+  1442 ;;Total ram usage:        1 bytes
+  1443 ;; Hardware stack levels used:    1
+  1444 ;; This function calls:
+  1445 ;;		Nothing
+  1446 ;; This function is called by:
+  1447 ;;		_InterSPI
+  1448 ;; This function uses a non-reentrant model
+  1449 ;;
+  1450                           
+  1451                           
+  1452                           ;psect for function _absolute
+  1453  02DB                     _absolute:	
+  1454                           
+  1455                           ;incstack = 0
+  1456                           ; Regs used in _absolute: [wreg+status,2+status,0]
+  1457                           ;absolute@a stored from wreg
+  1458  02DB  00F0               	movwf	absolute@a
+  1459                           
+  1460                           ;source.c: 173: if(a<0) return -a;
+  1461  02DC  1FF0               	btfss	absolute@a,7
+  1462  02DD  2AE1               	goto	i1l800
+  1463  02DE  0370               	decf	absolute@a,w
+  1464  02DF  3AFF               	xorlw	255
+  1465  02E0  0008               	return
+  1466  02E1                     i1l800:	
+  1467                           
+  1468                           ;source.c: 174: return a;
+  1469  02E1  0870               	movf	absolute@a,w
+  1470  02E2  0008               	return
+  1471  02E3                     __end_of_absolute:	
+  1472                           
+  1473                           	psect	text4
+  1474  02CA                     __ptext4:	
+  1475 ;; *************** function ___bmul *****************
+  1476 ;; Defined at:
+  1477 ;;		line 4 in file "C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul8.c"
+  1478 ;; Parameters:    Size  Location     Type
+  1479 ;;  multiplier      1    wreg     unsigned char 
+  1480 ;;  multiplicand    1   10[COMMON] unsigned char 
+  1481 ;; Auto vars:     Size  Location     Type
+  1482 ;;  multiplier      1   13[COMMON] unsigned char 
+  1483 ;;  product         1   12[COMMON] unsigned char 
+  1484 ;; Return value:  Size  Location     Type
+  1485 ;;                  1    wreg      unsigned char 
+  1486 ;; Registers used:
+  1487 ;;		wreg, status,2, status,0
+  1488 ;; Tracked objects:
+  1489 ;;		On entry : 0/0
+  1490 ;;		On exit  : 0/0
+  1491 ;;		Unchanged: 0/0
+  1492 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  1493 ;;      Params:         1       0       0       0       0       0
+  1494 ;;      Locals:         2       0       0       0       0       0
+  1495 ;;      Temps:          1       0       0       0       0       0
+  1496 ;;      Totals:         4       0       0       0       0       0
+  1497 ;;Total ram usage:        4 bytes
+  1498 ;; Hardware stack levels used:    1
+  1499 ;; This function calls:
+  1500 ;;		Nothing
+  1501 ;; This function is called by:
+  1502 ;;		_InterSPI
+  1503 ;; This function uses a non-reentrant model
+  1504 ;;
+  1505                           
+  1506                           
+  1507                           ;psect for function ___bmul
+  1508  02CA                     ___bmul:	
+  1509                           
+  1510                           ;incstack = 0
+  1511                           ; Regs used in ___bmul: [wreg+status,2+status,0]
+  1512                           ;___bmul@multiplier stored from wreg
+  1513  02CA  00FD               	movwf	___bmul@multiplier
+  1514  02CB  01FC               	clrf	___bmul@product
+  1515  02CC                     i1l828:	
+  1516  02CC  1C7D               	btfss	___bmul@multiplier,0
+  1517  02CD  2AD2               	goto	i1l832
+  1518  02CE  087A               	movf	___bmul@multiplicand,w
+  1519  02CF  00FB               	movwf	??___bmul
+  1520  02D0  087B               	movf	??___bmul,w
+  1521  02D1  07FC               	addwf	___bmul@product,f
+  1522  02D2                     i1l832:	
+  1523  02D2  1003               	clrc
+  1524  02D3  0DFA               	rlf	___bmul@multiplicand,f
+  1525  02D4  1003               	clrc
+  1526  02D5  0CFD               	rrf	___bmul@multiplier,f
+  1527  02D6  087D               	movf	___bmul@multiplier,w
+  1528  02D7  1D03               	btfss	3,2
+  1529  02D8  2ACC               	goto	i1l828
+  1530  02D9  087C               	movf	___bmul@product,w
+  1531  02DA  0008               	return
+  1532  02DB                     __end_of___bmul:	
+  1533                           
+  1534                           	psect	text5
+  1535  0213                     __ptext5:	
+  1536 ;; *************** function ___awdiv *****************
+  1537 ;; Defined at:
+  1538 ;;		line 6 in file "C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c"
+  1539 ;; Parameters:    Size  Location     Type
+  1540 ;;  divisor         2    1[COMMON] int 
+  1541 ;;  dividend        2    3[COMMON] int 
+  1542 ;; Auto vars:     Size  Location     Type
+  1543 ;;  quotient        2    8[COMMON] int 
+  1544 ;;  sign            1    7[COMMON] unsigned char 
+  1545 ;;  counter         1    6[COMMON] unsigned char 
+  1546 ;; Return value:  Size  Location     Type
+  1547 ;;                  2    1[COMMON] int 
+  1548 ;; Registers used:
+  1549 ;;		wreg, status,2, status,0
+  1550 ;; Tracked objects:
+  1551 ;;		On entry : 0/0
+  1552 ;;		On exit  : 0/0
+  1553 ;;		Unchanged: 0/0
+  1554 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4
+  1555 ;;      Params:         4       0       0       0       0       0
+  1556 ;;      Locals:         4       0       0       0       0       0
+  1557 ;;      Temps:          1       0       0       0       0       0
+  1558 ;;      Totals:         9       0       0       0       0       0
+  1559 ;;Total ram usage:        9 bytes
+  1560 ;; Hardware stack levels used:    1
+  1561 ;; This function calls:
+  1562 ;;		Nothing
+  1563 ;; This function is called by:
+  1564 ;;		_InterSPI
+  1565 ;; This function uses a non-reentrant model
+  1566 ;;
+  1567                           
+  1568                           
+  1569                           ;psect for function ___awdiv
+  1570  0213                     ___awdiv:	
+  1571                           
+  1572                           ;incstack = 0
+  1573                           ; Regs used in ___awdiv: [wreg+status,2+status,0]
+  1574  0213  01F7               	clrf	___awdiv@sign
+  1575  0214  1FF2               	btfss	___awdiv@divisor+1,7
+  1576  0215  2A1D               	goto	i1l848
+  1577  0216  09F1               	comf	___awdiv@divisor,f
+  1578  0217  09F2               	comf	___awdiv@divisor+1,f
+  1579  0218  0AF1               	incf	___awdiv@divisor,f
+  1580  0219  1903               	skipnz
+  1581  021A  0AF2               	incf	___awdiv@divisor+1,f
+  1582  021B  01F7               	clrf	___awdiv@sign
+  1583  021C  0AF7               	incf	___awdiv@sign,f
+  1584  021D                     i1l848:	
+  1585  021D  1FF4               	btfss	___awdiv@dividend+1,7
+  1586  021E  2A28               	goto	i1l854
+  1587  021F  09F3               	comf	___awdiv@dividend,f
+  1588  0220  09F4               	comf	___awdiv@dividend+1,f
+  1589  0221  0AF3               	incf	___awdiv@dividend,f
+  1590  0222  1903               	skipnz
+  1591  0223  0AF4               	incf	___awdiv@dividend+1,f
+  1592  0224  3001               	movlw	1
+  1593  0225  00F5               	movwf	??___awdiv
+  1594  0226  0875               	movf	??___awdiv,w
+  1595  0227  06F7               	xorwf	___awdiv@sign,f
+  1596  0228                     i1l854:	
+  1597  0228  01F8               	clrf	___awdiv@quotient
+  1598  0229  01F9               	clrf	___awdiv@quotient+1
+  1599  022A  0871               	movf	___awdiv@divisor,w
+  1600  022B  0472               	iorwf	___awdiv@divisor+1,w
+  1601  022C  1903               	btfsc	3,2
+  1602  022D  2A57               	goto	i1l876
+  1603  022E  01F6               	clrf	___awdiv@counter
+  1604  022F  0AF6               	incf	___awdiv@counter,f
+  1605  0230                     i1l864:	
+  1606  0230  1BF2               	btfsc	___awdiv@divisor+1,7
+  1607  0231  2A3C               	goto	i1l866
+  1608  0232  3001               	movlw	1
+  1609  0233                     u71_25:	
+  1610  0233  35F1               	lslf	___awdiv@divisor,f
+  1611  0234  0DF2               	rlf	___awdiv@divisor+1,f
+  1612  0235  0B89               	decfsz	9,f
+  1613  0236  2A33               	goto	u71_25
+  1614  0237  3001               	movlw	1
+  1615  0238  00F5               	movwf	??___awdiv
+  1616  0239  0875               	movf	??___awdiv,w
+  1617  023A  07F6               	addwf	___awdiv@counter,f
+  1618  023B  2A30               	goto	i1l864
+  1619  023C                     i1l866:	
+  1620  023C  3001               	movlw	1
+  1621  023D                     u73_25:	
+  1622  023D  35F8               	lslf	___awdiv@quotient,f
+  1623  023E  0DF9               	rlf	___awdiv@quotient+1,f
+  1624  023F  0B89               	decfsz	9,f
+  1625  0240  2A3D               	goto	u73_25
+  1626  0241  0872               	movf	___awdiv@divisor+1,w
+  1627  0242  0274               	subwf	___awdiv@dividend+1,w
+  1628  0243  1D03               	skipz
+  1629  0244  2A47               	goto	u74_25
+  1630  0245  0871               	movf	___awdiv@divisor,w
+  1631  0246  0273               	subwf	___awdiv@dividend,w
+  1632  0247                     u74_25:	
+  1633  0247  1C03               	skipc
+  1634  0248  2A4E               	goto	i1l872
+  1635  0249  0871               	movf	___awdiv@divisor,w
+  1636  024A  02F3               	subwf	___awdiv@dividend,f
+  1637  024B  0872               	movf	___awdiv@divisor+1,w
+  1638  024C  3BF4               	subwfb	___awdiv@dividend+1,f
+  1639  024D  1478               	bsf	___awdiv@quotient,0
+  1640  024E                     i1l872:	
+  1641  024E  3001               	movlw	1
+  1642  024F                     u75_25:	
+  1643  024F  36F2               	lsrf	___awdiv@divisor+1,f
+  1644  0250  0CF1               	rrf	___awdiv@divisor,f
+  1645  0251  0B89               	decfsz	9,f
+  1646  0252  2A4F               	goto	u75_25
+  1647  0253  3001               	movlw	1
+  1648  0254  02F6               	subwf	___awdiv@counter,f
+  1649  0255  1D03               	btfss	3,2
+  1650  0256  2A3C               	goto	i1l866
+  1651  0257                     i1l876:	
+  1652  0257  0877               	movf	___awdiv@sign,w
+  1653  0258  1903               	btfsc	3,2
+  1654  0259  2A5F               	goto	i1l880
+  1655  025A  09F8               	comf	___awdiv@quotient,f
+  1656  025B  09F9               	comf	___awdiv@quotient+1,f
+  1657  025C  0AF8               	incf	___awdiv@quotient,f
+  1658  025D  1903               	skipnz
+  1659  025E  0AF9               	incf	___awdiv@quotient+1,f
+  1660  025F                     i1l880:	
+  1661  025F  0879               	movf	___awdiv@quotient+1,w
+  1662  0260  00F2               	movwf	?___awdiv+1
+  1663  0261  0878               	movf	___awdiv@quotient,w
+  1664  0262  00F1               	movwf	?___awdiv
+  1665  0263  0008               	return
+  1666  0264                     __end_of___awdiv:	
+  1667  007E                     btemp	set	126	;btemp
+  1668  007E                     wtemp	set	126
+  1669  007E                     wtemp0	set	126
+  1670  0080                     wtemp1	set	128
+  1671  0082                     wtemp2	set	130
+  1672  0084                     wtemp3	set	132
+  1673  0086                     wtemp4	set	134
+  1674  0088                     wtemp5	set	136
+  1675  007F                     wtemp6	set	127
+  1676  007E                     ttemp	set	126
+  1677  007E                     ttemp0	set	126
+  1678  0081                     ttemp1	set	129
+  1679  0084                     ttemp2	set	132
+  1680  0087                     ttemp3	set	135
+  1681  007F                     ttemp4	set	127
+  1682  007E                     ltemp	set	126
+  1683  007E                     ltemp0	set	126
+  1684  0082                     ltemp1	set	130
+  1685  0086                     ltemp2	set	134
+  1686  0080                     ltemp3	set	128
+
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        0
+    BSS         4
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMMON           14     14      14
+    BANK0            80     25      30
+    BANK1            80      0       0
+    BANK2            80      0       0
+    BANK3            80      0       0
+    BANK4            48      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMMON
+
+    None.
+
+Critical Paths under _InterSPI in COMMON
+
+    _InterSPI->___bmul
+    ___bmul->___awdiv
+    ___awdiv->_absolute
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _InterSPI in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _InterSPI in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _InterSPI in BANK2
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _InterSPI in BANK3
+
+    None.
+
+Critical Paths under _main in BANK4
+
+    None.
+
+Critical Paths under _InterSPI in BANK4
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 0     0      0       0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 0
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (1) _InterSPI                                            27    27      0    2684
+                                              0 BANK0     25    25      0
+                            ___awdiv
+                             ___bmul
+                           _absolute
+                           _spi_send
+ ---------------------------------------------------------------------------------
+ (2) _spi_send                                             6     1      5     441
+                                              0 COMMON     6     1      5
+ ---------------------------------------------------------------------------------
+ (2) _absolute                                             1     1      0      66
+                                              0 COMMON     1     1      0
+ ---------------------------------------------------------------------------------
+ (2) ___bmul                                               4     3      1     410
+                                             10 COMMON     4     3      1
+                            ___awdiv (ARG)
+                           _absolute (ARG)
+ ---------------------------------------------------------------------------------
+ (2) ___awdiv                                              9     5      4     724
+                                              1 COMMON     9     5      4
+                           _absolute (ARG)
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 2
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+
+ _InterSPI (ROOT)
+   ___awdiv
+     _absolute (ARG)
+   ___bmul
+     ___awdiv (ARG)
+       _absolute (ARG)
+     _absolute (ARG)
+   _absolute
+   _spi_send
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BIGRAM             170      0       0       0        0.0%
+EEDATA             100      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+BITCOMMON            E      0       0       1        0.0%
+BITSFR0              0      0       0       1        0.0%
+SFR0                 0      0       0       1        0.0%
+COMMON               E      E       E       2      100.0%
+BITSFR1              0      0       0       2        0.0%
+SFR1                 0      0       0       2        0.0%
+BITSFR2              0      0       0       3        0.0%
+SFR2                 0      0       0       3        0.0%
+STACK                0      0       0       3        0.0%
+BITSFR3              0      0       0       4        0.0%
+SFR3                 0      0       0       4        0.0%
+ABS                  0      0      2C       4        0.0%
+BITBANK0            50      0       1       5        1.3%
+BITSFR4              0      0       0       5        0.0%
+SFR4                 0      0       0       5        0.0%
+BANK0               50     19      1E       6       37.5%
+BITSFR5              0      0       0       6        0.0%
+SFR5                 0      0       0       6        0.0%
+BITBANK1            50      0       0       7        0.0%
+BITSFR6              0      0       0       7        0.0%
+SFR6                 0      0       0       7        0.0%
+BANK1               50      0       0       8        0.0%
+BITSFR7              0      0       0       8        0.0%
+SFR7                 0      0       0       8        0.0%
+BITBANK2            50      0       0       9        0.0%
+BITSFR8              0      0       0       9        0.0%
+SFR8                 0      0       0       9        0.0%
+BANK2               50      0       0      10        0.0%
+BITSFR9              0      0       0      10        0.0%
+SFR9                 0      0       0      10        0.0%
+BITBANK3            50      0       0      11        0.0%
+BITSFR10             0      0       0      11        0.0%
+SFR10                0      0       0      11        0.0%
+BANK3               50      0       0      12        0.0%
+BITSFR11             0      0       0      12        0.0%
+SFR11                0      0       0      12        0.0%
+BITBANK4            30      0       0      13        0.0%
+BITSFR12             0      0       0      13        0.0%
+SFR12                0      0       0      13        0.0%
+BANK4               30      0       0      14        0.0%
+BITSFR13             0      0       0      14        0.0%
+SFR13                0      0       0      14        0.0%
+BITSFR14             0      0       0      15        0.0%
+SFR14                0      0       0      15        0.0%
+DATA                 0      0      2C      15        0.0%
+BITSFR15             0      0       0      16        0.0%
+SFR15                0      0       0      16        0.0%
+BITSFR16             0      0       0      17        0.0%
+SFR16                0      0       0      17        0.0%
+BITSFR17             0      0       0      18        0.0%
+SFR17                0      0       0      18        0.0%
+BITSFR18             0      0       0      19        0.0%
+SFR18                0      0       0      19        0.0%
+BITSFR19             0      0       0      20        0.0%
+SFR19                0      0       0      20        0.0%
+BITSFR20             0      0       0      21        0.0%
+SFR20                0      0       0      21        0.0%
+BITSFR21             0      0       0      22        0.0%
+SFR21                0      0       0      22        0.0%
+BITSFR22             0      0       0      23        0.0%
+SFR22                0      0       0      23        0.0%
+BITSFR23             0      0       0      24        0.0%
+SFR23                0      0       0      24        0.0%
+BITSFR24             0      0       0      25        0.0%
+SFR24                0      0       0      25        0.0%
+BITSFR25             0      0       0      26        0.0%
+SFR25                0      0       0      26        0.0%
+BITSFR26             0      0       0      27        0.0%
+SFR26                0      0       0      27        0.0%
+BITSFR27             0      0       0      28        0.0%
+SFR27                0      0       0      28        0.0%
+BITSFR28             0      0       0      29        0.0%
+SFR28                0      0       0      29        0.0%
+BITSFR29             0      0       0      30        0.0%
+SFR29                0      0       0      30        0.0%
+BITSFR30             0      0       0      31        0.0%
+SFR30                0      0       0      31        0.0%
+BITSFR31             0      0       0      32        0.0%
+SFR31                0      0       0      32        0.0%
+
+
+Microchip Technology PIC Macro Assembler V1.34 build -361300703 
+Symbol Table                                                                                   Sun Oct 04 15:13:25 2015
+
+         ___bmul@product 007C              __CFG_CP$OFF 0000             ___awdiv@sign 0077  
+                    l121 02C9                      _GIE 005F                      _RA1 0061  
+                    _RA2 0062                      _RA3 0063                      _RA4 0064  
+                    _RA7 0067                      _RB7 006F             __CFG_CPD$OFF 0000  
+           __CFG_BORV$LO 0000                      wreg 0009             __CFG_LVP$OFF 0000  
+                   _PEIE 005E                     i1l91 0206                     i1l94 026F  
+                   i1l97 0277             __CFG_WRT$OFF 0000                     _main 02A2  
+                   btemp 007E                     ltemp 007E                     start 0209  
+                   ttemp 007E                     wtemp 007E            __CFG_IESO$OFF 0000  
+      ___bmul@multiplier 007D                    ?_main 0070          __end_of___awdiv 0264  
+          __CFG_WDTE$OFF 0000          ___awdiv@divisor 0071                    i1l100 027F  
+                  i1l111 029D                    i1l103 0287                    i1l107 0292  
+                  i1l800 02E1                    i1l820 0296                    i1l910 008F  
+                  i1l902 0080                    i1l832 02D2                    i1l904 0081  
+                  i1l828 02CC                    i1l940 00D5                    i1l916 00A1  
+                  i1l854 0228                    i1l934 00C6                    i1l926 00B6  
+                  i1l942 00E6                    i1l880 025F                    i1l872 024E  
+                  i1l864 0230                    i1l848 021D                    i1l960 01DD  
+                  i1l928 00B7                    i1l866 023C                    i1l876 0257  
+                  i1l964 0204                    i1l958 01CF                    i1l894 0050  
+        ___awdiv@counter 0076                    _PORTA 000C                    _PORTB 000D  
+                  u71_25 0233                    u80_25 001F                    _TRISA 008C  
+                  _TRISB 008D                    u73_25 023D                    u81_25 0026  
+                  u74_25 0247                    u75_25 024F                    u83_25 0074  
+                  u92_25 00A7                    u86_25 0086                    u95_25 00BC  
+                  u89_25 0094                    u98_25 00CB           __CFG_FCMEN$OFF 0000  
+         __CFG_BOREN$OFF 0000                    ltemp0 007E                    ltemp1 0082  
+                  ltemp2 0086                    ltemp3 0080                    ttemp0 007E  
+                  ttemp1 0081                    ttemp2 0084                    ttemp3 0087  
+                  ttemp4 007F                    status 0003                    wtemp0 007E  
+                  wtemp1 0080                    wtemp2 0082                    wtemp3 0084  
+                  wtemp4 0086                    wtemp5 0088                    wtemp6 007F  
+         __CFG_MCLRE$OFF 0000          __initialization 020B             __end_of_main 02CA  
+       __end_of_InterSPI 0209                   ??_main 0039           __CFG_PLLEN$OFF 0000  
+       ___awdiv@dividend 0073                   _ANSELA 018C                   _ANSELB 018D  
+                 u101_25 00F1                   u110_25 01BF                   u102_25 00FD  
+                 u103_25 019B                   u104_20 01A2                   u105_20 01A3  
+                 u106_25 01A5                   u107_25 01B5                   u108_20 01BC  
+                 u109_20 01BD                   _OSCCON 0099                   _SS1SEL 08ED  
+                 _SSP1IE 048B                   _SSP1IF 008B         __end_of_absolute 02E3  
+         __CFG_PWRTE$OFF 0000                   ___bmul 02CA                ??___awdiv 0075  
+       ___awdiv@quotient 0078           InterSPI@R_data 0037           InterSPI@Lmotor 0026  
+       __end_of_spi_send 02A2           InterSPI@Rmotor 0027           InterSPI@hassha 002C  
+         InterSPI@senkai 0036  __end_of__initialization 0210      ___bmul@multiplicand 007A  
+         __pcstackCOMMON 0070               __pbssBANK0 0039                ?_InterSPI 0070  
+             __pmaintext 02A2                  ?___bmul 007A               __pintentry 0004  
+                _SDO1SEL 08EE                ?_absolute 0070                  _SSP1BUF 0211  
+                _SSP2BUF 0219               ??_InterSPI 0020          __size_of___bmul 0011  
+              ?_spi_send 0070                  ___awdiv 0213          __CFG_STVREN$OFF 0000  
+                __ptext0 0000                  __ptext2 0264                  __ptext3 02DB  
+                __ptext4 02CA                  __ptext5 0213               ??_absolute 0070  
+        InterSPI@BLmotor 002A       InterSPI@FL_BRmotor 0030          InterSPI@BRmotor 002B  
+        InterSPI@FLmotor 0028     end_of_initialization 0210          InterSPI@FRmotor 0029  
+     InterSPI@FR_BLmotor 0031               ??_spi_send 0075      spi_send@hasshakiko2 0074  
+        InterSPI@hassha2 002D         __CFG_FOSC$INTOSC 0000          InterSPI@x_level 0034  
+        InterSPI@y_level 0035                _G_hassha2 003C          spi_send@BLmotor 0070  
+         __end_of___bmul 02DB          spi_send@BRmotor 0072          spi_send@FLmotor 0075  
+        spi_send@FRmotor 0071            __pbitbssBANK0 01E8      start_initialization 020B  
+           _InterSPI$506 002E        __size_of_InterSPI 0205                 ??___bmul 007B  
+              ___latbits 0001            __pcstackBANK0 0020        __size_of_absolute 0008  
+               ?___awdiv 0071        __size_of_spi_send 003E                absolute@a 0070  
+               _SSP1CON1 0215                 _SSP2CON1 021D       spi_send@hasshakiko 0073  
+               _SSP1STAT 0214              _hasshaflag1 01E8              _hasshaflag2 01E9  
+            _hasshaflag3 01EA                 _SSP2STAT 021C                 _G_Lmotor 0039  
+               _G_Rmotor 003A                 _G_hassha 003B                 _InterSPI 0004  
+       __size_of___awdiv 0051                 _absolute 02DB            __size_of_main 0028  
+               _spi_send 0264      InterSPI@FL_BRmotor2 0032             _SSP2STATbits 021C  
+               intlevel1 0000      InterSPI@FR_BLmotor2 0033        __CFG_CLKOUTEN$OFF 0000  

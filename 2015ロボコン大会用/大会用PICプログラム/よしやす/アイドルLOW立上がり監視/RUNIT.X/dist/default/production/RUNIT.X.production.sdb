@@ -1,0 +1,181 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"40 C:\Users\Speedy\Desktop\RUNIT.X\source.c
+[v _InterSPI InterSPI `II(v  1 e 0 0 ]
+"129
+[v _spi_send spi_send `(v  1 e 0 0 ]
+"171
+[v _absolute absolute `(uc  1 e 1 0 ]
+"178
+[v _main main `(v  1 e 0 0 ]
+"414 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f1827.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"475
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"1120
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1181
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1664
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2797
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2848
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3502
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"3613
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+"3734
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+"4179
+[v _SSP2BUF SSP2BUF `VEuc  1 e 1 @537 ]
+"4236
+[v _SSP2STAT SSP2STAT `VEuc  1 e 1 @540 ]
+[s S43 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"4253
+[u S52 . 1 `S43 1 . 1 0 ]
+[v _SSP2STATbits SSP2STATbits `VES52  1 e 1 @540 ]
+"4297
+[v _SSP2CON1 SSP2CON1 `VEuc  1 e 1 @541 ]
+"6962
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"7184
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"7214
+[v _RA1 RA1 `VEb  1 e 0 @97 ]
+"7216
+[v _RA2 RA2 `VEb  1 e 0 @98 ]
+"7218
+[v _RA3 RA3 `VEb  1 e 0 @99 ]
+"7220
+[v _RA4 RA4 `VEb  1 e 0 @100 ]
+"7226
+[v _RA7 RA7 `VEb  1 e 0 @103 ]
+"7242
+[v _RB7 RB7 `VEb  1 e 0 @111 ]
+"7266
+[v _SDO1SEL SDO1SEL `VEb  1 e 0 @2286 ]
+"7308
+[v _SS1SEL SS1SEL `VEb  1 e 0 @2285 ]
+"7310
+[v _SSP1IE SSP1IE `VEb  1 e 0 @1163 ]
+"7312
+[v _SSP1IF SSP1IF `VEb  1 e 0 @139 ]
+"31 C:\Users\Speedy\Desktop\RUNIT.X\source.c
+[v _hasshaflag1 hasshaflag1 `b  1 e 0 0 ]
+"32
+[v _hasshaflag2 hasshaflag2 `b  1 e 0 0 ]
+"33
+[v _hasshaflag3 hasshaflag3 `b  1 e 0 0 ]
+"34
+[v _G_Lmotor G_Lmotor `uc  1 e 1 0 ]
+[v _G_Rmotor G_Rmotor `uc  1 e 1 0 ]
+"35
+[v _G_hassha G_hassha `c  1 e 1 0 ]
+[v _G_hassha2 G_hassha2 `c  1 e 1 0 ]
+"178
+[v _main main `(v  1 e 0 0 ]
+{
+"212
+} 0
+"40
+[v _InterSPI InterSPI `II(v  1 e 0 0 ]
+{
+"42
+[v InterSPI@R_data R_data `ui  1 a 2 23 ]
+"43
+[v InterSPI@senkai senkai `c  1 a 1 22 ]
+[v InterSPI@y_level y_level `c  1 a 1 21 ]
+[v InterSPI@x_level x_level `c  1 a 1 20 ]
+"45
+[v InterSPI@FR_BLmotor2 FR_BLmotor2 `uc  1 a 1 19 ]
+[v InterSPI@FL_BRmotor2 FL_BRmotor2 `uc  1 a 1 18 ]
+"44
+[v InterSPI@FR_BLmotor FR_BLmotor `c  1 a 1 17 ]
+[v InterSPI@FL_BRmotor FL_BRmotor `c  1 a 1 16 ]
+"48
+[v InterSPI@hassha2 hassha2 `c  1 a 1 13 ]
+[v InterSPI@hassha hassha `c  1 a 1 12 ]
+"47
+[v InterSPI@BRmotor BRmotor `c  1 a 1 11 ]
+[v InterSPI@BLmotor BLmotor `c  1 a 1 10 ]
+[v InterSPI@FRmotor FRmotor `c  1 a 1 9 ]
+[v InterSPI@FLmotor FLmotor `c  1 a 1 8 ]
+"46
+[v InterSPI@Rmotor Rmotor `uc  1 a 1 7 ]
+[v InterSPI@Lmotor Lmotor `uc  1 a 1 6 ]
+"127
+} 0
+"129
+[v _spi_send spi_send `(v  1 e 0 0 ]
+{
+[v spi_send@FLmotor FLmotor `uc  1 a 1 wreg ]
+[v spi_send@FLmotor FLmotor `uc  1 a 1 wreg ]
+[v spi_send@BLmotor BLmotor `uc  1 p 1 0 ]
+[v spi_send@FRmotor FRmotor `uc  1 p 1 1 ]
+[v spi_send@BRmotor BRmotor `uc  1 p 1 2 ]
+[v spi_send@hasshakiko hasshakiko `c  1 p 1 3 ]
+[v spi_send@hasshakiko2 hasshakiko2 `c  1 p 1 4 ]
+"131
+[v spi_send@FLmotor FLmotor `uc  1 a 1 5 ]
+"169
+} 0
+"171
+[v _absolute absolute `(uc  1 e 1 0 ]
+{
+[v absolute@a a `c  1 a 1 wreg ]
+[v absolute@a a `c  1 a 1 wreg ]
+"173
+[v absolute@a a `c  1 a 1 0 ]
+"175
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 12 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 10 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 13 ]
+"51
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 8 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 7 ]
+[v ___awdiv@counter counter `uc  1 a 1 6 ]
+"6
+[v ___awdiv@divisor divisor `i  1 p 2 1 ]
+[v ___awdiv@dividend dividend `i  1 p 2 3 ]
+"42
+} 0

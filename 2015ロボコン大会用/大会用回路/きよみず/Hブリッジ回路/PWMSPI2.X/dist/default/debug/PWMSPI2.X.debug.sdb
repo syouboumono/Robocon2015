@@ -1,0 +1,308 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1829 ]
+[d frameptr 6 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"12 E:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829â¸í˘î≈20150921\PWMSPI2.X\main.c
+[v _inter inter `II(v  1 e 0 0 ]
+"32
+[v _main main `(v  1 e 0 0 ]
+"61
+[v _stop stop `(v  1 e 0 0 ]
+[v i1_stop stop `(v  1 e 0 0 ]
+"66
+[v _keep keep `(v  1 e 0 0 ]
+[v i1_keep keep `(v  1 e 0 0 ]
+"74
+[v _right right `(v  1 e 0 0 ]
+"82
+[v _left left `(v  1 e 0 0 ]
+"90
+[v _speed speed `(v  1 e 0 0 ]
+"3 E:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829â¸í˘î≈20150921\PWMSPI2.X\pic16f1829_config.c
+[v _pic_reg pic_reg `(v  1 e 0 0 ]
+"15 E:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829â¸í˘î≈20150921\PWMSPI2.X\spi.c
+[v _slave_reg slave_reg `(v  1 e 0 0 ]
+"38
+[v _slave_read slave_read `(i  1 e 2 0 ]
+"62
+[v _master_reg master_reg `(v  1 e 0 0 ]
+"85
+[v _master_send master_send `(v  1 e 0 0 ]
+"412 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f1829.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"461
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"499
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"938
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"957
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"976
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1150
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1199
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1237
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1720
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2881
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2927
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"2962
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3020
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"3075
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"3126
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+"3187
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"3634
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"3745
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+[s S94 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"3767
+[u S103 . 1 `S94 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES103  1 e 1 @532 ]
+"3866
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+"4626
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"4645
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @658 ]
+"4664
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+"4975
+[v _PSTR1CON PSTR1CON `VEuc  1 e 1 @662 ]
+"5336
+[v _CCPTMRS CCPTMRS `VEuc  1 e 1 @670 ]
+"7026
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"7206
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"7434
+[v _P1CSEL P1CSEL `VEb  1 e 0 @2290 ]
+"7450
+[v _P1DSEL P1DSEL `VEb  1 e 0 @2291 ]
+"7480
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"7508
+[v _RA0 RA0 `VEb  1 e 0 @96 ]
+"7510
+[v _RA1 RA1 `VEb  1 e 0 @97 ]
+"7512
+[v _RA2 RA2 `VEb  1 e 0 @98 ]
+"7514
+[v _RA3 RA3 `VEb  1 e 0 @99 ]
+"7516
+[v _RA4 RA4 `VEb  1 e 0 @100 ]
+"7518
+[v _RA5 RA5 `VEb  1 e 0 @101 ]
+"7522
+[v _RB5 RB5 `VEb  1 e 0 @109 ]
+"7526
+[v _RB7 RB7 `VEb  1 e 0 @111 ]
+"7528
+[v _RC0 RC0 `VEb  1 e 0 @112 ]
+"7530
+[v _RC1 RC1 `VEb  1 e 0 @113 ]
+"7532
+[v _RC2 RC2 `VEb  1 e 0 @114 ]
+"7534
+[v _RC3 RC3 `VEb  1 e 0 @115 ]
+"7536
+[v _RC4 RC4 `VEb  1 e 0 @116 ]
+"7538
+[v _RC5 RC5 `VEb  1 e 0 @117 ]
+"7550
+[v _RD RD `VEb  1 e 0 @3240 ]
+"7610
+[v _SSP1IE SSP1IE `VEb  1 e 0 @1163 ]
+"7612
+[v _SSP1IF SSP1IF `VEb  1 e 0 @139 ]
+"7744
+[v _TMR2ON TMR2ON `VEb  1 e 0 @226 ]
+"7870
+[v _WR WR `VEb  1 e 0 @3241 ]
+"7872
+[v _WREN WREN `VEb  1 e 0 @3242 ]
+"8 E:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829â¸í˘î≈20150921\PWMSPI2.X\spi.h
+[v _r_data r_data `uc  1 e 1 0 ]
+"32 E:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829â¸í˘î≈20150921\PWMSPI2.X\main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"59
+} 0
+"15 E:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829â¸í˘î≈20150921\PWMSPI2.X\spi.c
+[v _slave_reg slave_reg `(v  1 e 0 0 ]
+{
+"32
+} 0
+"3 E:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829â¸í˘î≈20150921\PWMSPI2.X\pic16f1829_config.c
+[v _pic_reg pic_reg `(v  1 e 0 0 ]
+{
+"17
+} 0
+"66 E:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829â¸í˘î≈20150921\PWMSPI2.X\main.c
+[v _keep keep `(v  1 e 0 0 ]
+{
+"72
+} 0
+"61
+[v _stop stop `(v  1 e 0 0 ]
+{
+"64
+} 0
+"12
+[v _inter inter `II(v  1 e 0 0 ]
+{
+"30
+} 0
+"66
+[v i1_keep keep `(v  1 e 0 0 ]
+{
+"72
+} 0
+"90
+[v _speed speed `(v  1 e 0 0 ]
+{
+[v speed@ration ration `uc  1 a 1 wreg ]
+[v speed@ration ration `uc  1 a 1 wreg ]
+[v speed@ration ration `uc  1 a 1 0 ]
+"96
+} 0
+"38 E:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829â¸í˘î≈20150921\PWMSPI2.X\spi.c
+[v _slave_read slave_read `(i  1 e 2 0 ]
+{
+"51
+} 0
+"74 E:\ÉçÉ{ÉRÉì\2015ÉçÉ{ÉRÉì\ÇoÇhÇb\16F1829â¸í˘î≈20150921\PWMSPI2.X\main.c
+[v _right right `(v  1 e 0 0 ]
+{
+"80
+} 0
+"82
+[v _left left `(v  1 e 0 0 ]
+{
+"88
+} 0
+"61
+[v i1_stop stop `(v  1 e 0 0 ]
+{
+"64
+} 0
