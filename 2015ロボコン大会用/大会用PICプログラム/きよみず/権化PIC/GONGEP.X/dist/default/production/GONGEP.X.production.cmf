@@ -11,22 +11,22 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
+$C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+end_init CODE 0 79 79 2 2
 reset_vec CODE 0 0 0 2 2
-end_init CODE 0 78 78 2 2
 config CONFIG 0 8007 8007 2 2
 $dist/default/production\GONGEP.X.production.obj
-cinit CODE 0 7A 7A 6 2
-text1 CODE 0 156 156 C 2
-text2 CODE 0 162 162 9 2
-text3 CODE 0 115 115 18 2
-text4 CODE 0 16B 16B 9 2
-text6 CODE 0 174 174 9 2
-text7 CODE 0 12D 12D 15 2
-text8 CODE 0 80 80 95 2
-maintext CODE 0 142 142 14 2
+cinit CODE 0 7B 7B 7 2
+intentry CODE 0 4 4 75 2
+text8 CODE 0 82 82 9A 2
+text7 CODE 0 134 134 15 2
+text6 CODE 0 17B 17B 9 2
+text4 CODE 0 172 172 9 2
+text3 CODE 0 11C 11C 18 2
+text2 CODE 0 169 169 9 2
+text1 CODE 0 15D 15D C 2
+maintext CODE 0 149 149 14 2
 cstackCOMMON COMMON 1 70 70 7 1
-intentry CODE 0 4 4 74 2
 bssCOMMON COMMON 1 77 77 3 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -34,63 +34,63 @@ bssCOMMON COMMON 1 77 77 3 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 20-6F 1
-RAM A0-EF 1
-RAM 120-16F 1
-RAM 1A0-1EF 1
-RAM 220-24F 1
-BANK0 20-6F 1
-BANK1 A0-EF 1
-BANK2 120-16F 1
-BANK3 1A0-1EF 1
-BANK4 220-24F 1
-CONST 2-3 2
-CONST 17D-FFF 2
-ENTRY 2-3 2
-ENTRY 17D-FFF 2
-IDLOC 8000-8003 2
-SFR10 500-56F 1
-SFR11 580-5EF 1
-SFR12 600-66F 1
-SFR13 680-6EF 1
-SFR14 700-76F 1
-SFR15 780-7EF 1
-SFR16 800-86F 1
-SFR17 880-8EF 1
-SFR18 900-96F 1
-SFR19 980-9EF 1
-SFR20 A00-A6F 1
-SFR21 A80-AEF 1
-SFR22 B00-B6F 1
-SFR23 B80-BEF 1
-SFR24 C00-C6F 1
-SFR25 C80-CEF 1
-SFR26 D00-D6F 1
-SFR27 D80-DEF 1
-SFR28 E00-E6F 1
-SFR29 E80-EEF 1
-SFR30 F00-F6F 1
-SFR31 F80-FEF 1
-STACK 2000-216F 1
-CODE 2-3 2
-CODE 17D-FFF 2
-SFR0 0-1F 1
-SFR1 80-9F 1
-SFR2 100-11F 1
-SFR3 180-19F 1
-SFR4 200-21F 1
-SFR5 280-2EF 1
-SFR6 300-36F 1
-SFR7 380-3EF 1
-SFR8 400-46F 1
-SFR9 480-4EF 1
-BIGRAM 2000-216F 1
-COMMON 7A-7D 1
-EEDATA F000-F0FF 2
-STRCODE 2-3 2
-STRCODE 17D-FFF 2
-STRING 2-3 2
-STRING 17D-FFF 2
+BANK0 00020-0006F 1
+BANK1 000A0-000EF 1
+BANK2 00120-0016F 1
+BANK3 001A0-001EF 1
+BANK4 00220-0024F 1
+BIGRAM 02000-0216F 1
+CODE 00002-00003 2
+CODE 00184-00FFF 2
+COMMON 0007A-0007D 1
+CONST 00002-00003 2
+CONST 00184-00FFF 2
+EEDATA 0F000-0F0FF 2
+ENTRY 00002-00003 2
+ENTRY 00184-00FFF 2
+IDLOC 08000-08003 2
+RAM 00020-0006F 1
+RAM 000A0-000EF 1
+RAM 00120-0016F 1
+RAM 001A0-001EF 1
+RAM 00220-0024F 1
+SFR0 00000-0001F 1
+SFR1 00080-0009F 1
+SFR10 00500-0056F 1
+SFR11 00580-005EF 1
+SFR12 00600-0066F 1
+SFR13 00680-006EF 1
+SFR14 00700-0076F 1
+SFR15 00780-007EF 1
+SFR16 00800-0086F 1
+SFR17 00880-008EF 1
+SFR18 00900-0096F 1
+SFR19 00980-009EF 1
+SFR2 00100-0011F 1
+SFR20 00A00-00A6F 1
+SFR21 00A80-00AEF 1
+SFR22 00B00-00B6F 1
+SFR23 00B80-00BEF 1
+SFR24 00C00-00C6F 1
+SFR25 00C80-00CEF 1
+SFR26 00D00-00D6F 1
+SFR27 00D80-00DEF 1
+SFR28 00E00-00E6F 1
+SFR29 00E80-00EEF 1
+SFR3 00180-0019F 1
+SFR30 00F00-00F6F 1
+SFR31 00F80-00FEF 1
+SFR4 00200-0021F 1
+SFR5 00280-002EF 1
+SFR6 00300-0036F 1
+SFR7 00380-003EF 1
+SFR8 00400-0046F 1
+SFR9 00480-004EF 1
+STACK 02000-0216F 1
+STRCODE 00002-00003 2
+STRCODE 00184-00FFF 2
+STRING 00002-00003 2
+STRING 00184-00FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -98,179 +98,179 @@ STRING 17D-FFF 2
 #   $foo.obj
 # Each line that follows describes a single mapping until the next
 # object file.  Mappings have the following format:
-#    <address> <psect name> <class name> ><line number>:<file name>
+#    <file name>:<line number> <address> <psect name> <class name>
 # The address is absolute and given given in unqualified hex 
 # in delta units of the psect. All mappings within an object file
 # are in ascending order of addresses.
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\GONGEP.X.production.obj
-0 text0 CODE >5671:C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f1827.h
-4 intentry CODE >17:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-8 intentry CODE >20:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-F intentry CODE >21:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-13 intentry CODE >23:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-15 intentry CODE >25:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-20 intentry CODE >27:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-22 intentry CODE >28:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-23 intentry CODE >29:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-25 intentry CODE >30:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-26 intentry CODE >32:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-27 intentry CODE >34:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-28 intentry CODE >37:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-28 intentry CODE >39:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-2A intentry CODE >41:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-2D intentry CODE >42:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-2F intentry CODE >44:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-31 intentry CODE >45:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-32 intentry CODE >46:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-33 intentry CODE >47:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-34 intentry CODE >49:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-36 intentry CODE >50:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-38 intentry CODE >55:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-3B intentry CODE >57:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-43 intentry CODE >59:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-47 intentry CODE >60:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-4B intentry CODE >62:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-58 intentry CODE >63:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-63 intentry CODE >65:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-65 intentry CODE >66:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-66 intentry CODE >68:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-6B intentry CODE >69:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-6D intentry CODE >71:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-6F intentry CODE >72:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-70 intentry CODE >73:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-71 intentry CODE >74:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-72 intentry CODE >76:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-74 intentry CODE >83:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-7A cinit CODE >1137:C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.
-7A cinit CODE >1140:C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.
-7A cinit CODE >1154:C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.
-7B cinit CODE >1155:C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.
-7C cinit CODE >1156:C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.
-7D cinit CODE >1162:C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.
-7D cinit CODE >1163:C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.
-7E cinit CODE >1164:C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.
-80 text8 CODE >91:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-80 text8 CODE >93:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-84 text8 CODE >94:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-86 text8 CODE >95:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-89 text8 CODE >96:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-8B text8 CODE >97:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-8D text8 CODE >98:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-8E text8 CODE >101:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-92 text8 CODE >102:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-94 text8 CODE >103:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-97 text8 CODE >104:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-99 text8 CODE >105:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-9B text8 CODE >106:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-9C text8 CODE >107:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-9D text8 CODE >110:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-A2 text8 CODE >111:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-A4 text8 CODE >112:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-A7 text8 CODE >113:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-A9 text8 CODE >114:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-AB text8 CODE >115:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-AC text8 CODE >118:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-B1 text8 CODE >119:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-B3 text8 CODE >120:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-B6 text8 CODE >121:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-B8 text8 CODE >122:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-BA text8 CODE >123:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-BB text8 CODE >126:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-C0 text8 CODE >127:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-C2 text8 CODE >128:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-C5 text8 CODE >129:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-C7 text8 CODE >130:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-C9 text8 CODE >131:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-CA text8 CODE >134:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-CF text8 CODE >135:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-D1 text8 CODE >136:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-D4 text8 CODE >137:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-D6 text8 CODE >138:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-D8 text8 CODE >139:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-D9 text8 CODE >142:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-DE text8 CODE >143:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-E0 text8 CODE >144:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-E3 text8 CODE >145:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-E5 text8 CODE >146:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-E7 text8 CODE >147:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-E8 text8 CODE >150:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-ED text8 CODE >151:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-EF text8 CODE >152:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-F2 text8 CODE >153:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-F4 text8 CODE >154:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-F6 text8 CODE >155:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-F7 text8 CODE >158:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-FC text8 CODE >159:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-FE text8 CODE >160:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-101 text8 CODE >161:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-103 text8 CODE >162:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-105 text8 CODE >163:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-106 text8 CODE >166:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-10B text8 CODE >167:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-10D text8 CODE >168:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-110 text8 CODE >169:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-112 text8 CODE >170:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-114 text8 CODE >171:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-115 text3 CODE >3:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-115 text3 CODE >6:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-118 text3 CODE >7:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-11A text3 CODE >8:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-11C text3 CODE >9:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-11F text3 CODE >10:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-120 text3 CODE >11:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-122 text3 CODE >12:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-123 text3 CODE >14:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-125 text3 CODE >15:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-128 text3 CODE >19:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-12A text3 CODE >20:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-12B text3 CODE >21:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-12C text3 CODE >23:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c
-12D text7 CODE >42:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-12D text7 CODE >45:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-133 text7 CODE >46:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-135 text7 CODE >47:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-13A text7 CODE >49:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-13D text7 CODE >52:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-142 maintext CODE >85:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-142 maintext CODE >88:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-145 maintext CODE >89:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-148 maintext CODE >90:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-14B maintext CODE >92:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-14C maintext CODE >93:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-14D maintext CODE >97:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-150 maintext CODE >99:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-152 maintext CODE >100:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-155 maintext CODE >95:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-156 text1 CODE >15:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-156 text1 CODE >26:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-159 text1 CODE >27:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-15A text1 CODE >28:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-15C text1 CODE >29:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-15D text1 CODE >32:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-15F text1 CODE >33:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-161 text1 CODE >36:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-162 text2 CODE >106:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-162 text2 CODE >108:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-164 text2 CODE >110:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-166 text2 CODE >111:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-167 text2 CODE >112:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-169 text2 CODE >113:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-16A text2 CODE >115:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-16B text4 CODE >65:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-16B text4 CODE >76:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-16E text4 CODE >77:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-16F text4 CODE >80:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-171 text4 CODE >81:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-173 text4 CODE >85:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c
-174 text6 CODE >106:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-174 text6 CODE >108:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-176 text6 CODE >110:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-178 text6 CODE >111:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-179 text6 CODE >112:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-17B text6 CODE >113:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
-17C text6 CODE >115:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c
+"C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f1827.h":5738 0 text0 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":17 4 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":20 9 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":21 10 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":23 14 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":25 16 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":27 21 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":28 23 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":29 24 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":30 26 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":34 27 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":37 29 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":38 2C intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":40 2E intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":41 30 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":42 31 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":43 32 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":45 33 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":46 35 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":52 37 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":54 3A intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":56 42 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":57 46 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":59 4A intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":60 57 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":62 62 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":63 64 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":65 65 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":66 6B intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":68 6D intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":69 6F intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":70 70 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":71 71 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":73 72 intentry CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":80 74 intentry CODE
+"C:\Users\MONOSE~1\AppData\Local\Temp\s73k.":1135 7B cinit CODE
+"C:\Users\MONOSE~1\AppData\Local\Temp\s73k.":1138 7B cinit CODE
+"C:\Users\MONOSE~1\AppData\Local\Temp\s73k.":1152 7B cinit CODE
+"C:\Users\MONOSE~1\AppData\Local\Temp\s73k.":1153 7C cinit CODE
+"C:\Users\MONOSE~1\AppData\Local\Temp\s73k.":1154 7D cinit CODE
+"C:\Users\MONOSE~1\AppData\Local\Temp\s73k.":1160 7E cinit CODE
+"C:\Users\MONOSE~1\AppData\Local\Temp\s73k.":1161 7E cinit CODE
+"C:\Users\MONOSE~1\AppData\Local\Temp\s73k.":1162 7F cinit CODE
+"C:\Users\MONOSE~1\AppData\Local\Temp\s73k.":1163 80 cinit CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":91 82 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":93 82 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":94 86 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":95 88 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":96 8B text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":97 8D text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":98 8F text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":101 90 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":102 95 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":103 97 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":104 99 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":105 9C text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":106 9E text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":107 A0 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":108 A1 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":109 A3 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":112 A4 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":113 A9 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":114 AB text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":115 AE text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":116 B0 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":117 B2 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":120 B3 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":121 B8 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":122 BA text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":123 BD text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":124 BF text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":125 C1 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":128 C2 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":129 C7 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":130 C9 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":131 CC text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":132 CE text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":133 D0 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":136 D1 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":137 D6 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":138 D8 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":139 DB text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":140 DD text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":141 DF text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":144 E0 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":145 E5 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":146 E7 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":147 EA text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":148 EC text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":149 EE text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":152 EF text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":153 F4 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":154 F6 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":155 F9 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":156 FB text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":157 FD text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":160 FE text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":161 103 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":162 105 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":163 108 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":164 10A text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":165 10C text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":168 10D text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":169 112 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":170 114 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":171 117 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":172 119 text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":173 11B text8 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":3 11C text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":6 11C text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":7 11F text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":8 121 text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":9 123 text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":10 126 text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":11 127 text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":12 129 text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":14 12A text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":15 12C text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":19 12F text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":20 131 text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":21 132 text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\pic16f1827_config.c":23 133 text3 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":42 134 text7 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":45 134 text7 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":46 13A text7 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":47 13C text7 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":49 141 text7 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":52 144 text7 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":82 149 maintext CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":85 149 maintext CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":86 14C maintext CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":87 14F maintext CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":89 152 maintext CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":90 153 maintext CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":94 154 maintext CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":96 157 maintext CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":97 159 maintext CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":92 15C maintext CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":15 15D text1 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":26 15D text1 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":27 160 text1 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":28 161 text1 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":29 163 text1 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":32 164 text1 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":33 166 text1 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":36 168 text1 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":103 169 text2 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":105 169 text2 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":107 16B text2 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":108 16D text2 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":109 16E text2 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":110 170 text2 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":112 171 text2 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":65 172 text4 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":76 172 text4 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":77 175 text4 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":80 176 text4 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":81 178 text4 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\spi.c":85 17A text4 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":103 17B text6 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":105 17B text6 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":107 17D text6 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":108 17F text6 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":109 180 text6 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":110 182 text6 CODE
+"E:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\権化PIC\GONGEP.X\main.c":112 183 text6 CODE
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -283,334 +283,331 @@ FE text8 CODE >160:D:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-___latbits 1 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__Hspace_0 8009 0 ABS 0 - -
-__Hspace_1 7A 0 ABS 0 - -
-__Hspace_2 0 0 ABS 0 - -
-__Hspace_3 0 0 ABS 0 - -
-__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_SSP1STATbits 214 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_of_master_send 22A 0 CODE 0 text8 dist/default/production\GONGEP.X.production.obj
-ltemp0 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-ltemp1 82 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-ltemp2 86 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-ltemp3 80 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__Hstrings 0 0 ABS 0 strings -
-_PEIE 5E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_WPUB 20D 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-_main 284 0 CODE 0 maintext dist/default/production\GONGEP.X.production.obj
-_shot 2C4 0 CODE 0 text2 dist/default/production\GONGEP.X.production.obj
-btemp 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-i1_shot 2E8 0 CODE 0 text6 dist/default/production\GONGEP.X.production.obj
-ltemp 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-start F0 0 CODE 0 init C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-ttemp 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-wtemp 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__size_of_main 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__size_of_shot 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__HbssCOMMON 0 0 ABS 0 bssCOMMON -
-__Hpowerup 0 0 CODE 0 powerup -
-ttemp0 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-ttemp1 81 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-ttemp2 84 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-ttemp3 87 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-ttemp4 7F 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-intlevel0 0 0 CODE 0 functab C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-intlevel1 0 0 CODE 0 functab C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-intlevel2 0 0 CODE 0 functab C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-intlevel3 0 0 CODE 0 functab C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-intlevel4 0 0 CODE 0 functab C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-intlevel5 0 0 CODE 0 functab C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-__LbssCOMMON 0 0 ABS 0 bssCOMMON -
-wtemp0 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-wtemp1 80 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-wtemp2 82 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-wtemp3 84 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-wtemp4 86 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-wtemp5 88 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-wtemp6 7F 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__Hfunctab 0 0 CODE 0 functab -
-__size_ofi1_shot 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__Hclrtext 0 0 ABS 0 clrtext -
-_ANSELA 18C 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_ANSELB 18D 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_master_reg 2D6 0 CODE 0 text4 dist/default/production\GONGEP.X.production.obj
-__Lmaintext 0 0 ABS 0 maintext -
-__size_of_pic_reg 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_OPTION_REG 95 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__size_of_inter 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__size_of_master_send 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_slave_read 25A 0 CODE 0 text7 dist/default/production\GONGEP.X.production.obj
-start_initialization F4 0 CODE 0 cinit dist/default/production\GONGEP.X.production.obj
-_OSCCON 99 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__CFG_STVREN$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__pcstackBANK0 0 0 BANK0 1 cstackBANK0 dist/default/production\GONGEP.X.production.obj
-_SS1SEL 8ED 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_SSP1IE 48B 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_SSP1IF 8B 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_SSP2IE 4A0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_SSP2IF A0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__end_of_master_reg 2E8 0 CODE 0 text4 dist/default/production\GONGEP.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-__Hbank0 0 0 ABS 0 bank0 -
-__Hbank1 0 0 ABS 0 bank1 -
-__Hbank2 0 0 ABS 0 bank2 -
-__Hbank3 0 0 ABS 0 bank3 -
-__Hbank4 0 0 ABS 0 bank4 -
-__Hbank5 0 0 BANK5 1 bank5 -
-__Hbank6 0 0 BANK6 1 bank6 -
-__Hbank7 0 0 BANK7 1 bank7 -
-__Hbank8 0 0 BANK8 1 bank8 -
-__Hbank9 0 0 BANK9 1 bank9 -
-__Hcinit 100 0 CODE 0 cinit -
-__Hidloc 0 0 IDLOC 0 idloc -
-__Hsfr10 0 0 ABS 0 sfr10 -
-__Hsfr11 0 0 ABS 0 sfr11 -
-__Hsfr12 0 0 ABS 0 sfr12 -
-__Hsfr13 0 0 ABS 0 sfr13 -
-__Hsfr14 0 0 ABS 0 sfr14 -
-__Hsfr15 0 0 ABS 0 sfr15 -
-__Hsfr16 0 0 ABS 0 sfr16 -
-__Hsfr17 0 0 ABS 0 sfr17 -
-__Hsfr18 0 0 ABS 0 sfr18 -
-__Hsfr19 0 0 ABS 0 sfr19 -
-__Hsfr20 0 0 ABS 0 sfr20 -
-__Hsfr21 0 0 ABS 0 sfr21 -
-__Hsfr22 0 0 ABS 0 sfr22 -
-__Hsfr23 0 0 ABS 0 sfr23 -
-__Hsfr24 0 0 ABS 0 sfr24 -
-__Hsfr25 0 0 ABS 0 sfr25 -
-__Hsfr26 0 0 ABS 0 sfr26 -
-__Hsfr27 0 0 ABS 0 sfr27 -
-__Hsfr28 0 0 ABS 0 sfr28 -
-__Hsfr29 0 0 ABS 0 sfr29 -
-__Hsfr30 0 0 ABS 0 sfr30 -
-__Hsfr31 0 0 ABS 0 sfr31 -
-__Hstack 0 0 STACK 2 stack -
-__Hbank10 0 0 BANK10 1 bank10 -
-__Hbank11 0 0 BANK11 1 bank11 -
-__Hbank12 0 0 BANK12 1 bank12 -
-__Hbank13 0 0 BANK13 1 bank13 -
-__Hbank14 0 0 BANK14 1 bank14 -
-__Hbank15 0 0 BANK15 1 bank15 -
-__Hbank16 0 0 BANK16 1 bank16 -
-__Hbank17 0 0 BANK17 1 bank17 -
-__Hbank18 0 0 BANK18 1 bank18 -
-__Hbank19 0 0 BANK19 1 bank19 -
-__Hbank20 0 0 BANK20 1 bank20 -
-__Hbank21 0 0 BANK21 1 bank21 -
-__Hbank22 0 0 BANK22 1 bank22 -
-__Hbank23 0 0 BANK23 1 bank23 -
-__Hbank24 0 0 BANK24 1 bank24 -
-__Hbank25 0 0 BANK25 1 bank25 -
-__Hbank26 0 0 BANK26 1 bank26 -
-__Hbank27 0 0 BANK27 1 bank27 -
-__Hbank28 0 0 BANK28 1 bank28 -
-__Hbank29 0 0 BANK29 1 bank29 -
-__Hbank30 0 0 BANK30 1 bank30 -
-__Hbank31 0 0 BANK31 1 bank31 -
-__Hbigram 0 0 ABS 0 bigram -
-__Hmaintext 0 0 ABS 0 maintext -
-__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__Hcommon 0 0 ABS 0 common -
-__Hconfig 10012 0 CONFIG 0 config -
-__Lbank0 0 0 ABS 0 bank0 -
-__Lbank1 0 0 ABS 0 bank1 -
-__Lbank2 0 0 ABS 0 bank2 -
-__Lbank3 0 0 ABS 0 bank3 -
-__Lbank4 0 0 ABS 0 bank4 -
-__Lbank5 0 0 BANK5 1 bank5 -
-__Lbank6 0 0 BANK6 1 bank6 -
-__Lbank7 0 0 BANK7 1 bank7 -
-__Lbank8 0 0 BANK8 1 bank8 -
-__Lbank9 0 0 BANK9 1 bank9 -
-__Lcinit F4 0 CODE 0 cinit -
-__Lidloc 0 0 IDLOC 0 idloc -
-__Lsfr10 0 0 ABS 0 sfr10 -
-__Lsfr11 0 0 ABS 0 sfr11 -
-__Lsfr12 0 0 ABS 0 sfr12 -
-__Lsfr13 0 0 ABS 0 sfr13 -
-__Lsfr14 0 0 ABS 0 sfr14 -
-__Lsfr15 0 0 ABS 0 sfr15 -
-__Lsfr16 0 0 ABS 0 sfr16 -
-__Lsfr17 0 0 ABS 0 sfr17 -
-__Lsfr18 0 0 ABS 0 sfr18 -
-__Lsfr19 0 0 ABS 0 sfr19 -
-__Lsfr20 0 0 ABS 0 sfr20 -
-__Lsfr21 0 0 ABS 0 sfr21 -
-__Lsfr22 0 0 ABS 0 sfr22 -
-__Lsfr23 0 0 ABS 0 sfr23 -
-__Lsfr24 0 0 ABS 0 sfr24 -
-__Lsfr25 0 0 ABS 0 sfr25 -
-__Lsfr26 0 0 ABS 0 sfr26 -
-__Lsfr27 0 0 ABS 0 sfr27 -
-__Lsfr28 0 0 ABS 0 sfr28 -
-__Lsfr29 0 0 ABS 0 sfr29 -
-__Lsfr30 0 0 ABS 0 sfr30 -
-__Lsfr31 0 0 ABS 0 sfr31 -
-__Lstack 0 0 STACK 2 stack -
-__end_of_slave_read 284 0 CODE 0 text7 dist/default/production\GONGEP.X.production.obj
-__end_of_pic_reg 25A 0 CODE 0 text3 dist/default/production\GONGEP.X.production.obj
-__Habs1 0 0 ABS 0 abs1 -
-__Hcode 0 0 ABS 0 code -
-__Hinit F0 0 CODE 0 init -
-__Hsfr0 0 0 ABS 0 sfr0 -
-__Hsfr1 0 0 ABS 0 sfr1 -
-__Hsfr2 0 0 ABS 0 sfr2 -
-__Hsfr3 0 0 ABS 0 sfr3 -
-__Hsfr4 0 0 ABS 0 sfr4 -
-__Hsfr5 0 0 ABS 0 sfr5 -
-__Hsfr6 0 0 ABS 0 sfr6 -
-__Hsfr7 0 0 ABS 0 sfr7 -
-__Hsfr8 0 0 ABS 0 sfr8 -
-__Hsfr9 0 0 ABS 0 sfr9 -
-__Htext 0 0 ABS 0 text -
-__Labs1 0 0 ABS 0 abs1 -
-__Lcode 0 0 ABS 0 code -
-__Linit F0 0 CODE 0 init -
-__Lsfr0 0 0 ABS 0 sfr0 -
-__Lsfr1 0 0 ABS 0 sfr1 -
-__Lsfr2 0 0 ABS 0 sfr2 -
-__Lsfr3 0 0 ABS 0 sfr3 -
-__Lsfr4 0 0 ABS 0 sfr4 -
-__Lsfr5 0 0 ABS 0 sfr5 -
-__Lsfr6 0 0 ABS 0 sfr6 -
-__Lsfr7 0 0 ABS 0 sfr7 -
-__Lsfr8 0 0 ABS 0 sfr8 -
-__Lsfr9 0 0 ABS 0 sfr9 -
-__Ltext 0 0 ABS 0 text -
-_SSP1CON1 215 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_SSP1STAT 214 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_SSP2CON1 21D 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_SSP2STAT 21C 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
-_SSP2STATbits 21C 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-_GIE 5F 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__size_of_slave_reg 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 _RA0 60 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_RB0 68 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 _RA1 61 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 _RA2 62 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 _RA3 63 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_RA4 64 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_RA7 67 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_RB0 68 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 _RB3 6B 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_RA4 64 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 _RB6 6E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_RA7 67 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 _RB7 6F 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 __S0 8009 0 ABS 0 - -
 __S1 7A 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-__Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-master_send@obj 70 0 COMMON 1 cstackCOMMON dist/default/production\GONGEP.X.production.obj
-_IOCBFbits 396 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__Lbank10 0 0 BANK10 1 bank10 -
-__Lbank11 0 0 BANK11 1 bank11 -
-__Lbank12 0 0 BANK12 1 bank12 -
-__Lbank13 0 0 BANK13 1 bank13 -
-__Lbank14 0 0 BANK14 1 bank14 -
-__Lbank15 0 0 BANK15 1 bank15 -
-__Lbank16 0 0 BANK16 1 bank16 -
-__Lbank17 0 0 BANK17 1 bank17 -
-__Lbank18 0 0 BANK18 1 bank18 -
-__Lbank19 0 0 BANK19 1 bank19 -
-__Lbank20 0 0 BANK20 1 bank20 -
-__Lbank21 0 0 BANK21 1 bank21 -
-__Lbank22 0 0 BANK22 1 bank22 -
-__Lbank23 0 0 BANK23 1 bank23 -
-__Lbank24 0 0 BANK24 1 bank24 -
-__Lbank25 0 0 BANK25 1 bank25 -
-__Lbank26 0 0 BANK26 1 bank26 -
-__Lbank27 0 0 BANK27 1 bank27 -
-__Lbank28 0 0 BANK28 1 bank28 -
-__Lbank29 0 0 BANK29 1 bank29 -
-__Lbank30 0 0 BANK30 1 bank30 -
-__Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext 284 0 CODE 0 maintext dist/default/production\GONGEP.X.production.obj
-__Lbigram 0 0 ABS 0 bigram -
-__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__Lcommon 0 0 ABS 0 common -
-__Lconfig 1000E 0 CONFIG 0 config -
-__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_master_send 100 0 CODE 0 text8 dist/default/production\GONGEP.X.production.obj
-_r_data 79 0 COMMON 1 bssCOMMON dist/default/production\GONGEP.X.production.obj
-__size_of_master_reg 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-stackhi 216F 0 ABS 0 - C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-stacklo 2000 0 ABS 0 - C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__Lspace_0 0 0 ABS 0 - -
-__Lspace_1 0 0 ABS 0 - -
-__Lspace_2 0 0 ABS 0 - -
-__Lspace_3 0 0 ABS 0 - -
-__pbssCOMMON 77 0 COMMON 1 bssCOMMON dist/default/production\GONGEP.X.production.obj
-__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
-__Lend_init F0 0 CODE 0 end_init -
-__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-end_of_initialization FA 0 CODE 0 cinit dist/default/production\GONGEP.X.production.obj
-__Hintentry F0 0 CODE 0 intentry -
-__Lstrings 0 0 ABS 0 strings -
-__Hreset_vec 4 0 CODE 0 reset_vec -
-_SDO1SEL 8EE 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_GIE 5F 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 __size_of_slave_read 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__ptext0 0 0 CODE 0 text0 dist/default/production\GONGEP.X.production.obj
-__ptext1 2AC 0 CODE 0 text1 dist/default/production\GONGEP.X.production.obj
-__ptext2 2C4 0 CODE 0 text2 dist/default/production\GONGEP.X.production.obj
-__ptext3 22A 0 CODE 0 text3 dist/default/production\GONGEP.X.production.obj
-__ptext4 2D6 0 CODE 0 text4 dist/default/production\GONGEP.X.production.obj
-__ptext6 2E8 0 CODE 0 text6 dist/default/production\GONGEP.X.production.obj
-__ptext7 25A 0 CODE 0 text7 dist/default/production\GONGEP.X.production.obj
-__ptext8 100 0 CODE 0 text8 dist/default/production\GONGEP.X.production.obj
-_turn_flag 77 0 COMMON 1 bssCOMMON dist/default/production\GONGEP.X.production.obj
-?_slave_read 70 0 COMMON 1 cstackCOMMON dist/default/production\GONGEP.X.production.obj
-__Lpowerup 0 0 CODE 0 powerup -
-__Leeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_ofi1_shot 2FA 0 CODE 0 text6 dist/default/production\GONGEP.X.production.obj
-__Lreset_vec 0 0 CODE 0 reset_vec -
-_pic_reg 22A 0 CODE 0 text3 dist/default/production\GONGEP.X.production.obj
-__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__end_of__initialization FA 0 CODE 0 cinit dist/default/production\GONGEP.X.production.obj
-__Lfunctab 0 0 CODE 0 functab -
-__Lclrtext 0 0 ABS 0 clrtext -
-__CFG_PLLEN$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\GONGEP.X.production.obj
-_SSP1BUF 211 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_SSP2BUF 219 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__Hend_init F4 0 CODE 0 end_init -
-master_send@s_data 72 0 COMMON 1 cstackCOMMON dist/default/production\GONGEP.X.production.obj
-__end_of_main 2AC 0 CODE 0 maintext dist/default/production\GONGEP.X.production.obj
-__end_of_shot 2D6 0 CODE 0 text2 dist/default/production\GONGEP.X.production.obj
+_SSP1STATbits 214 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_SSP2STATbits 21C 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Hintentry F2 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__pintentry 8 0 CODE 0 intentry dist/default/production\GONGEP.X.production.obj
+_PEIE 5E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_WPUB 20D 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_main 292 0 CODE 0 maintext dist/default/production\GONGEP.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+btemp 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_shot 2D2 0 CODE 0 text2 dist/default/production\GONGEP.X.production.obj
+start F2 0 CODE 0 init C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+master_send@obj 70 0 COMMON 1 cstackCOMMON dist/default/production\GONGEP.X.production.obj
 _IOCBF 396 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_IOCBN 395 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_IOCBP 394 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 _IOCIE 5B 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 _IOCIF 58 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__end_of_inter F0 0 CODE 0 intentry dist/default/production\GONGEP.X.production.obj
-_PORTA C 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_PORTB D 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 _TRISA 8C 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 _TRISB 8D 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__end_of_slave_reg 2C4 0 CODE 0 text1 dist/default/production\GONGEP.X.production.obj
+_IOCBN 395 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_PORTA C 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+_PORTB D 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Hconfig 10012 0 CONFIG 0 config -
+__Lconfig 1000E 0 CONFIG 0 config -
+__Hbigram 0 0 ABS 0 bigram -
+__Lbigram 0 0 ABS 0 bigram -
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 _inter 8 0 CODE 0 intentry dist/default/production\GONGEP.X.production.obj
-__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__size_of_slave_reg 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__pintentry 8 0 CODE 0 intentry dist/default/production\GONGEP.X.production.obj
-__initialization F4 0 CODE 0 cinit dist/default/production\GONGEP.X.production.obj
+__size_ofi1_shot 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+__end_of_pic_reg 268 0 CODE 0 text3 dist/default/production\GONGEP.X.production.obj
+_OPTION_REG 95 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_SSP1IE 48B 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_SSP2IE 4A0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+_SSP1IF 8B 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_SSP2IF A0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_ANSELA 18C 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_ANSELB 18D 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_turn_flag 77 0 COMMON 1 bssCOMMON dist/default/production\GONGEP.X.production.obj
+_SS1SEL 8ED 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__end_of_master_reg 2F6 0 CODE 0 text4 dist/default/production\GONGEP.X.production.obj
+_OSCCON 99 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+pic14e$flags 7E 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__end_of_master_send 238 0 CODE 0 text8 dist/default/production\GONGEP.X.production.obj
+_slave_reg 2BA 0 CODE 0 text1 dist/default/production\GONGEP.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+_r_data 79 0 COMMON 1 bssCOMMON dist/default/production\GONGEP.X.production.obj
+stackhi 216F 0 ABS 0 - C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+__end_of_shot 2E4 0 CODE 0 text2 dist/default/production\GONGEP.X.production.obj
+stacklo 2000 0 ABS 0 - C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+__Hinit F2 0 CODE 0 init -
+__Linit F2 0 CODE 0 init -
+__end_of_main 2BA 0 CODE 0 maintext dist/default/production\GONGEP.X.production.obj
+i1_shot 2F6 0 CODE 0 text6 dist/default/production\GONGEP.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+_slave_read 268 0 CODE 0 text7 dist/default/production\GONGEP.X.production.obj
+end_of_initialization FC 0 CODE 0 cinit dist/default/production\GONGEP.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+_IOCBFbits 396 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+_SSP1BUF 211 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_SSP2BUF 219 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_SDO1SEL 8EE 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 1 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 BANK5 1 bank5 -
+__Lbank5 0 0 BANK5 1 bank5 -
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__Hbank6 0 0 BANK6 1 bank6 -
+__Lbank6 0 0 BANK6 1 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__end_of_slave_reg 2D2 0 CODE 0 text1 dist/default/production\GONGEP.X.production.obj
+__Hbank8 0 0 BANK8 1 bank8 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__ptext0 0 0 CODE 0 text0 dist/default/production\GONGEP.X.production.obj
+__end_of_slave_read 292 0 CODE 0 text7 dist/default/production\GONGEP.X.production.obj
+__ptext1 2BA 0 CODE 0 text1 dist/default/production\GONGEP.X.production.obj
+__ptext2 2D2 0 CODE 0 text2 dist/default/production\GONGEP.X.production.obj
+__ptext3 238 0 CODE 0 text3 dist/default/production\GONGEP.X.production.obj
+__ptext4 2E4 0 CODE 0 text4 dist/default/production\GONGEP.X.production.obj
+__ptext6 2F6 0 CODE 0 text6 dist/default/production\GONGEP.X.production.obj
+__ptext7 268 0 CODE 0 text7 dist/default/production\GONGEP.X.production.obj
+__ptext8 104 0 CODE 0 text8 dist/default/production\GONGEP.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+_master_reg 2E4 0 CODE 0 text4 dist/default/production\GONGEP.X.production.obj
+__end_of__initialization FC 0 CODE 0 cinit dist/default/production\GONGEP.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__CFG_STVREN$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_pic_reg 238 0 CODE 0 text3 dist/default/production\GONGEP.X.production.obj
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hspace_0 8009 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__end_ofi1_shot 308 0 CODE 0 text6 dist/default/production\GONGEP.X.production.obj
+__Hspace_1 7A 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__size_of_shot 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+master_send@s_data 72 0 COMMON 1 cstackCOMMON dist/default/production\GONGEP.X.production.obj
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Hcinit 104 0 CODE 0 cinit -
+__Lcinit F6 0 CODE 0 cinit -
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__size_of_pic_reg 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+?_slave_read 70 0 COMMON 1 cstackCOMMON dist/default/production\GONGEP.X.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_SSP1CON1 215 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_SSP2CON1 21D 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Hbank10 0 0 BANK10 1 bank10 -
+__Lbank10 0 0 BANK10 1 bank10 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__size_of_inter 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Lbank23 0 0 BANK23 1 bank23 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__size_of_master_reg 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Hbank16 0 0 BANK16 1 bank16 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__CFG_PLLEN$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__Hbank18 0 0 BANK18 1 bank18 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__size_of_master_send 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 __CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
-_slave_reg 2AC 0 CODE 0 text1 dist/default/production\GONGEP.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__pbssCOMMON 77 0 COMMON 1 bssCOMMON dist/default/production\GONGEP.X.production.obj
+__Hend_init F6 0 CODE 0 end_init -
+__Lend_init F2 0 CODE 0 end_init -
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+intlevel0 0 0 CODE 0 functab C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+_SSP1STAT 214 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+_SSP2STAT 21C 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__end_of_inter F2 0 CODE 0 intentry dist/default/production\GONGEP.X.production.obj
+intlevel2 0 0 CODE 0 functab C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+intlevel3 0 0 CODE 0 functab C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+intlevel4 0 0 CODE 0 functab C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+intlevel5 0 0 CODE 0 functab C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\GONGEP.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+start_initialization F6 0 CODE 0 cinit dist/default/production\GONGEP.X.production.obj
+_master_send 104 0 CODE 0 text8 dist/default/production\GONGEP.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__pmaintext 292 0 CODE 0 maintext dist/default/production\GONGEP.X.production.obj
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__initialization F6 0 CODE 0 cinit dist/default/production\GONGEP.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\GONGEP.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
-# Each line is a record a particular split, where the parent psect is on
+# Each line is a record a particular split, where the parent psect in on
 # the left and the child on the right.  Note that a child psect is always
 # split form the top of the parent psect. All splits from a given parent
 # are listed in the order in which they occurred.
@@ -632,7 +629,7 @@ _slave_reg 2AC 0 CODE 0 text1 dist/default/production\GONGEP.X.production.obj
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cstackCOMMON 1 70 70 A 1
-intentry 0 4 8 179 2
 reset_vec 0 0 0 2 2
+intentry 0 4 8 180 2
 config 0 8007 1000E 2 2
+cstackCOMMON 1 70 70 A 1

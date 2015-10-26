@@ -1,15 +1,15 @@
-Microchip MPLAB XC8 Compiler V1.34 ()
+Microchip MPLAB XC8 Compiler V1.33 ()
 
 Linker command line:
 
---edf=C:\Program Files (x86)\Microchip\xc8\v1.34\dat\en_msgs.txt -cs \
+--edf=C:\Program Files (x86)\Microchip\xc8\v1.33\dat\en_msgs.txt -cs \
   -h+dist/default/production\GONGEP.X.production.sym \
   --cmf=dist/default/production\GONGEP.X.production.cmf -z -Q16F1827 \
-  -oC:\Users\MONOCE~1\AppData\Local\Temp\sc4o.6 \
+  -oC:\Users\MONOSE~1\AppData\Local\Temp\s73k.6 \
   -Mdist/default/production/GONGEP.X.production.map -E1 -ver=XC8 \
-  -ASTACK=02000h-0216fh -pstack=STACK -ACODE=00h-07FFhx2 \
-  -ASTRCODE=00h-0FFFh -ASTRING=00h-0FFhx16 -ACONST=00h-0FFhx16 \
-  -AENTRY=00h-0FFhx16 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
+  -ASTACK=02000h-0216fh -pstack=STACK -ACONST=00h-0FFhx16 \
+  -ACODE=00h-07FFhx2 -ASTRCODE=00h-0FFFh -AENTRY=00h-0FFhx16 \
+  -ASTRING=00h-0FFhx16 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
   -ABANK1=0A0h-0EFh -ABANK2=0120h-016Fh -ABANK3=01A0h-01EFh \
   -ABANK4=0220h-024Fh -ABIGRAM=02000h-0216Fh \
   -ARAM=020h-06Fh,0A0h-0EFh,0120h-016Fh,01A0h-01EFh,0220h-024Fh \
@@ -29,7 +29,7 @@ Linker command line:
   -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj \
+  C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj \
   dist/default/production\GONGEP.X.production.obj 
 
 Object code version is 3.11
@@ -39,48 +39,48 @@ Machine type is 16F1827
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\MONOCE~1\AppData\Local\Temp\sc4o.obj
-                end_init                             78       78        2        8       0
+C:\Users\MONOSE~1\AppData\Local\Temp\s73k.obj
+                end_init                             79       79        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
 dist/default/production\GONGEP.X.production.obj
-                cinit                                7A       7A        6        8       0
-                intentry                              4        4       74        8       0
-                text8                                80       80       95        8       0
-                text7                               12D      12D       15        8       0
-                text6                               174      174        9        8       0
-                text4                               16B      16B        9        8       0
-                text3                               115      115       18        8       0
-                text2                               162      162        9        8       0
-                text1                               156      156        C        8       0
-                maintext                            142      142       14        8       0
+                cinit                                7B       7B        7        8       0
+                intentry                              4        4       75        8       0
+                text8                                82       82       9A        8       0
+                text7                               134      134       15        8       0
+                text6                               17B      17B        9        8       0
+                text4                               172      172        9        8       0
+                text3                               11C      11C       18        8       0
+                text2                               169      169        9        8       0
+                text1                               15D      15D        C        8       0
+                maintext                            149      149       14        8       0
                 cstackCOMMON                         70       70        7       70       1
                 bssCOMMON                            77       77        3       70       1
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
+        CLASS   CONST          
+
         CLASS   CODE           
-                end_init                             78       78        2         0
-                cinit                                7A       7A        6         0
-                intentry                              4        4       74         0
+                end_init                             79       79        2         0
+                cinit                                7B       7B        7         0
+                intentry                              4        4       75         0
                 reset_vec                             0        0        2         0
-                text8                                80       80       95         0
-                text7                               12D      12D       15         0
-                text6                               174      174        9         0
-                text4                               16B      16B        9         0
-                text3                               115      115       18         0
-                text2                               162      162        9         0
-                text1                               156      156        C         0
-                maintext                            142      142       14         0
+                text8                                82       82       9A         0
+                text7                               134      134       15         0
+                text6                               17B      17B        9         0
+                text4                               172      172        9         0
+                text3                               11C      11C       18         0
+                text2                               169      169        9         0
+                text1                               15D      15D        C         0
+                maintext                            149      149       14         0
 
         CLASS   STRCODE        
 
-        CLASS   STRING         
-
-        CLASS   CONST          
-
         CLASS   ENTRY          
+
+        CLASS   STRING         
 
         CLASS   COMMON         
                 cstackCOMMON                         70       70        7         1
@@ -233,7 +233,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000002  000002         0       0  CODE        2
-                intentry                       000004  000179  00017D         8       0  CODE        2
+                intentry                       000004  000180  000184         8       0  CODE        2
                 cstackCOMMON                   000070  00000A  00007A        70       1  COMMON      1
                 config                         008007  000002  008009     1000E       0  CONFIG      2
 
@@ -248,13 +248,13 @@ UNUSED ADDRESS RANGES
         BANK4            00220-0024F              30           1
         BIGRAM           02000-0216F             170           1
         CODE             00002-00003               2           2
-                         0017D-00FFF             683
+                         00184-00FFF             67C
         COMMON           0007A-0007D               4           1
         CONST            00002-00003               2           2
-                         0017D-00FFF             100
+                         00184-00FFF             100
         EEDATA           0F000-0F0FF             100           2
         ENTRY            00002-00003               2           2
-                         0017D-00FFF             100
+                         00184-00FFF             100
         IDLOC            08000-08003               4           2
         RAM              00020-0006F              50           1
                          000A0-000EF              50
@@ -295,9 +295,9 @@ UNUSED ADDRESS RANGES
         SFR9             00480-004EF              70           1
         STACK            02000-0216F             170           1
         STRCODE          00002-00003               2           2
-                         0017D-00FFF             E83
+                         00184-00FFF             E7C
         STRING           00002-00003               2           2
-                         0017D-00FFF             100
+                         00184-00FFF             100
 
                                   Symbol Table
 
@@ -308,7 +308,6 @@ _GIE                     (abs)        0005F
 _IOCBF                   (abs)        00396
 _IOCBFbits               (abs)        00396
 _IOCBN                   (abs)        00395
-_IOCBP                   (abs)        00394
 _IOCIE                   (abs)        0005B
 _IOCIF                   (abs)        00058
 _OPTION_REG              (abs)        00095
@@ -393,19 +392,18 @@ __Hbank8                 bank8        00000
 __Hbank9                 bank9        00000
 __Hbigram                bigram       00000
 __HbssCOMMON             bssCOMMON    00000
-__Hcinit                 cinit        00080
+__Hcinit                 cinit        00082
 __Hclrtext               clrtext      00000
 __Hcode                  code         00000
 __Hcommon                common       00000
 __Hconfig                config       08009
-__HcstackBANK0           cstackBANK0  00000
 __HcstackCOMMON          cstackCOMMON 00000
 __Heeprom_data           eeprom_data  00000
-__Hend_init              end_init     0007A
+__Hend_init              end_init     0007B
 __Hfunctab               functab      00000
 __Hidloc                 idloc        00000
-__Hinit                  init         00078
-__Hintentry              intentry     00078
+__Hinit                  init         00079
+__Hintentry              intentry     00079
 __Hmaintext              maintext     00000
 __Hpowerup               powerup      00000
 __Hram                   ram          00000
@@ -484,18 +482,17 @@ __Lbank8                 bank8        00000
 __Lbank9                 bank9        00000
 __Lbigram                bigram       00000
 __LbssCOMMON             bssCOMMON    00000
-__Lcinit                 cinit        0007A
+__Lcinit                 cinit        0007B
 __Lclrtext               clrtext      00000
 __Lcode                  code         00000
 __Lcommon                common       00000
 __Lconfig                config       08007
-__LcstackBANK0           cstackBANK0  00000
 __LcstackCOMMON          cstackCOMMON 00000
 __Leeprom_data           eeprom_data  00000
-__Lend_init              end_init     00078
+__Lend_init              end_init     00079
 __Lfunctab               functab      00000
 __Lidloc                 idloc        00000
-__Linit                  init         00078
+__Linit                  init         00079
 __Lintentry              intentry     00004
 __Lmaintext              maintext     00000
 __Lpowerup               powerup      00000
@@ -547,30 +544,29 @@ __S3                     (abs)        00000
 ___int_sp                stack        00000
 ___latbits               (abs)        00001
 ___sp                    stack        00000
-__end_of__initialization cinit        0007D
-__end_of_inter           intentry     00078
-__end_of_main            maintext     00156
-__end_of_master_reg      text4        00174
-__end_of_master_send     text8        00115
-__end_of_pic_reg         text3        0012D
-__end_of_shot            text2        0016B
-__end_of_slave_read      text7        00142
-__end_of_slave_reg       text1        00162
-__end_ofi1_shot          text6        0017D
-__initialization         cinit        0007A
+__end_of__initialization cinit        0007E
+__end_of_inter           intentry     00079
+__end_of_main            maintext     0015D
+__end_of_master_reg      text4        0017B
+__end_of_master_send     text8        0011C
+__end_of_pic_reg         text3        00134
+__end_of_shot            text2        00172
+__end_of_slave_read      text7        00149
+__end_of_slave_reg       text1        00169
+__end_ofi1_shot          text6        00184
+__initialization         cinit        0007B
 __pbssCOMMON             bssCOMMON    00077
-__pcstackBANK0           cstackBANK0  00000
 __pcstackCOMMON          cstackCOMMON 00070
 __pintentry              intentry     00004
-__pmaintext              maintext     00142
+__pmaintext              maintext     00149
 __ptext0                 text0        00000
-__ptext1                 text1        00156
-__ptext2                 text2        00162
-__ptext3                 text3        00115
-__ptext4                 text4        0016B
-__ptext6                 text6        00174
-__ptext7                 text7        0012D
-__ptext8                 text8        00080
+__ptext1                 text1        0015D
+__ptext2                 text2        00169
+__ptext3                 text3        0011C
+__ptext4                 text4        00172
+__ptext6                 text6        0017B
+__ptext7                 text7        00134
+__ptext8                 text8        00082
 __size_of_inter          (abs)        00000
 __size_of_main           (abs)        00000
 __size_of_master_reg     (abs)        00000
@@ -581,18 +577,18 @@ __size_of_slave_read     (abs)        00000
 __size_of_slave_reg      (abs)        00000
 __size_ofi1_shot         (abs)        00000
 _inter                   intentry     00004
-_main                    maintext     00142
-_master_reg              text4        0016B
-_master_send             text8        00080
-_pic_reg                 text3        00115
+_main                    maintext     00149
+_master_reg              text4        00172
+_master_send             text8        00082
+_pic_reg                 text3        0011C
 _r_data                  bssCOMMON    00079
-_shot                    text2        00162
-_slave_read              text7        0012D
-_slave_reg               text1        00156
+_shot                    text2        00169
+_slave_read              text7        00134
+_slave_reg               text1        0015D
 _turn_flag               bssCOMMON    00077
 btemp                    (abs)        0007E
-end_of_initialization    cinit        0007D
-i1_shot                  text6        00174
+end_of_initialization    cinit        0007E
+i1_shot                  text6        0017B
 intlevel0                functab      00000
 intlevel1                functab      00000
 intlevel2                functab      00000
@@ -606,11 +602,12 @@ ltemp2                   (abs)        00086
 ltemp3                   (abs)        00080
 master_send@obj          cstackCOMMON 00070
 master_send@s_data       cstackCOMMON 00072
+pic14e$flags             (abs)        0007E
 reset_vec                reset_vec    00000
 stackhi                  (abs)        0216F
 stacklo                  (abs)        02000
-start                    init         00078
-start_initialization     cinit        0007A
+start                    init         00079
+start_initialization     cinit        0007B
 ttemp                    (abs)        0007E
 ttemp0                   (abs)        0007E
 ttemp1                   (abs)        00081
@@ -631,7 +628,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 85 in file "main.c"
+		line 82 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -693,7 +690,7 @@ Total ram usage:        0 bytes
 
  *************** function _shot *****************
  Defined at:
-		line 106 in file "main.c"
+		line 103 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -815,7 +812,7 @@ Total ram usage:        4 bytes
 
  *************** function i1_shot *****************
  Defined at:
-		line 106 in file "main.c"
+		line 103 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -906,28 +903,28 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 spi.c
-		_master_reg    		CODE           	016B	0000	10
-		_master_send   		CODE           	0080	0000	150
-		_slave_reg     		CODE           	0156	0000	13
-		_slave_read    		CODE           	012D	0000	22
+		_master_reg    		CODE           	0172	0000	9
+		_master_send   		CODE           	0082	0000	154
+		_slave_reg     		CODE           	015D	0000	12
+		_slave_read    		CODE           	0134	0000	21
 
-spi.c estimated size: 195
+spi.c estimated size: 196
 
 shared
-		__initializatio		CODE           	007A	0000	4
-		i1_shot        		CODE           	0174	0000	10
+		__initializatio		CODE           	007B	0000	3
+		i1_shot        		CODE           	017B	0000	9
 
-shared estimated size: 14
+shared estimated size: 12
 
 main.c
-		_shot          		CODE           	0162	0000	10
-		_main          		CODE           	0142	0000	21
+		_shot          		CODE           	0169	0000	9
+		_main          		CODE           	0149	0000	20
 		_inter         		CODE           	0004	0000	117
 
-main.c estimated size: 148
+main.c estimated size: 146
 
 pic16f1827_config.c
-		_pic_reg       		CODE           	0115	0000	25
+		_pic_reg       		CODE           	011C	0000	24
 
-pic16f1827_config.c estimated size: 25
+pic16f1827_config.c estimated size: 24
 

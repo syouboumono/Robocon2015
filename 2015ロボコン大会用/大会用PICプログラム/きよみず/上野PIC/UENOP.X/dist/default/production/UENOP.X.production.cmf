@@ -11,6 +11,10 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
+$C:\Users\Speedy\AppData\Local\Temp\s16g.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 5D 5D 2 2
+config CONFIG 0 8007 8007 2 2
 $dist/default/production\UENOP.X.production.obj
 cinit CODE 0 5F 5F 16 2
 text1 CODE 0 138 138 C 2
@@ -27,10 +31,6 @@ intentry CODE 0 4 4 59 2
 bssBANK0 BANK0 1 20 20 2 1
 dataCOMMON COMMON 1 77 77 6 1
 bssCOMMON COMMON 1 7D 7D 1 1
-$C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
-reset_vec CODE 0 0 0 2 2
-end_init CODE 0 5D 5D 2 2
-config CONFIG 0 8007 8007 2 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -107,106 +107,106 @@ STRING 15C-FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\UENOP.X.production.obj
-4 intentry CODE >22:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-8 intentry CODE >25:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-F intentry CODE >26:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-12 intentry CODE >27:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-14 intentry CODE >28:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-18 intentry CODE >30:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-1D intentry CODE >31:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-20 intentry CODE >32:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-25 intentry CODE >33:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-28 intentry CODE >34:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-2A intentry CODE >35:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-2C intentry CODE >38:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-2D intentry CODE >39:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-2E intentry CODE >42:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-2E intentry CODE >44:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-30 intentry CODE >45:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-33 intentry CODE >47:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-34 intentry CODE >49:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-36 intentry CODE >51:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-43 intentry CODE >53:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-48 intentry CODE >54:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-4B intentry CODE >55:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-51 intentry CODE >56:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-55 intentry CODE >59:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-57 intentry CODE >60:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-59 intentry CODE >64:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-5F cinit CODE >1166:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-5F cinit CODE >1169:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-5F cinit CODE >1195:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-60 cinit CODE >1199:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-61 cinit CODE >1200:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-62 cinit CODE >1205:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-63 cinit CODE >1206:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-64 cinit CODE >1207:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-65 cinit CODE >1208:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-66 cinit CODE >1209:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-67 cinit CODE >1210:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-68 cinit CODE >1211:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-69 cinit CODE >1212:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-6A cinit CODE >1213:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-6B cinit CODE >1214:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-6C cinit CODE >1215:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-6D cinit CODE >1216:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-6E cinit CODE >1217:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-6F cinit CODE >1218:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-70 cinit CODE >1219:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-71 cinit CODE >1220:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-72 cinit CODE >1226:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-72 cinit CODE >1227:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-73 cinit CODE >1228:C:\Users\Speedy\AppData\Local\Temp\s1j8.
-75 text7 CODE >111:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+4 intentry CODE >26:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+8 intentry CODE >29:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+F intentry CODE >30:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+12 intentry CODE >31:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+14 intentry CODE >32:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+18 intentry CODE >34:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+1D intentry CODE >35:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+20 intentry CODE >36:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+25 intentry CODE >37:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+28 intentry CODE >38:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+2A intentry CODE >39:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+2C intentry CODE >42:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+2D intentry CODE >43:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+2E intentry CODE >46:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+2E intentry CODE >48:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+30 intentry CODE >49:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+33 intentry CODE >51:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+34 intentry CODE >53:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+36 intentry CODE >55:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+43 intentry CODE >57:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+48 intentry CODE >58:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+4B intentry CODE >59:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+51 intentry CODE >60:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+55 intentry CODE >63:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+57 intentry CODE >64:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+59 intentry CODE >68:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+5F cinit CODE >1166:C:\Users\Speedy\AppData\Local\Temp\s16g.
+5F cinit CODE >1169:C:\Users\Speedy\AppData\Local\Temp\s16g.
+5F cinit CODE >1195:C:\Users\Speedy\AppData\Local\Temp\s16g.
+60 cinit CODE >1199:C:\Users\Speedy\AppData\Local\Temp\s16g.
+61 cinit CODE >1200:C:\Users\Speedy\AppData\Local\Temp\s16g.
+62 cinit CODE >1205:C:\Users\Speedy\AppData\Local\Temp\s16g.
+63 cinit CODE >1206:C:\Users\Speedy\AppData\Local\Temp\s16g.
+64 cinit CODE >1207:C:\Users\Speedy\AppData\Local\Temp\s16g.
+65 cinit CODE >1208:C:\Users\Speedy\AppData\Local\Temp\s16g.
+66 cinit CODE >1209:C:\Users\Speedy\AppData\Local\Temp\s16g.
+67 cinit CODE >1210:C:\Users\Speedy\AppData\Local\Temp\s16g.
+68 cinit CODE >1211:C:\Users\Speedy\AppData\Local\Temp\s16g.
+69 cinit CODE >1212:C:\Users\Speedy\AppData\Local\Temp\s16g.
+6A cinit CODE >1213:C:\Users\Speedy\AppData\Local\Temp\s16g.
+6B cinit CODE >1214:C:\Users\Speedy\AppData\Local\Temp\s16g.
+6C cinit CODE >1215:C:\Users\Speedy\AppData\Local\Temp\s16g.
+6D cinit CODE >1216:C:\Users\Speedy\AppData\Local\Temp\s16g.
+6E cinit CODE >1217:C:\Users\Speedy\AppData\Local\Temp\s16g.
+6F cinit CODE >1218:C:\Users\Speedy\AppData\Local\Temp\s16g.
+70 cinit CODE >1219:C:\Users\Speedy\AppData\Local\Temp\s16g.
+71 cinit CODE >1220:C:\Users\Speedy\AppData\Local\Temp\s16g.
+72 cinit CODE >1226:C:\Users\Speedy\AppData\Local\Temp\s16g.
+72 cinit CODE >1227:C:\Users\Speedy\AppData\Local\Temp\s16g.
+73 cinit CODE >1228:C:\Users\Speedy\AppData\Local\Temp\s16g.
 75 text7 CODE >115:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-7D text7 CODE >117:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-80 text7 CODE >118:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-88 text7 CODE >119:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-8A text7 CODE >121:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-8E text7 CODE >122:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-90 text7 CODE >124:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-91 text7 CODE >128:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-9D text7 CODE >130:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-A0 text7 CODE >131:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-A8 text7 CODE >132:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-AA text7 CODE >134:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-AE text7 CODE >135:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-B0 text7 CODE >137:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-B1 text7 CODE >141:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-BD text7 CODE >143:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-C0 text7 CODE >144:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-C2 text7 CODE >146:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-CA text7 CODE >148:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-CC text7 CODE >149:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-CD text7 CODE >151:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-CF text7 CODE >152:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-D3 text7 CODE >153:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-D7 text7 CODE >155:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-D8 maintext CODE >66:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-D8 maintext CODE >68:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-DB maintext CODE >69:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-DE maintext CODE >72:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-E0 maintext CODE >73:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-E3 maintext CODE >74:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-E5 maintext CODE >75:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-E8 maintext CODE >76:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-EA maintext CODE >77:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-EC maintext CODE >78:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-ED maintext CODE >79:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-EE maintext CODE >80:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-EF maintext CODE >81:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-F1 maintext CODE >82:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-F2 maintext CODE >84:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-F5 maintext CODE >85:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-F7 maintext CODE >86:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-100 maintext CODE >87:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-102 maintext CODE >88:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-103 maintext CODE >90:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-104 maintext CODE >91:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-105 maintext CODE >95:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-108 maintext CODE >96:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-10A maintext CODE >97:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-10D maintext CODE >93:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+75 text7 CODE >119:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+7D text7 CODE >121:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+80 text7 CODE >122:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+88 text7 CODE >123:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+8A text7 CODE >125:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+8E text7 CODE >126:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+90 text7 CODE >128:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+91 text7 CODE >132:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+9D text7 CODE >134:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+A0 text7 CODE >135:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+A8 text7 CODE >136:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+AA text7 CODE >138:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+AE text7 CODE >139:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+B0 text7 CODE >141:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+B1 text7 CODE >145:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+BD text7 CODE >147:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+C0 text7 CODE >148:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+C2 text7 CODE >150:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+CA text7 CODE >152:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+CC text7 CODE >153:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+CD text7 CODE >155:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+CF text7 CODE >156:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+D3 text7 CODE >157:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+D7 text7 CODE >159:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+D8 maintext CODE >70:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+D8 maintext CODE >72:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+DB maintext CODE >73:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+DE maintext CODE >76:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+E0 maintext CODE >77:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+E3 maintext CODE >78:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+E5 maintext CODE >79:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+E8 maintext CODE >80:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+EA maintext CODE >81:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+EC maintext CODE >82:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+ED maintext CODE >83:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+EE maintext CODE >84:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+EF maintext CODE >85:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+F1 maintext CODE >86:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+F2 maintext CODE >88:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+F5 maintext CODE >89:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+F7 maintext CODE >90:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+100 maintext CODE >91:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+102 maintext CODE >92:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+103 maintext CODE >94:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+104 maintext CODE >95:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+105 maintext CODE >99:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+108 maintext CODE >100:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+10A maintext CODE >101:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+10D maintext CODE >97:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
 10E text3 CODE >3:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\pic16f1827_config.c
 10E text3 CODE >6:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\pic16f1827_config.c
 111 text3 CODE >7:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\pic16f1827_config.c
@@ -235,20 +235,20 @@ F7 maintext CODE >86:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラ
 13F text1 CODE >32:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\spi.c
 141 text1 CODE >33:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\spi.c
 143 text1 CODE >36:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\spi.c
-144 text2 CODE >103:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-144 text2 CODE >104:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-146 text2 CODE >105:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-148 text2 CODE >106:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-14A text2 CODE >107:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-14B text2 CODE >108:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-14C text2 CODE >109:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-14D text5 CODE >103:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-14D text5 CODE >104:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-14F text5 CODE >105:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-151 text5 CODE >106:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-153 text5 CODE >107:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-154 text5 CODE >108:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
-155 text5 CODE >109:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+144 text2 CODE >107:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+144 text2 CODE >108:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+146 text2 CODE >109:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+148 text2 CODE >110:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+14A text2 CODE >111:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+14B text2 CODE >112:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+14C text2 CODE >113:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+14D text5 CODE >107:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+14D text5 CODE >108:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+14F text5 CODE >109:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+151 text5 CODE >110:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+153 text5 CODE >111:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+154 text5 CODE >112:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+155 text5 CODE >113:F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -277,14 +277,14 @@ __Hstrings 0 0 ABS 0 strings -
 _PEIE 5E 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 _TMR2 1A 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 _WPUB 20D 0 ABS 0 - dist/default/production\UENOP.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
+___sp 0 0 STACK 2 stack C:\Users\Speedy\AppData\Local\Temp\s16g.obj
 _load EA 0 CODE 0 text7 dist/default/production\UENOP.X.production.obj
 _main 1B0 0 CODE 0 maintext dist/default/production\UENOP.X.production.obj
 _shot 288 0 CODE 0 text2 dist/default/production\UENOP.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 i1_shot 29A 0 CODE 0 text5 dist/default/production\UENOP.X.production.obj
 ltemp 7E 0 ABS 0 - dist/default/production\UENOP.X.production.obj
-start BA 0 CODE 0 init C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
+start BA 0 CODE 0 init C:\Users\Speedy\AppData\Local\Temp\s16g.obj
 ttemp 7E 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 wtemp 7E 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\UENOP.X.production.obj
@@ -299,12 +299,12 @@ ttemp2 84 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 ttemp3 87 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 ttemp4 7F 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 __HdataCOMMON 0 0 ABS 0 dataCOMMON -
-intlevel0 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
-intlevel1 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
-intlevel2 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
-intlevel3 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
-intlevel4 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
-intlevel5 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s16g.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s16g.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s16g.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s16g.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s16g.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Speedy\AppData\Local\Temp\s16g.obj
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 wtemp0 7E 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 wtemp1 80 0 ABS 0 - dist/default/production\UENOP.X.production.obj
@@ -343,7 +343,7 @@ _SSP2IE 4A0 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 _SSP2IF A0 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 _TMR2ON E2 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 _load_flag 20 0 BANK0 1 bssBANK0 dist/default/production\UENOP.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Speedy\AppData\Local\Temp\s16g.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -496,7 +496,7 @@ __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __HidataCOMMON 0 0 ABS 0 idataCOMMON -
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Speedy\AppData\Local\Temp\s16g.obj
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 _slot_state 77 0 COMMON 1 dataCOMMON dist/default/production\UENOP.X.production.obj
 _IOCBFbits 396 0 ABS 0 - dist/default/production\UENOP.X.production.obj
@@ -531,8 +531,8 @@ __Lconfig 1000E 0 CONFIG 0 config -
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 _r_data 7D 0 COMMON 1 bssCOMMON dist/default/production\UENOP.X.production.obj
-stackhi 216F 0 ABS 0 - C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
-stacklo 2004 0 ABS 0 - C:\Users\Speedy\AppData\Local\Temp\s1j8.obj
+stackhi 216F 0 ABS 0 - C:\Users\Speedy\AppData\Local\Temp\s16g.obj
+stacklo 2004 0 ABS 0 - C:\Users\Speedy\AppData\Local\Temp\s16g.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\UENOP.X.production.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -

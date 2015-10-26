@@ -3,9 +3,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _slave_read `(i ~T0 @X0 0 ef ]
 "7310 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f1827.h
 [v _SSP1IE `Vb ~T0 @X0 0 e@1163 ]
-"19 main.c
+"23 main.c
 [v _shot `(v ~T0 @X0 0 ef ]
-"20
+"24
 [v _load `(v ~T0 @X0 0 ef ]
 "7312 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f1827.h
 [v _SSP1IF `Vb ~T0 @X0 0 e@139 ]
@@ -2857,7 +2857,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;spi.h: 6: int slave_read();
 [; ;spi.h: 23: void master_reg();
 [; ;spi.h: 24: void master_send(int obj,unsigned char s_data);
-"16 main.c
+"20 main.c
 [v _slot_state `i ~T0 @X0 -> 3 `i e ]
 [i _slot_state
 :U ..
@@ -2866,351 +2866,351 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 1 `i
 ..
 ]
-[; ;main.c: 16: int slot_state[3] = {0,1,1};
-"17
+[; ;main.c: 20: int slot_state[3] = {0,1,1};
+"21
 [v _load_flag `i ~T0 @X0 1 e ]
-[; ;main.c: 17: int load_flag;
-[; ;main.c: 19: void shot();
-[; ;main.c: 20: void load();
+[; ;main.c: 21: int load_flag;
+[; ;main.c: 23: void shot();
+[; ;main.c: 24: void load();
 [v F2781 `(v ~T0 @X0 1 tf ]
-"22
+"26
 [v _inter `IF2781 ~T0 @X0 1 e ]
 {
-[; ;main.c: 22: void interrupt inter(){
+[; ;main.c: 26: void interrupt inter(){
 [e :U _inter ]
 [f ]
-[; ;main.c: 25: if(slave_read() == 0){
-"25
+[; ;main.c: 29: if(slave_read() == 0){
+"29
 [e $ ! == ( _slave_read ..  -> 0 `i 351  ]
 {
-[; ;main.c: 26: if(r_data == 0x01){
-"26
+[; ;main.c: 30: if(r_data == 0x01){
+"30
 [e $ ! == -> _r_data `i -> 1 `i 352  ]
 {
-[; ;main.c: 27: SSP1IE = 0;
-"27
+[; ;main.c: 31: SSP1IE = 0;
+"31
 [e = _SSP1IE -> -> 0 `i `b ]
-[; ;main.c: 28: if(slot_state[0] == 1){
-"28
+[; ;main.c: 32: if(slot_state[0] == 1){
+"32
 [e $ ! == *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i 353  ]
 {
-[; ;main.c: 30: load_flag = 1;
-"30
+[; ;main.c: 34: load_flag = 1;
+"34
 [e = _load_flag -> 1 `i ]
-[; ;main.c: 31: shot();
-"31
+[; ;main.c: 35: shot();
+"35
 [e ( _shot ..  ]
-"32
+"36
 }
-[; ;main.c: 32: }else if(slot_state[0] == 0){
+[; ;main.c: 36: }else if(slot_state[0] == 0){
 [e $U 354  ]
 [e :U 353 ]
 [e $ ! == *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i 355  ]
 {
-[; ;main.c: 33: load();
-"33
+[; ;main.c: 37: load();
+"37
 [e ( _load ..  ]
-[; ;main.c: 34: SSP1IF = 0;
-"34
+[; ;main.c: 38: SSP1IF = 0;
+"38
 [e = _SSP1IF -> -> 0 `i `b ]
-[; ;main.c: 35: SSP1IE = 1;
-"35
+[; ;main.c: 39: SSP1IE = 1;
+"39
 [e = _SSP1IE -> -> 1 `i `b ]
-"36
+"40
 }
 [e :U 355 ]
-"38
+"42
 [e :U 354 ]
 }
-[; ;main.c: 36: }
-[; ;main.c: 38: }else{
+[; ;main.c: 40: }
+[; ;main.c: 42: }else{
 [e $U 356  ]
 [e :U 352 ]
 {
-[; ;main.c: 39: __nop();
-"39
+[; ;main.c: 43: __nop();
+"43
 [e ( ___nop ..  ]
-"40
+"44
 }
 [e :U 356 ]
-"42
+"46
 }
 [e :U 351 ]
-[; ;main.c: 40: }
-[; ;main.c: 42: }
-[; ;main.c: 44: if(IOCIF == 1){
-"44
+[; ;main.c: 44: }
+[; ;main.c: 46: }
+[; ;main.c: 48: if(IOCIF == 1){
+"48
 [e $ ! == -> _IOCIF `i -> 1 `i 357  ]
 {
-[; ;main.c: 45: if(IOCBFbits.IOCBF5 == 1){
-"45
+[; ;main.c: 49: if(IOCBFbits.IOCBF5 == 1){
+"49
 [e $ ! == -> . . _IOCBFbits 0 5 `i -> 1 `i 358  ]
 {
-[; ;main.c: 47: IOCIE = 0;
-"47
-[e = _IOCIE -> -> 0 `i `b ]
-[; ;main.c: 49: RB0 = 0;
-"49
-[e = _RB0 -> -> 0 `i `b ]
-[; ;main.c: 51: _delay((unsigned long)((500)*(2000000/4000.0)));
+[; ;main.c: 51: IOCIE = 0;
 "51
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
-[; ;main.c: 53: if(load_flag == 1){
+[e = _IOCIE -> -> 0 `i `b ]
+[; ;main.c: 53: RB0 = 0;
 "53
+[e = _RB0 -> -> 0 `i `b ]
+[; ;main.c: 55: _delay((unsigned long)((500)*(2000000/4000.0)));
+"55
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+[; ;main.c: 57: if(load_flag == 1){
+"57
 [e $ ! == _load_flag -> 1 `i 359  ]
 {
-[; ;main.c: 54: load();
-"54
+[; ;main.c: 58: load();
+"58
 [e ( _load ..  ]
-"55
+"59
 }
-[; ;main.c: 55: }else if(load_flag == 0){
+[; ;main.c: 59: }else if(load_flag == 0){
 [e $U 360  ]
 [e :U 359 ]
 [e $ ! == _load_flag -> 0 `i 361  ]
 {
-[; ;main.c: 56: slot_state[0] = 1;
-"56
-[e = *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i ]
-"57
-}
-[e :U 361 ]
-"59
-[e :U 360 ]
-[; ;main.c: 57: }
-[; ;main.c: 59: SSP1IF = 0;
-[e = _SSP1IF -> -> 0 `i `b ]
-[; ;main.c: 60: SSP1IE = 1;
+[; ;main.c: 60: slot_state[0] = 1;
 "60
-[e = _SSP1IE -> -> 1 `i `b ]
+[e = *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i ]
 "61
 }
+[e :U 361 ]
+"63
+[e :U 360 ]
+[; ;main.c: 61: }
+[; ;main.c: 63: SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+[; ;main.c: 64: SSP1IE = 1;
+"64
+[e = _SSP1IE -> -> 1 `i `b ]
+"65
+}
 [e :U 358 ]
-"62
+"66
 }
 [e :U 357 ]
-[; ;main.c: 61: }
-[; ;main.c: 62: }
-[; ;main.c: 64: }
-"64
+[; ;main.c: 65: }
+[; ;main.c: 66: }
+[; ;main.c: 68: }
+"68
 [e :UE 350 ]
 }
-"66
+"70
 [v _main `(v ~T0 @X0 1 ef ]
-"67
+"71
 {
-[; ;main.c: 66: void main(void)
-[; ;main.c: 67: {
+[; ;main.c: 70: void main(void)
+[; ;main.c: 71: {
 [e :U _main ]
 [f ]
-[; ;main.c: 68: pic_reg();
-"68
-[e ( _pic_reg ..  ]
-[; ;main.c: 69: slave_reg();
-"69
-[e ( _slave_reg ..  ]
-[; ;main.c: 72: CCPTMRS = 0b00000000;
+[; ;main.c: 72: pic_reg();
 "72
-[e = _CCPTMRS -> -> 0 `i `uc ]
-[; ;main.c: 73: CCP3CON = 0b00001100;
+[e ( _pic_reg ..  ]
+[; ;main.c: 73: slave_reg();
 "73
-[e = _CCP3CON -> -> 12 `i `uc ]
-[; ;main.c: 74: CCP4CON = 0b00001100;
-"74
-[e = _CCP4CON -> -> 12 `i `uc ]
-[; ;main.c: 75: T2CON = 0b01111111;
-"75
-[e = _T2CON -> -> 127 `i `uc ]
-[; ;main.c: 76: PR2 = 155;
+[e ( _slave_reg ..  ]
+[; ;main.c: 76: CCPTMRS = 0b00000000;
 "76
-[e = _PR2 -> -> 155 `i `uc ]
-[; ;main.c: 77: CCPR3L = 0;
+[e = _CCPTMRS -> -> 0 `i `uc ]
+[; ;main.c: 77: CCP3CON = 0b00001100;
 "77
-[e = _CCPR3L -> -> 0 `i `uc ]
-[; ;main.c: 78: CCPR3H = 0;
+[e = _CCP3CON -> -> 12 `i `uc ]
+[; ;main.c: 78: CCP4CON = 0b00001100;
 "78
-[e = _CCPR3H -> -> 0 `i `uc ]
-[; ;main.c: 79: CCPR4L = 0;
+[e = _CCP4CON -> -> 12 `i `uc ]
+[; ;main.c: 79: T2CON = 0b01111111;
 "79
-[e = _CCPR4L -> -> 0 `i `uc ]
-[; ;main.c: 80: CCPR4H = 0;
+[e = _T2CON -> -> 127 `i `uc ]
+[; ;main.c: 80: PR2 = 155;
 "80
-[e = _CCPR4H -> -> 0 `i `uc ]
-[; ;main.c: 81: TMR2 = 0;
+[e = _PR2 -> -> 155 `i `uc ]
+[; ;main.c: 81: CCPR3L = 0;
 "81
-[e = _TMR2 -> -> 0 `i `uc ]
-[; ;main.c: 82: TMR2ON = 1;
-"82
-[e = _TMR2ON -> -> 1 `i `b ]
-[; ;main.c: 84: CCPR3L = 6;
-"84
-[e = _CCPR3L -> -> 6 `i `uc ]
-[; ;main.c: 85: CCPR4L = 6;
-"85
-[e = _CCPR4L -> -> 6 `i `uc ]
-[; ;main.c: 86: _delay((unsigned long)((300)*(2000000/4000.0)));
-"86
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
-[; ;main.c: 87: CCPR3L = 0;
-"87
 [e = _CCPR3L -> -> 0 `i `uc ]
-[; ;main.c: 88: CCPR4L = 0;
-"88
+[; ;main.c: 82: CCPR3H = 0;
+"82
+[e = _CCPR3H -> -> 0 `i `uc ]
+[; ;main.c: 83: CCPR4L = 0;
+"83
 [e = _CCPR4L -> -> 0 `i `uc ]
-[; ;main.c: 90: PEIE = 1;
+[; ;main.c: 84: CCPR4H = 0;
+"84
+[e = _CCPR4H -> -> 0 `i `uc ]
+[; ;main.c: 85: TMR2 = 0;
+"85
+[e = _TMR2 -> -> 0 `i `uc ]
+[; ;main.c: 86: TMR2ON = 1;
+"86
+[e = _TMR2ON -> -> 1 `i `b ]
+[; ;main.c: 88: CCPR3L = 12;
+"88
+[e = _CCPR3L -> -> 12 `i `uc ]
+[; ;main.c: 89: CCPR4L = 12;
+"89
+[e = _CCPR4L -> -> 12 `i `uc ]
+[; ;main.c: 90: _delay((unsigned long)((300)*(2000000/4000.0)));
 "90
-[e = _PEIE -> -> 1 `i `b ]
-[; ;main.c: 91: GIE = 1;
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+[; ;main.c: 91: CCPR3L = 0;
 "91
+[e = _CCPR3L -> -> 0 `i `uc ]
+[; ;main.c: 92: CCPR4L = 0;
+"92
+[e = _CCPR4L -> -> 0 `i `uc ]
+[; ;main.c: 94: PEIE = 1;
+"94
+[e = _PEIE -> -> 1 `i `b ]
+[; ;main.c: 95: GIE = 1;
+"95
 [e = _GIE -> -> 1 `i `b ]
-[; ;main.c: 93: while(1){
-"93
+[; ;main.c: 97: while(1){
+"97
 [e :U 364 ]
 {
-[; ;main.c: 95: if(RB7 == 0){
-"95
+[; ;main.c: 99: if(RB7 == 0){
+"99
 [e $ ! == -> _RB7 `i -> 0 `i 366  ]
 {
-[; ;main.c: 96: load_flag = 0;
-"96
+[; ;main.c: 100: load_flag = 0;
+"100
 [e = _load_flag -> 0 `i ]
-[; ;main.c: 97: shot();
-"97
+[; ;main.c: 101: shot();
+"101
 [e ( _shot ..  ]
-"98
+"102
 }
 [e :U 366 ]
-"99
+"103
 }
 [e :U 363 ]
-"93
+"97
 [e $U 364  ]
 [e :U 365 ]
-[; ;main.c: 98: }
-[; ;main.c: 99: }
-[; ;main.c: 101: }
-"101
+[; ;main.c: 102: }
+[; ;main.c: 103: }
+[; ;main.c: 105: }
+"105
 [e :UE 362 ]
 }
-"103
+"107
 [v _shot `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 103: void shot(){
+[; ;main.c: 107: void shot(){
 [e :U _shot ]
 [f ]
-[; ;main.c: 104: slot_state[0] = 0;
-"104
-[e = *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i ]
-[; ;main.c: 105: RB0 = 1;
-"105
-[e = _RB0 -> -> 1 `i `b ]
-[; ;main.c: 106: IOCBFbits.IOCBF5 = 0;
-"106
-[e = . . _IOCBFbits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 107: IOCIF = 0;
-"107
-[e = _IOCIF -> -> 0 `i `b ]
-[; ;main.c: 108: IOCIE = 1;
+[; ;main.c: 108: slot_state[0] = 0;
 "108
-[e = _IOCIE -> -> 1 `i `b ]
-[; ;main.c: 109: }
+[e = *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i ]
+[; ;main.c: 109: RB0 = 1;
 "109
+[e = _RB0 -> -> 1 `i `b ]
+[; ;main.c: 110: IOCBFbits.IOCBF5 = 0;
+"110
+[e = . . _IOCBFbits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 111: IOCIF = 0;
+"111
+[e = _IOCIF -> -> 0 `i `b ]
+[; ;main.c: 112: IOCIE = 1;
+"112
+[e = _IOCIE -> -> 1 `i `b ]
+[; ;main.c: 113: }
+"113
 [e :UE 367 ]
 }
-"111
+"115
 [v _load `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 111: void load(){
+[; ;main.c: 115: void load(){
 [e :U _load ]
 [f ]
-[; ;main.c: 115: if((slot_state[0] == 0) && (slot_state[1] == 1)){
-"115
+[; ;main.c: 119: if((slot_state[0] == 0) && (slot_state[1] == 1)){
+"119
 [e $ ! && == *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i == *U + &U _slot_state * -> -> -> 1 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i 369  ]
 {
-[; ;main.c: 117: CCPR3L = 12;
-"117
-[e = _CCPR3L -> -> 12 `i `uc ]
-[; ;main.c: 118: _delay((unsigned long)((300)*(2000000/4000.0)));
-"118
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
-[; ;main.c: 119: CCPR3L = 0;
-"119
-[e = _CCPR3L -> -> 0 `i `uc ]
-[; ;main.c: 121: slot_state[0] = 1;
+[; ;main.c: 121: CCPR3L = 6;
 "121
-[e = *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i ]
-[; ;main.c: 122: slot_state[1] = 0;
+[e = _CCPR3L -> -> 6 `i `uc ]
+[; ;main.c: 122: _delay((unsigned long)((300)*(2000000/4000.0)));
 "122
-[e = *U + &U _slot_state * -> -> -> 1 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i ]
-[; ;main.c: 124: return;
-"124
-[e $UE 368  ]
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+[; ;main.c: 123: CCPR3L = 0;
+"123
+[e = _CCPR3L -> -> 0 `i `uc ]
+[; ;main.c: 125: slot_state[0] = 1;
+"125
+[e = *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i ]
+[; ;main.c: 126: slot_state[1] = 0;
 "126
+[e = *U + &U _slot_state * -> -> -> 1 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i ]
+[; ;main.c: 128: return;
+"128
+[e $UE 368  ]
+"130
 }
 [e :U 369 ]
-[; ;main.c: 126: }
-[; ;main.c: 128: if((slot_state[0] == 0) && (slot_state[1] == 0) && (slot_state[2] == 1)){
-"128
+[; ;main.c: 130: }
+[; ;main.c: 132: if((slot_state[0] == 0) && (slot_state[1] == 0) && (slot_state[2] == 1)){
+"132
 [e $ ! && && == *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i == *U + &U _slot_state * -> -> -> 1 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i == *U + &U _slot_state * -> -> -> 2 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i 370  ]
 {
-[; ;main.c: 130: CCPR4L = 12;
-"130
-[e = _CCPR4L -> -> 12 `i `uc ]
-[; ;main.c: 131: _delay((unsigned long)((300)*(2000000/4000.0)));
-"131
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
-[; ;main.c: 132: CCPR4L = 0;
-"132
-[e = _CCPR4L -> -> 0 `i `uc ]
-[; ;main.c: 134: slot_state[0] = 1;
+[; ;main.c: 134: CCPR4L = 6;
 "134
-[e = *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i ]
-[; ;main.c: 135: slot_state[2] = 0;
+[e = _CCPR4L -> -> 6 `i `uc ]
+[; ;main.c: 135: _delay((unsigned long)((300)*(2000000/4000.0)));
 "135
-[e = *U + &U _slot_state * -> -> -> 2 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i ]
-[; ;main.c: 137: return;
-"137
-[e $UE 368  ]
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+[; ;main.c: 136: CCPR4L = 0;
+"136
+[e = _CCPR4L -> -> 0 `i `uc ]
+[; ;main.c: 138: slot_state[0] = 1;
+"138
+[e = *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i ]
+[; ;main.c: 139: slot_state[2] = 0;
 "139
+[e = *U + &U _slot_state * -> -> -> 2 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i ]
+[; ;main.c: 141: return;
+"141
+[e $UE 368  ]
+"143
 }
 [e :U 370 ]
-[; ;main.c: 139: }
-[; ;main.c: 141: if((slot_state[0] == 0) && (slot_state[1] == 0) && (slot_state[2] == 0)){
-"141
+[; ;main.c: 143: }
+[; ;main.c: 145: if((slot_state[0] == 0) && (slot_state[1] == 0) && (slot_state[2] == 0)){
+"145
 [e $ ! && && == *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i == *U + &U _slot_state * -> -> -> 1 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i == *U + &U _slot_state * -> -> -> 2 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i 371  ]
 {
-[; ;main.c: 143: CCPR3L = 6;
-"143
-[e = _CCPR3L -> -> 6 `i `uc ]
-[; ;main.c: 144: CCPR4L = 6;
-"144
-[e = _CCPR4L -> -> 6 `i `uc ]
-[; ;main.c: 146: _delay((unsigned long)((300)*(2000000/4000.0)));
-"146
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
-[; ;main.c: 148: CCPR3L = 0;
+[; ;main.c: 147: CCPR3L = 12;
+"147
+[e = _CCPR3L -> -> 12 `i `uc ]
+[; ;main.c: 148: CCPR4L = 12;
 "148
-[e = _CCPR3L -> -> 0 `i `uc ]
-[; ;main.c: 149: CCPR4L = 0;
-"149
-[e = _CCPR4L -> -> 0 `i `uc ]
-[; ;main.c: 151: slot_state[0] = 0;
-"151
-[e = *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i ]
-[; ;main.c: 152: slot_state[1] = 1;
+[e = _CCPR4L -> -> 12 `i `uc ]
+[; ;main.c: 150: _delay((unsigned long)((300)*(2000000/4000.0)));
+"150
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 2000000 `l `d .4000.0 `ul ]
+[; ;main.c: 152: CCPR3L = 0;
 "152
-[e = *U + &U _slot_state * -> -> -> 1 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i ]
-[; ;main.c: 153: slot_state[2] = 1;
+[e = _CCPR3L -> -> 0 `i `uc ]
+[; ;main.c: 153: CCPR4L = 0;
 "153
-[e = *U + &U _slot_state * -> -> -> 2 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i ]
-[; ;main.c: 155: return;
+[e = _CCPR4L -> -> 0 `i `uc ]
+[; ;main.c: 155: slot_state[0] = 0;
 "155
-[e $UE 368  ]
+[e = *U + &U _slot_state * -> -> -> 0 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 0 `i ]
+[; ;main.c: 156: slot_state[1] = 1;
 "156
+[e = *U + &U _slot_state * -> -> -> 1 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i ]
+[; ;main.c: 157: slot_state[2] = 1;
+"157
+[e = *U + &U _slot_state * -> -> -> 2 `i `ui `ux -> -> # *U &U _slot_state `ui `ux -> 1 `i ]
+[; ;main.c: 159: return;
+"159
+[e $UE 368  ]
+"160
 }
 [e :U 371 ]
-[; ;main.c: 156: }
-[; ;main.c: 157: }
-"157
+[; ;main.c: 160: }
+[; ;main.c: 161: }
+"161
 [e :UE 368 ]
 }

@@ -9,6 +9,10 @@
 #define DEG_180 17
 #define DELAY_TIME 300
 
+#define DEG_OPEN 6
+#define DEG_CLOSE 12
+
+
 #define SLOT_BULLET 3
 #define BUTTON_PUSH 0
 #define SENSOR_INCIDENT 1
@@ -81,8 +85,8 @@ void main(void)
     TMR2    = 0;                    //タイマ2クリア
     TMR2ON  = 1;
     
-    CCPR3L = DEG_0;
-    CCPR4L = DEG_0;
+    CCPR3L = DEG_CLOSE;
+    CCPR4L = DEG_CLOSE;
     __delay_ms(DELAY_TIME);
     CCPR3L = DEG_LOCKED;
     CCPR4L = DEG_LOCKED;
@@ -114,7 +118,7 @@ void load(){
             
     if((slot_state[0] == 0) && (slot_state[1] == 1)){
         //一段目
-        CCPR3L = DEG_90;
+        CCPR3L = DEG_OPEN;
         __delay_ms(DELAY_TIME);
         CCPR3L = DEG_LOCKED;
             
@@ -127,7 +131,7 @@ void load(){
     
     if((slot_state[0] == 0) && (slot_state[1] == 0) && (slot_state[2] == 1)){
         //二段目
-        CCPR4L = DEG_90;
+        CCPR4L = DEG_OPEN;
         __delay_ms(DELAY_TIME);
         CCPR4L = DEG_LOCKED;
             
@@ -140,8 +144,8 @@ void load(){
     
     if((slot_state[0] == 0) && (slot_state[1] == 0) && (slot_state[2] == 0)){    
         //装填機構に輪がない場合
-        CCPR3L = DEG_0;
-        CCPR4L = DEG_0;
+        CCPR3L = DEG_CLOSE;
+        CCPR4L = DEG_CLOSE;
     
         __delay_ms(DELAY_TIME);
     

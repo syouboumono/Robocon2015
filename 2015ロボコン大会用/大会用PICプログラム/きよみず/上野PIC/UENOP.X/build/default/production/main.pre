@@ -3750,7 +3750,7 @@ int slave_read();
 void master_reg();
 void master_send(int obj,unsigned char s_data);
 
-# 16 "main.c"
+# 20 "main.c"
 int slot_state[3] = {0,1,1};
 int load_flag;
 
@@ -3819,8 +3819,8 @@ CCPR4H = 0;
 TMR2 = 0;
 TMR2ON = 1;
 
-CCPR3L = 6;
-CCPR4L = 6;
+CCPR3L = 12;
+CCPR4L = 12;
 _delay((unsigned long)((300)*(2000000/4000.0)));
 CCPR3L = 0;
 CCPR4L = 0;
@@ -3852,7 +3852,7 @@ void load(){
 
 if((slot_state[0] == 0) && (slot_state[1] == 1)){
 
-CCPR3L = 12;
+CCPR3L = 6;
 _delay((unsigned long)((300)*(2000000/4000.0)));
 CCPR3L = 0;
 
@@ -3865,7 +3865,7 @@ return;
 
 if((slot_state[0] == 0) && (slot_state[1] == 0) && (slot_state[2] == 1)){
 
-CCPR4L = 12;
+CCPR4L = 6;
 _delay((unsigned long)((300)*(2000000/4000.0)));
 CCPR4L = 0;
 
@@ -3878,8 +3878,8 @@ return;
 
 if((slot_state[0] == 0) && (slot_state[1] == 0) && (slot_state[2] == 0)){
 
-CCPR3L = 6;
-CCPR4L = 6;
+CCPR3L = 12;
+CCPR4L = 12;
 
 _delay((unsigned long)((300)*(2000000/4000.0)));
 

@@ -78,7 +78,7 @@ void master_reg()
 
     //äÑÇËçûÇ›ÇÃãñâ¬
     SSP2IF  = 0;
-    SSP2IE  = 1;
+    SSP2IE  = 0;
 //    PEIE    = 1;
 //    GIE     = 1;
 
@@ -99,11 +99,13 @@ void master_send(int obj,unsigned char s_data)
     }
 
     if(obj == SS_RA1){
+        SSP2IE = 1;
         RA1 = 0;
         SSP2BUF = s_data;
         while(SSP2STATbits.BF == 0);
         RA1 = 1;
         SSP2IF = 0;
+        SSP2IE = 0;
         return;
     }
 

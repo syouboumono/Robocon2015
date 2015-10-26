@@ -1,0 +1,10 @@
+_pic_reg: CODE, 292 0 24
+_shot: CODE, 346 0 9
+_main: CODE, 238 0 54
+_load: CODE, 123 0 115
+_slave_reg: CODE, 334 0 12
+_slave_read: CODE, 316 0 18
+__initialization: CODE, 100 0 19
+i1_shot: CODE, 355 0 9
+_inter: CODE, 4 0 94
+Total: 354

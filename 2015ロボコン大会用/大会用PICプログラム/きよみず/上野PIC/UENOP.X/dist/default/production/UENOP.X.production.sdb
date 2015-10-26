@@ -11,14 +11,14 @@
 [v _eecpymem eecpymem `(v  1 e 0 0 ]
 "24
 [v _memcpyee memcpyee `(v  1 e 0 0 ]
-"22 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+"26 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
 [v _inter inter `II(v  1 e 0 0 ]
-"66
+"70
 [v _main main `(v  1 e 0 0 ]
-"103
+"107
 [v _shot shot `(v  1 e 0 0 ]
 [v i1_shot shot `(v  1 e 0 0 ]
-"111
+"115
 [v _load load `(v  1 e 0 0 ]
 "3 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\pic16f1827_config.c
 [v _pic_reg pic_reg `(v  1 e 0 0 ]
@@ -160,49 +160,49 @@
 [v _SSP2IF SSP2IF `VEb  1 e 0 @160 ]
 "7442
 [v _TMR2ON TMR2ON `VEb  1 e 0 @226 ]
-"16 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+"20 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
 [v _slot_state slot_state `[3]i  1 e 6 0 ]
-"17
+"21
 [v _load_flag load_flag `i  1 e 2 0 ]
 "3 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\spi.h
 [v _r_data r_data `uc  1 e 1 0 ]
-"66 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+"70 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
 [v _main main `(v  1 e 0 0 ]
 {
-"101
+"105
 } 0
 "15 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\spi.c
 [v _slave_reg slave_reg `(v  1 e 0 0 ]
 {
 "36
 } 0
-"103 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+"107 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
 [v _shot shot `(v  1 e 0 0 ]
 {
-"109
+"113
 } 0
 "3 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\pic16f1827_config.c
 [v _pic_reg pic_reg `(v  1 e 0 0 ]
 {
 "23
 } 0
-"22 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+"26 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
 [v _inter inter `II(v  1 e 0 0 ]
 {
-"64
+"68
 } 0
-"103
+"107
 [v i1_shot shot `(v  1 e 0 0 ]
 {
-"109
+"113
 } 0
 "42 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\spi.c
 [v _slave_read slave_read `(i  1 e 2 0 ]
 {
 "52
 } 0
-"111 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
+"115 F:\川村重工業\ロボコン\2015ロボコン大会用\大会用PICプログラム\きよみず\上野PIC\UENOP.X\main.c
 [v _load load `(v  1 e 0 0 ]
 {
-"157
+"161
 } 0

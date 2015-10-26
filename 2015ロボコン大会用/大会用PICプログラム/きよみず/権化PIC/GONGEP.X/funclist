@@ -1,12 +1,11 @@
-_pic_reg: CODE, 252 0 26
-_master_reg: CODE, 331 0 9
-_master_send: CODE, 62 0 149
-_shot: CODE, 340 0 3
-_main: CODE, 299 0 20
-_load: CODE, 211 0 41
-_slave_reg: CODE, 319 0 12
-_slave_read: CODE, 278 0 21
-__initialization: CODE, 55 0 3
-i1_shot: CODE, 343 0 3
-_inter: CODE, 4 0 49
-Total: 336
+_pic_reg: CODE, 284 0 24
+_master_reg: CODE, 370 0 9
+_master_send: CODE, 130 0 154
+_shot: CODE, 361 0 9
+_main: CODE, 329 0 20
+_slave_reg: CODE, 349 0 12
+_slave_read: CODE, 308 0 21
+__initialization: CODE, 123 0 3
+i1_shot: CODE, 379 0 9
+_inter: CODE, 4 0 117
+Total: 378

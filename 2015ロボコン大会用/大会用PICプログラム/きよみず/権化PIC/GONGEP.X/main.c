@@ -5,7 +5,7 @@
 #define DEG_0 6
 #define DEG_90 12
 #define DEG_180 17
-#define LOAD_DELAY_TIME 1000
+#define LOAD_DELAY_TIME 500
 
 #define BUTTON_PUSH 0
 #define SENSOR_INCIDENT 1
@@ -26,18 +26,14 @@ void interrupt inter(void){
             
             IOCBF = 0;
             IOCIF = 0;
-            IOCBP = 0x40;
+            IOCBN = 0x40;
             IOCIE = 1;
-
-        }else{
-            
-            NOP();
-            
         }
     }
 
     if(IOCIF == 1){
-        
+
+        //発射機構のセンサ
         if(IOCBFbits.IOCBF7 == SENSOR_INCIDENT){
             RB0 = 0;
 
@@ -51,7 +47,8 @@ void interrupt inter(void){
             
         }
 
-        
+
+        //装填Ｒ機構のセンサ
         if(IOCBFbits.IOCBF6 == SENSOR_INCIDENT){
             
             master_send(SS_RA1,0x00);
@@ -70,7 +67,7 @@ void interrupt inter(void){
                 
                 IOCBF = 0;
                 IOCIF = 0;
-                IOCBP = 0x00;
+                IOCBN = 0x00;
                 IOCIE = 0;
                 
                 shot();
